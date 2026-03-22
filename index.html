@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI實體化製造新紀元 | Markforged FX10 台灣體驗日</title>
+  <style>
+    :root {
+      --yellow: #FFC500;
+      --black: #000000;
+      --white: #FFFFFF;
+      --gray-dark: #404040;
+      --gray-mid: #595959;
+      --gray-light: #E4E4E4;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: var(--black);
+      color: var(--white);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #000 60%, #1a1a1a 100%);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 48px;
+      border-bottom: 1px solid #222;
+    }
+
+    .hero-logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--white);
+    }
+
+    .hero-logo span {
+      color: var(--yellow);
+    }
+
+    .vip-badge {
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+    }
+
+    .hero-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 60px 48px;
+      gap: 60px;
+    }
+
+    .hero-text {
+      flex: 1;
+      max-width: 580px;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 4px;
+      margin-bottom: 24px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      color: var(--white);
+    }
+
+    .hero-title .highlight {
+      color: var(--yellow);
+    }
+
+    .hero-subtitle {
+      font-size: 20px;
+      font-weight: 400;
+      color: #aaa;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    .hero-features {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      color: #ccc;
+    }
+
+    .hero-feature .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--yellow);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.2s;
+    }
+
+    .hero-cta:hover { opacity: 0.88; }
+
+    .hero-image {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      max-width: 480px;
+      width: 100%;
+      filter: drop-shadow(0 0 60px rgba(255,197,0,0.25));
+    }
+
+    /* ── SECTION SHARED ── */
+    section {
+      padding: 80px 48px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--yellow);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(24px, 3vw, 38px);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: #aaa;
+      max-width: 640px;
+      line-height: 1.7;
+      margin-bottom: 48px;
+    }
+
+    /* ── WHY ── */
+    .why {
+      background: #0a0a0a;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 32px 28px;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover { border-color: var(--yellow); }
+
+    .card-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--white);
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.7;
+    }
+
+    /* ── PRODUCT ── */
+    .product {
+      background: #000;
+    }
+
+    .product-grid {
+      display: flex;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .product-img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .product-img img {
+      max-width: 400px;
+      width: 100%;
+      filter: drop-shadow(0 0 40px rgba(255,197,0,0.2));
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    .product-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .spec-item {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 6px;
+      padding: 16px;
+    }
+
+    .spec-label {
+      font-size: 11px;
+      color: #666;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .spec-value {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--yellow);
+    }
+
+    /* ── EXPERIENCE ── */
+    .experience {
+      background: #0a0a0a;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 680px;
+    }
+
+    .step {
+      display: flex;
+      gap: 24px;
+      padding: 28px 0;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .step:last-child { border-bottom: none; }
+
+    .step-num {
+      width: 40px;
+      height: 40px;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 16px;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-content h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .step-content p {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.6;
+    }
+
+    /* ── FORM ── */
+    .form-section {
+      background: #000;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    .form-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #0d0d0d;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 48px;
+    }
+
+    .form-title {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .form-subtitle {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #ccc;
+      letter-spacing: 0.5px;
+    }
+
+    label .req {
+      color: var(--yellow);
+      margin-left: 3px;
+    }
+
+    input, select, textarea {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 12px 16px;
+      color: var(--white);
+      font-size: 15px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--yellow);
+    }
+
+    select option {
+      background: #1a1a1a;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-divider {
+      grid-column: 1 / -1;
+      border: none;
+      border-top: 1px solid #222;
+      margin: 8px 0;
+    }
+
+    .form-section-label {
+      grid-column: 1 / -1;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--yellow);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding-top: 8px;
+    }
+
+    .submit-btn {
+      grid-column: 1 / -1;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: opacity 0.2s;
+      width: 100%;
+    }
+
+    .submit-btn:hover { opacity: 0.88; }
+
+    .form-note {
+      grid-column: 1 / -1;
+      font-size: 12px;
+      color: #555;
+      text-align: center;
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+
+    /* ── SUCCESS ── */
+    #success-msg {
+      display: none;
+      text-align: center;
+      padding: 40px;
+    }
+
+    #success-msg .success-icon {
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+
+    #success-msg h3 {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    #success-msg p {
+      font-size: 15px;
+      color: #aaa;
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #000;
+      border-top: 1px solid #1a1a1a;
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .footer-logo span { color: var(--yellow); }
+
+    .footer-text {
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero-content { flex-direction: column; padding: 40px 24px; }
+      .hero-image { display: none; }
+      section { padding: 60px 24px; }
+      .product-grid { flex-direction: column; }
+      .form-grid { grid-template-columns: 1fr; }
+      .form-wrapper { padding: 28px 20px; }
+      .hero-nav { padding: 20px 24px; }
+      footer { padding: 28px 24px; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <nav class="hero-nav">
+    <div class="hero-logo">MARK<span>FORGED</span></div>
+    <div class="vip-badge">VIP 預約制</div>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-tag">🇹🇼 台灣限定 · 專屬體驗</div>
+      <h1 class="hero-title">
+        AI實體化<br/>
+        <span class="highlight">製造新紀元</span>
+      </h1>
+      <p style="font-size:18px; color:#888; margin-bottom:8px; font-weight:500;">
+        Markforged FX10 台灣體驗日
+      </p>
+      <p class="hero-subtitle">
+        全球首台金屬複合材料工業列印機，<br/>
+        一台搞定複合材料 + 金屬零件，就在您身邊實際體驗。
+      </p>
+
+      <div class="hero-features">
+        <div class="hero-feature">
+          <div class="dot"></div>
+          <span>北部（台北）× 中部（台中）專屬展示場地</span>
+        </div>
+        <div class="hero-feature">
+          <div class="dot"></div>
+          <span>一對一 VIP 貴賓體驗，針對您的需求客製化展示</span>
+        </div>
+        <div class="hero-feature">
+          <div class="dot"></div>
+          <span>由 Markforged 台灣原廠工程師親自解說</span>
+        </div>
+        <div class="hero-feature">
+          <div class="dot"></div>
+          <span>FX10 + Metal Kit 實機操作，當場看到成品</span>
+        </div>
+      </div>
+
+      <a href="#register" class="hero-cta">立即申請 VIP 體驗名額</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://markforged.com/wp-content/uploads/2023/03/FX10-Hero.png" alt="Markforged FX10" />
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY ── -->
+<section class="why">
+  <div class="section-label">為什麼選擇 FX10</div>
+  <h2 class="section-title">您的製造痛點，FX10 一次解決</h2>
+  <p class="section-subtitle">
+    不再依賴外包鑄造廠，不再等待漫長交期。FX10 讓您的工廠具備當天設計、當天產出的能力。
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <div class="card-title">大幅縮短交期</div>
+      <div class="card-desc">從設計到成品最快當天完成。告別傳統外包 4~8 週等待，即時響應生產需求。</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">💰</div>
+      <div class="card-title">降低模具與庫存成本</div>
+      <div class="card-desc">小批量、多樣化零件無需開模。按需生產，大幅減少庫存壓力與模具費用。</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔩</div>
+      <div class="card-title">金屬 × 複合材料一機雙用</div>
+      <div class="card-desc">全球首台可切換金屬與複合材料列印的工業機。FX10 + Metal Kit，兩種需求一台搞定。</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏭</div>
+      <div class="card-title">工廠級可靠度</div>
+      <div class="card-desc">精密機械鋁製列印平台，自動校準與感測器驗證，無需專職操作員，人人都能用。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRODUCT ── -->
+<section class="product">
+  <div class="product-grid">
+    <div class="product-img">
+      <img src="https://markforged.com/wp-content/uploads/2023/03/FX10-Hero.png" alt="FX10 + Metal Kit" />
+    </div>
+    <div class="product-info">
+      <div class="section-label">主打產品</div>
+      <h2 class="section-title">FX10 + Metal Kit</h2>
+      <p class="section-subtitle" style="margin-bottom: 0;">
+        全球首台工業級金屬 + 複合材料 3D 列印機。
+        模組化設計讓您輕鬆在複合材料與金屬列印之間切換，
+        搭配 Eiger 雲端軟體，遠端監控、多地管理，一台頂多台。
+      </p>
+
+      <div class="product-specs">
+        <div class="spec-item">
+          <div class="spec-label">列印尺寸</div>
+          <div class="spec-value">375 × 300 × 300 mm</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">列印技術</div>
+          <div class="spec-value">FFF + 連續碳纖維</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">層厚精度</div>
+          <div class="spec-value">125 – 250 µm</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">材料支援</div>
+          <div class="spec-value">金屬 + 複合材料</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section class="experience">
+  <div class="section-label">體驗流程</div>
+  <h2 class="section-title">您的專屬 VIP 體驗日</h2>
+  <p class="section-subtitle">從申請到親眼看到您的零件，每一步都由 Markforged 台灣原廠陪伴。</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>填寫申請表</h4>
+        <p>提供您的需求資訊，讓我們為您量身準備最相關的展示內容。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Markforged 台灣審核確認</h4>
+        <p>我們將在 3 個工作日內與您聯繫，確認體驗時間與地點（台北 / 台中）。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>一對一 VIP 展示</h4>
+        <p>原廠工程師針對您的產業與需求，客製化展示 FX10 + Metal Kit 實際應用場景。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>親手觸碰成品</h4>
+        <p>現場看到金屬零件與複合材料成品，感受與傳統製程的差異。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>量身規劃導入方案</h4>
+        <p>根據您的需求，提供客製化導入建議與報價。零壓力，完全依您步調進行。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FORM ── -->
+<section class="form-section" id="register">
+  <div class="form-wrapper">
+    <div id="form-container">
+      <h2 class="form-title">申請 VIP 體驗名額</h2>
+      <p class="form-subtitle">
+        填寫以下資料，Markforged 台灣將在 3 個工作日內與您確認體驗時間。<br/>
+        名額有限，歡迎盡早提出申請。
+      </p>
+
+      <form id="vip-form">
+        <div class="form-grid">
+
+          <!-- 基本資料 -->
+          <div class="form-section-label">基本資料</div>
+
+          <div class="form-group">
+            <label>姓名 <span class="req">*</span></label>
+            <input type="text" name="name" placeholder="王大明" required />
+          </div>
+
+          <div class="form-group">
+            <label>職稱 <span class="req">*</span></label>
+            <input type="text" name="title" placeholder="製造部經理" required />
+          </div>
+
+          <div class="form-group">
+            <label>公司名稱 <span class="req">*</span></label>
+            <input type="text" name="company" placeholder="XX 精密工業股份有限公司" required />
+          </div>
+
+          <div class="form-group">
+            <label>公司規模（員工人數）<span class="req">*</span></label>
+            <select name="company_size" required>
+              <option value="" disabled selected>請選擇</option>
+              <option>50 人以下</option>
+              <option>51 – 200 人</option>
+              <option>201 – 500 人</option>
+              <option>500 人以上</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="name@company.com" required />
+          </div>
+
+          <div class="form-group">
+            <label>手機號碼 <span class="req">*</span></label>
+            <input type="tel" name="phone" placeholder="0912-345-678" required />
+          </div>
+
+          <hr class="form-divider" />
+
+          <!-- 需求資訊 -->
+          <div class="form-section-label">需求資訊</div>
+
+          <div class="form-group">
+            <label>偏好體驗地點 <span class="req">*</span></label>
+            <select name="location" required>
+              <option value="" disabled selected>請選擇</option>
+              <option>北部（台北）</option>
+              <option>中部（台中）</option>
+              <option>均可配合</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>產業別 <span class="req">*</span></label>
+            <select name="industry" required>
+              <option value="" disabled selected>請選擇</option>
+              <option>汽車與交通</option>
+              <option>航太與國防</option>
+              <option>醫療與生技</option>
+              <option>精密機械與模具</option>
+              <option>電子與半導體</option>
+              <option>消費品與零售</option>
+              <option>能源與重工業</option>
+              <option>學術與研究機構</option>
+              <option>其他</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label>目前零件製造方式 <span class="req">*</span></label>
+            <select name="current_process" required>
+              <option value="" disabled selected>請選擇</option>
+              <option>完全自製</option>
+              <option>完全外包</option>
+              <option>自製 + 外包並行</option>
+              <option>尚無固定製程</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label>感興趣的應用場景</label>
+            <textarea name="use_case" placeholder="例如：治具、夾具製作 / 小批量金屬零件 / 原型開發 / 其他（請描述）"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>預計導入時程 <span class="req">*</span></label>
+            <select name="timeline" required>
+              <option value="" disabled selected>請選擇</option>
+              <option>3 個月內</option>
+              <option>6 個月內</option>
+              <option>1 年內</option>
+              <option>評估中，尚未確定</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>預算範圍（新台幣）<span class="req">*</span></label>
+            <select name="budget" required>
+              <option value="" disabled selected>請選擇</option>
+              <option>100 萬以下</option>
+              <option>100 萬 – 300 萬</option>
+              <option>300 萬 – 500 萬</option>
+              <option>500 萬以上</option>
+              <option>尚未確認</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">送出申請 →</button>
+
+          <p class="form-note">
+            您的資料僅供 Markforged 台灣內部審核使用，不會對外分享。<br/>
+            我們將於 3 個工作日內以 Email 或電話與您聯繫確認。
+          </p>
+
+        </div><!-- /form-grid -->
+      </form>
+    </div><!-- /form-container -->
+
+    <!-- 送出成功 -->
+    <div id="success-msg">
+      <div class="success-icon">🎉</div>
+      <h3>感謝您的申請！</h3>
+      <p>
+        我們已收到您的 VIP 體驗申請。<br/>
+        Markforged 台灣團隊將於 <strong>3 個工作日內</strong> 以 Email 或電話與您聯繫，<br/>
+        確認專屬體驗時間與地點。<br/><br/>
+        期待與您相見！💛
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">MARK<span>FORGED</span> Taiwan</div>
+  <div class="footer-text">© 2026 Markforged. All rights reserved. | 台灣 VIP 預約制體驗</div>
+</footer>
+
+<script>
+  document.getElementById('vip-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+    const payload = {};
+    data.forEach((v, k) => { payload[k] = v; });
+
+    // Build email body
+    const lines = [
+      '📋 新的 VIP 體驗申請',
+      '━━━━━━━━━━━━━━━━━━━━━━',
+      '',
+      '【基本資料】',
+      `姓名：${payload.name}`,
+      `職稱：${payload.title}`,
+      `公司：${payload.company}`,
+      `公司規模：${payload.company_size}`,
+      `Email：${payload.email}`,
+      `電話：${payload.phone}`,
+      '',
+      '【需求資訊】',
+      `偏好地點：${payload.location}`,
+      `產業別：${payload.industry}`,
+      `目前製造方式：${payload.current_process}`,
+      `感興趣應用：${payload.use_case || '（未填寫）'}`,
+      `預計導入時程：${payload.timeline}`,
+      `預算範圍：${payload.budget}`,
+      '',
+      '━━━━━━━━━━━━━━━━━━━━━━',
+      '由 Markforged FX10 台灣體驗日 Landing Page 自動送出',
+    ].join('\n');
+
+    // mailto fallback (若有後端可改為 fetch POST)
+    const subject = encodeURIComponent(`[VIP申請] ${payload.name} - ${payload.company}`);
+    const body = encodeURIComponent(lines);
+    window.location.href = `mailto:brian.chen@markforged.com?subject=${subject}&body=${body}`;
+
+    // Show success
+    document.getElementById('form-container').style.display = 'none';
+    document.getElementById('success-msg').style.display = 'block';
+    document.getElementById('success-msg').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Smooth scroll for CTA
+  document.querySelector('.hero-cta').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
