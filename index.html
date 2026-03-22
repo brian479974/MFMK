@@ -86,9 +86,9 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background: url('images/fx10.jpg') center/cover no-repeat;
-      opacity: 0.22;
-      filter: brightness(0.8);
+      background: url('images/brian_fx10.jpg') center 30%/cover no-repeat;
+      opacity: 0.28;
+      filter: brightness(0.7);
     }
     .hero-overlay {
       position: absolute;
@@ -577,7 +577,7 @@
 <section class="spotlight">
   <div class="spotlight-inner">
     <div class="spotlight-img">
-      <img src="images/fx10_iso.png" alt="Markforged FX10" />
+      <img src="images/fx10_front.jpg" alt="Markforged FX10" style="background:#0a0a0a; border-radius:8px;" />
       <div class="img-badge">★ 主打產品</div>
     </div>
     <div class="spotlight-info">
@@ -656,6 +656,48 @@
       <h3>快速 ROI</h3>
       <p>以治具、夾具、備品自製為起點，快速回收投資，並逐步擴展到終端零件生產。</p>
     </div>
+  </div>
+</section>
+
+<!-- ── WORKFLOW ── -->
+<section style="padding:100px 48px; background:#000;">
+  <div style="text-align:center; margin-bottom:60px;">
+    <div class="section-label">列印流程</div>
+    <h2 class="section-title">從設計到成品，就這麼簡單</h2>
+  </div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; max-width:1100px; margin:0 auto;">
+    <div style="background:#0a0a0a; border:1px solid #1a1a1a; border-radius:12px; overflow:hidden;">
+      <img src="images/workflow_composite.jpg" alt="複合材料列印流程" style="width:100%; display:block;" />
+      <div style="padding:24px;">
+        <div style="font-size:11px; color:var(--yellow); font-weight:700; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">複合材料列印</div>
+        <h3 style="font-size:18px; font-weight:800; margin-bottom:8px;">設計 → 強化 → 列印 → 使用</h3>
+        <p style="font-size:13px; color:#666; line-height:1.7;">連續碳纖維強化技術，讓列印件強度媲美金屬。4 個步驟，當天完成。</p>
+      </div>
+    </div>
+    <div style="background:#0a0a0a; border:1px solid #1a1a1a; border-radius:12px; overflow:hidden;">
+      <img src="images/workflow_metal.jpg" alt="金屬列印流程" style="width:100%; display:block;" />
+      <div style="padding:24px;">
+        <div style="font-size:11px; color:var(--yellow); font-weight:700; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">金屬列印</div>
+        <h3 style="font-size:18px; font-weight:800; margin-bottom:8px;">設計 → 列印 → 清洗 → 燒結 → 使用</h3>
+        <p style="font-size:13px; color:#666; line-height:1.7;">安全、辦公室友好的金屬列印流程。無需傳統加工設備，直接產出高強度金屬零件。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BRIAN BANNER ── -->
+<section style="position:relative; overflow:hidden; min-height:480px; display:flex; align-items:center;">
+  <div style="position:absolute; inset:0; background:url('images/brian_fx10.jpg') center/cover no-repeat;"></div>
+  <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(0,0,0,0.85) 50%, rgba(0,0,0,0.3) 100%);"></div>
+  <div style="position:relative; z-index:2; padding:80px 48px; max-width:620px;">
+    <div style="font-size:clamp(28px,4vw,52px); font-weight:900; line-height:1.2; margin-bottom:24px;">
+      <span style="color:var(--yellow);">貴</span>從來不是<br/>好產品的缺點
+    </div>
+    <p style="font-size:16px; color:#aaa; line-height:1.8; margin-bottom:36px;">
+      FX10 + Metal Kit 讓您省下的每一筆外包費、每一天等待的交期損失，
+      都是真實的競爭優勢。來現場親眼見證。
+    </p>
+    <a href="#register" class="btn-yellow">預約 VIP 體驗 →</a>
   </div>
 </section>
 
@@ -744,7 +786,7 @@
       </div>
     </div>
     <div class="steps-visual">
-      <img src="images/fx10.jpg" alt="FX10 體驗" />
+      <img src="images/fx10_front.jpg" alt="FX10 體驗" style="background:#0a0a0a;" />
       <div class="overlay-box">
         <div class="icon">📍</div>
         <div>
