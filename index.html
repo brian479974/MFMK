@@ -819,125 +819,21 @@
   <div class="form-wrap">
     <div class="form-head">
       <div>
-        <h2>申請 VIP 體驗名額</h2>
-        <p>填寫後，Markforged 台灣將於 3 個工作日內與您聯繫確認時間</p>
+        <h2 class="form-title">申請 VIP 體驗名額</h2>
+        <p class="form-subtitle">填完後資料直接送出，Markforged 台灣將在 3 個工作日內與您聯繫確認時間</p>
       </div>
       <div class="form-head-icon">🏆</div>
     </div>
-    <div class="form-body" id="form-body">
-      <form id="vip-form">
-        <div class="fgrid">
-
-          <div class="flabel">基本資料</div>
-
-          <div class="fg">
-            <label>姓名<span class="r">*</span></label>
-            <input type="text" name="name" placeholder="王大明" required />
-          </div>
-          <div class="fg">
-            <label>職稱<span class="r">*</span></label>
-            <input type="text" name="title" placeholder="製造部經理" required />
-          </div>
-          <div class="fg">
-            <label>公司名稱<span class="r">*</span></label>
-            <input type="text" name="company" placeholder="XX 精密工業股份有限公司" required />
-          </div>
-          <div class="fg">
-            <label>公司規模（員工人數）<span class="r">*</span></label>
-            <select name="company_size" required>
-              <option value="" disabled selected>請選擇</option>
-              <option>50 人以下</option>
-              <option>51 – 200 人</option>
-              <option>201 – 500 人</option>
-              <option>500 人以上</option>
-            </select>
-          </div>
-          <div class="fg">
-            <label>Email<span class="r">*</span></label>
-            <input type="email" name="email" placeholder="name@company.com" required />
-          </div>
-          <div class="fg">
-            <label>手機號碼<span class="r">*</span></label>
-            <input type="tel" name="phone" placeholder="0912-345-678" required />
-          </div>
-
-          <hr class="fdivider" />
-          <div class="flabel">需求資訊</div>
-
-          <div class="fg">
-            <label>偏好體驗地點<span class="r">*</span></label>
-            <select name="location" required>
-              <option value="" disabled selected>請選擇</option>
-              <option>北部（台北）</option>
-              <option>中部（台中）</option>
-              <option>均可配合</option>
-            </select>
-          </div>
-          <div class="fg">
-            <label>產業別<span class="r">*</span></label>
-            <select name="industry" required>
-              <option value="" disabled selected>請選擇</option>
-              <option>汽車與交通</option>
-              <option>航太與國防</option>
-              <option>醫療與生技</option>
-              <option>精密機械與模具</option>
-              <option>電子與半導體</option>
-              <option>消費品與零售</option>
-              <option>能源與重工業</option>
-              <option>學術與研究機構</option>
-              <option>其他</option>
-            </select>
-          </div>
-          <div class="fg full">
-            <label>目前零件製造方式<span class="r">*</span></label>
-            <select name="current_process" required>
-              <option value="" disabled selected>請選擇</option>
-              <option>完全自製</option>
-              <option>完全外包</option>
-              <option>自製 + 外包並行</option>
-              <option>尚無固定製程</option>
-            </select>
-          </div>
-          <div class="fg full">
-            <label>感興趣的應用場景</label>
-            <textarea name="use_case" placeholder="例如：治具、夾具製作 / 小批量金屬零件 / 原型開發…（請描述）"></textarea>
-          </div>
-          <div class="fg">
-            <label>預計導入時程<span class="r">*</span></label>
-            <select name="timeline" required>
-              <option value="" disabled selected>請選擇</option>
-              <option>3 個月內</option>
-              <option>6 個月內</option>
-              <option>1 年內</option>
-              <option>評估中，尚未確定</option>
-            </select>
-          </div>
-          <div class="fg">
-            <label>預算範圍（新台幣）<span class="r">*</span></label>
-            <select name="budget" required>
-              <option value="" disabled selected>請選擇</option>
-              <option>100 萬以下</option>
-              <option>100 萬 – 300 萬</option>
-              <option>300 萬 – 500 萬</option>
-              <option>500 萬以上</option>
-              <option>尚未確認</option>
-            </select>
-          </div>
-
-          <div class="submit-wrap">
-            <button type="submit" class="submit-btn">送出 VIP 體驗申請 →</button>
-          </div>
-          <p class="form-note">
-            您的資料僅供 Markforged 台灣內部審核，不對外分享。<br/>
-            我們將於 3 個工作日內以 Email 或電話與您確認。
-          </p>
-        </div>
-      </form>
-    </div>
-    <div id="success" style="display:none; padding:60px 40px; text-align:center;">
-      <div class="s-icon">🎉</div>
-      <h3>感謝您的申請！</h3>
-      <p>已收到您的 VIP 體驗申請。<br/>Markforged 台灣團隊將於 <strong>3 個工作日內</strong> 與您聯繫確認時間與地點。<br/><br/>期待與您相見！💛</p>
+    <div style="background:#fff; border-radius:0 0 16px 16px; overflow:hidden;">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHfHIrV3X5ok5YSBPxJw5KSReE07iA02elAP8VPhqy0-O6hg/viewform?embedded=true"
+        width="100%"
+        height="1500"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        style="display:block;">
+        載入中...
+      </iframe>
     </div>
   </div>
 </section>
