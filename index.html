@@ -851,35 +851,7 @@
 </footer>
 
 <script>
-  document.getElementById('vip-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const data = new FormData(e.target);
-    const p = {};
-    data.forEach((v, k) => p[k] = v);
-    const lines = [
-      '📋 新的 VIP 體驗申請 — mfmk.markforged.tw',
-      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
-      '',
-      '【基本資料】',
-      `姓名：${p.name}　職稱：${p.title}`,
-      `公司：${p.company}（${p.company_size}）`,
-      `Email：${p.email}　電話：${p.phone}`,
-      '',
-      '【需求資訊】',
-      `偏好地點：${p.location}　產業：${p.industry}`,
-      `目前製程：${p.current_process}`,
-      `感興趣應用：${p.use_case || '（未填寫）'}`,
-      `導入時程：${p.timeline}　預算：${p.budget}`,
-      '',
-      '━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
-    ].join('\n');
-    const sub = encodeURIComponent(`[VIP申請] ${p.name} — ${p.company}`);
-    const body = encodeURIComponent(lines);
-    window.location.href = `mailto:brian.chen@markforged.com?subject=${sub}&body=${body}`;
-    document.getElementById('form-body').style.display = 'none';
-    document.getElementById('success').style.display = 'block';
-    document.getElementById('success').scrollIntoView({ behavior: 'smooth' });
-  });
+  // VIP form: currently handled by Google Forms external link (see #register section)
 
   // Smooth scroll for all anchor links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
