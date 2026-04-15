@@ -653,94 +653,17 @@
     .form-head h2 { font-size: 24px; font-weight: 900; color: var(--black); }
     .form-head p { font-size: 13px; color: #333; margin-top: 4px; }
     .form-head-icon { font-size: 48px; }
-    .form-body { padding: 40px 48px; }
-    .fgrid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
+    .form-body {
+      padding: 0;
     }
-    .fg {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-    .fg.full { grid-column: 1 / -1; }
-    .fg label {
-      font-size: 12px;
-      font-weight: 600;
-      color: #999;
-      letter-spacing: .5px;
-    }
-    .fg label .req { color: var(--yellow); margin-left: 2px; }
-    .fg input, .fg select, .fg textarea {
-      background: #141414;
-      border: 1px solid #2a2a2a;
-      border-radius: 6px;
-      padding: 12px 14px;
-      color: #fff;
-      font-size: 14px;
-      font-family: inherit;
-      outline: none;
-      transition: border-color .2s, box-shadow .2s;
+    .gform-iframe {
       width: 100%;
-    }
-    .fg input:focus, .fg select:focus, .fg textarea:focus {
-      border-color: var(--yellow);
-      box-shadow: 0 0 0 2px rgba(255,197,0,0.1);
-    }
-    .fg select { cursor: pointer; }
-    .fg select option { background: #141414; }
-    .fg textarea { min-height: 80px; resize: vertical; }
-    .fdivider {
-      grid-column: 1/-1;
+      min-height: 1800px;
       border: none;
-      border-top: 1px solid #1a1a1a;
-      margin: 8px 0;
+      display: block;
+      background: #fff;
+      border-radius: 0 0 16px 16px;
     }
-    .flabel {
-      grid-column: 1/-1;
-      font-size: 10px;
-      font-weight: 700;
-      color: var(--yellow);
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding-top: 4px;
-    }
-    .submit-wrap {
-      grid-column: 1/-1;
-      margin-top: 12px;
-    }
-    .submit-btn {
-      width: 100%;
-      background: var(--yellow);
-      color: var(--black);
-      font-size: 16px;
-      font-weight: 800;
-      padding: 18px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: opacity .2s, box-shadow .3s;
-      letter-spacing: .5px;
-    }
-    .submit-btn:hover { opacity: .88; box-shadow: 0 4px 24px rgba(255,197,0,0.3); }
-    .submit-btn:disabled { opacity: .5; cursor: not-allowed; }
-    .form-footnote {
-      grid-column: 1/-1;
-      font-size: 11px;
-      color: #444;
-      text-align: center;
-      margin-top: 4px;
-      line-height: 1.6;
-    }
-    #form-success {
-      display: none;
-      text-align: center;
-      padding: 60px 40px;
-    }
-    #form-success .s-icon { font-size: 64px; margin-bottom: 20px; }
-    #form-success h3 { font-size: 26px; font-weight: 800; margin-bottom: 14px; }
-    #form-success p { font-size: 15px; color: #888; line-height: 1.8; }
 
     /* ── FOOTER ── */
     footer {
@@ -786,8 +709,6 @@
       .why-grid, .products-grid { grid-template-columns: 1fr; }
       .workflow-grid { grid-template-columns: 1fr; }
       .form-head { padding: 24px 20px; }
-      .form-body { padding: 24px 20px; }
-      .fgrid { grid-template-columns: 1fr; }
       footer { padding: 28px 20px; flex-direction: column; align-items: flex-start; }
       .brian-banner-content { padding: 40px 20px; }
       .line-section { padding: 40px 20px; }
@@ -1104,123 +1025,20 @@
       </div>
       <div class="form-head-icon">🏆</div>
     </div>
-    <div class="form-body" id="form-area">
-      <form id="vip-form" class="fgrid" novalidate
-            action="https://docs.google.com/forms/d/e/1FAIpQLScR_phPm9NNG53l9yS2W_c_LZzFP2jYrb0E2n2BAXnH2Owdmw/formResponse"
-            method="POST" target="hidden_iframe">
-        <!-- 基本資料 -->
-        <div class="flabel">基本資料</div>
-        <div class="fg">
-          <label>姓名 <span class="req">*</span></label>
-          <input type="text" name="entry.792149782" required placeholder="您的姓名" />
-        </div>
-        <div class="fg">
-          <label>公司名稱 <span class="req">*</span></label>
-          <input type="text" name="entry.1649468181" required placeholder="公司名稱" />
-        </div>
-        <div class="fg">
-          <label>職稱 <span class="req">*</span></label>
-          <input type="text" name="entry.471465998" required placeholder="您的職稱" />
-        </div>
-        <div class="fg">
-          <label>Email <span class="req">*</span></label>
-          <input type="email" name="entry.1697880856" required placeholder="name@company.com" />
-        </div>
-        <div class="fg">
-          <label>手機號碼 <span class="req">*</span></label>
-          <input type="tel" name="entry.256791019" required placeholder="0912-345-678" />
-        </div>
-        <div class="fg">
-          <label>公司規模 <span class="req">*</span></label>
-          <select name="entry.1878283217" required>
-            <option value="">請選擇員工人數</option>
-            <option>50 人以下</option>
-            <option>51 – 200 人</option>
-            <option>201 – 500 人</option>
-            <option>500 人以上</option>
-          </select>
-        </div>
-        <hr class="fdivider" />
-        <!-- 需求資訊 -->
-        <div class="flabel">需求資訊</div>
-        <div class="fg">
-          <label>偏好體驗地點 <span class="req">*</span></label>
-          <select name="entry.2108686636" required>
-            <option value="">請選擇地區</option>
-            <option>台灣北部（台北）</option>
-            <option>台灣中部（台中）</option>
-            <option>台灣南部（高雄）</option>
-            <option>中國華東（上海）</option>
-            <option>中國華南（深圳）</option>
-            <option>香港</option>
-            <option>越南（胡志明市）</option>
-            <option>線上展示</option>
-            <option>其他（請於備註說明）</option>
-          </select>
-        </div>
-        <div class="fg">
-          <label>產業別 <span class="req">*</span></label>
-          <select name="entry.1554290196" required>
-            <option value="">請選擇產業</option>
-            <option>汽車與交通</option>
-            <option>航太與國防</option>
-            <option>醫療與生技</option>
-            <option>精密機械與模具</option>
-            <option>電子與半導體</option>
-            <option>能源與重工業</option>
-            <option>學術與研究機構</option>
-            <option>其他</option>
-          </select>
-        </div>
-        <div class="fg">
-          <label>目前零件製造方式 <span class="req">*</span></label>
-          <select name="entry.265044526" required>
-            <option value="">請選擇</option>
-            <option>完全自製</option>
-            <option>完全外包</option>
-            <option>自製 + 外包並行</option>
-            <option>尚無固定製程</option>
-          </select>
-        </div>
-        <div class="fg">
-          <label>預計導入時程 <span class="req">*</span></label>
-          <select name="entry.1319922095" required>
-            <option value="">請選擇</option>
-            <option>3 個月內</option>
-            <option>6 個月內</option>
-            <option>1 年內</option>
-            <option>評估中，尚未確定</option>
-          </select>
-        </div>
-        <div class="fg">
-          <label>預算範圍（新台幣） <span class="req">*</span></label>
-          <select name="entry.719086479" required>
-            <option value="">請選擇</option>
-            <option>100 萬以下</option>
-            <option>100 萬 – 300 萬</option>
-            <option>300 萬 – 500 萬</option>
-            <option>500 萬以上</option>
-            <option>尚未確認</option>
-          </select>
-        </div>
-        <div class="fg">
-          <label>感興趣的應用場景（選填）</label>
-          <input type="text" name="entry.1078220418" placeholder="例：治具夾具、金屬零件、原型驗證…" />
-        </div>
-        <div class="submit-wrap">
-          <button type="submit" class="submit-btn" id="submit-btn">🚀 送出 VIP 體驗申請</button>
-        </div>
-        <p class="form-footnote">名額有限，我們將優先安排符合資格的申請者。您的資料僅用於安排體驗，不會分享給第三方。</p>
-      </form>
-    </div>
-    <div id="form-success">
-      <div class="s-icon">🎉</div>
-      <h3>申請已送出！</h3>
-      <p>感謝您的申請，Markforged 團隊將在 3 個工作日內<br/>與您聯繫確認專屬體驗時間。</p>
+    <div class="form-body">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScR_phPm9NNG53l9yS2W_c_LZzFP2jYrb0E2n2BAXnH2Owdmw/viewform?embedded=true"
+        class="gform-iframe"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="VIP 體驗申請表"
+        loading="lazy">
+        載入中…
+      </iframe>
     </div>
   </div>
 </section>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
 <!-- ── FOOTER ── -->
 <footer>
@@ -1234,48 +1052,6 @@
 </footer>
 
 <script>
-  // VIP Form — submit via hidden iframe (bypasses CORS)
-  (function() {
-    const form = document.getElementById('vip-form');
-    const btn = document.getElementById('submit-btn');
-    if (!form) return;
-
-    form.addEventListener('submit', function(e) {
-      // Validate required fields before allowing submit
-      const requiredFields = form.querySelectorAll('[required]');
-      let valid = true;
-      requiredFields.forEach(function(f) {
-        if (!f.value.trim()) {
-          f.style.borderColor = '#e74c3c';
-          valid = false;
-        } else {
-          f.style.borderColor = '#2a2a2a';
-        }
-      });
-
-      if (!valid) {
-        e.preventDefault();
-        return;
-      }
-
-      // Form will POST to hidden iframe via action/target attributes
-      btn.disabled = true;
-      btn.textContent = '送出中...';
-
-      // Show success after a short delay (iframe response can't be read cross-origin)
-      setTimeout(function() {
-        document.getElementById('form-area').style.display = 'none';
-        document.getElementById('form-success').style.display = 'block';
-      }, 1500);
-    });
-
-    // Visual feedback on focus/blur
-    form.querySelectorAll('input, select, textarea').forEach(function(f) {
-      f.addEventListener('focus', function() { f.style.borderColor = 'var(--yellow)'; });
-      f.addEventListener('blur', function() { if (f.value) f.style.borderColor = '#2a2a2a'; });
-    });
-  })();
-
   // Smooth scroll for all anchor links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function(e) {
