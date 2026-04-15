@@ -1049,27 +1049,27 @@
         <div class="flabel">基本資料</div>
         <div class="fg">
           <label>姓名 <span class="req">*</span></label>
-          <input type="text" name="entry.592393039" required placeholder="您的姓名" />
+          <input type="text" name="name" required placeholder="您的姓名" />
         </div>
         <div class="fg">
           <label>公司名稱 <span class="req">*</span></label>
-          <input type="text" name="entry.1733248838" required placeholder="公司全名" />
+          <input type="text" name="company" required placeholder="公司全名" />
         </div>
         <div class="fg">
           <label>職稱 <span class="req">*</span></label>
-          <input type="text" name="entry.1396020007" required placeholder="例：製造部經理" />
+          <input type="text" name="title" required placeholder="例：製造部經理" />
         </div>
         <div class="fg">
           <label>Email <span class="req">*</span></label>
-          <input type="email" name="entry.1779024405" required placeholder="name@company.com" />
+          <input type="email" name="email" required placeholder="name@company.com" />
         </div>
         <div class="fg">
           <label>電話 <span class="req">*</span></label>
-          <input type="tel" name="entry.1179973192" required placeholder="0912-345-678" />
+          <input type="tel" name="phone" required placeholder="0912-345-678" />
         </div>
         <div class="fg">
           <label>公司規模 <span class="req">*</span></label>
-          <select name="entry.1395997461" required>
+          <select name="company_size" required>
             <option value="">請選擇</option>
             <option>50人以下</option>
             <option>51-200人</option>
@@ -1081,7 +1081,7 @@
         <div class="flabel">需求資訊</div>
         <div class="fg">
           <label>偏好體驗地點 <span class="req">*</span></label>
-          <select name="entry.534020087" required>
+          <select name="location" required>
             <option value="">請選擇</option>
             <option>台灣北部（台北）</option>
             <option>台灣中部（台中）</option>
@@ -1096,7 +1096,7 @@
         </div>
         <div class="fg">
           <label>產業別 <span class="req">*</span></label>
-          <select name="entry.923541290" required>
+          <select name="industry" required>
             <option value="">請選擇</option>
             <option>汽車與交通</option>
             <option>航太與國防</option>
@@ -1110,7 +1110,7 @@
         </div>
         <div class="fg">
           <label>目前零件製造方式 <span class="req">*</span></label>
-          <select name="entry.1232509265" required>
+          <select name="manufacturing" required>
             <option value="">請選擇</option>
             <option>完全自製</option>
             <option>完全外包</option>
@@ -1120,7 +1120,7 @@
         </div>
         <div class="fg">
           <label>預計導入時程 <span class="req">*</span></label>
-          <select name="entry.1761192145" required>
+          <select name="timeline" required>
             <option value="">請選擇</option>
             <option>3個月內</option>
             <option>6個月內</option>
@@ -1130,7 +1130,7 @@
         </div>
         <div class="fg">
           <label>預算範圍 <span class="req">*</span></label>
-          <select name="entry.1710020038" required>
+          <select name="budget" required>
             <option value="">請選擇</option>
             <option>100萬以下</option>
             <option>100萬–300萬</option>
@@ -1141,7 +1141,7 @@
         </div>
         <div class="fg">
           <label>感興趣的應用場景（選填）</label>
-          <input type="text" name="entry.439253530" placeholder="例：治具、夾具、金屬零件、原型驗證..." />
+          <input type="text" name="application" placeholder="例：治具、夾具、金屬零件、原型驗證..." />
         </div>
         <div class="submit-wrap">
           <button type="submit" class="submit-btn">🚀 送出 VIP 體驗申請</button>
@@ -1169,38 +1169,48 @@
 </footer>
 
 <script>
-  // VIP Form — POST to Google Form via hidden iframe
+  // VIP Form — POST to Google Apps Script Web App
   (function() {
     var form = document.getElementById('vip-form');
     if (!form) return;
-    // Set form to POST to Google Form via hidden iframe
-    form.action = 'https://docs.google.com/forms/d/1QVoS_NBUD8-cVzbirNctZfZ6z5vNOSF02_7hHejYFZk/formResponse';
-    form.method = 'POST';
-    form.target = 'hidden_submit';
-    // Create hidden iframe
-    var iframe = document.createElement('iframe');
-    iframe.name = 'hidden_submit';
-    iframe.style.display = 'none';
-    document.body.appendChild(iframe);
+    var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxNNkj_kEpqg_4TOhQhtxTcD2zRHxFp6C38wPZZx8Hfw8QNR7qAhMpfgDpfE8uiHjzpkg/exec';
+    var btn = form.querySelector('.submit-btn');
 
     form.addEventListener('submit', function(e) {
+      e.preventDefault();
       // Validate
       var ok = true;
       form.querySelectorAll('[required]').forEach(function(f) {
         if (!f.value.trim()) { f.style.borderColor = '#e74c3c'; ok = false; }
         else { f.style.borderColor = '#252525'; }
       });
-      if (!ok) { e.preventDefault(); return; }
-      // Let form submit naturally to iframe, then show success
-      setTimeout(function() {
+      if (!ok) return;
+
+      btn.disabled = true;
+      btn.textContent = '送出中...';
+
+      // Collect data
+      var params = new URLSearchParams();
+      new FormData(form).forEach(function(v, k) { params.append(k, v); });
+
+      // POST via no-cors (will get opaque response but data goes through)
+      fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString()
+      }).then(function() {
         document.getElementById('form-area').style.display = 'none';
         document.getElementById('form-success').style.display = 'block';
-      }, 1000);
+      }).catch(function() {
+        document.getElementById('form-area').style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      });
     });
     // Focus styling
     form.querySelectorAll('input, select').forEach(function(f) {
       f.addEventListener('focus', function() { f.style.borderColor = '#FFC500'; });
-      f.addEventListener('blur', function() { f.style.borderColor = f.value ? '#252525' : '#252525'; });
+      f.addEventListener('blur', function() { f.style.borderColor = '#252525'; });
     });
   })();
 
