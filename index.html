@@ -103,11 +103,13 @@
       opacity: 0.6;
     }
     .nav-logo {
-      font-size: 20px;
-      font-weight: 900;
-      letter-spacing: 3px;
+      display: flex;
+      align-items: center;
     }
-    .nav-logo span { color: var(--yellow); }
+    .nav-logo img {
+      height: 24px;
+      width: auto;
+    }
     .nav-badge {
       background: #1a1a1a;
       border: 1px solid #333;
@@ -695,8 +697,22 @@
       flex-wrap: wrap;
       gap: 16px;
     }
-    .footer-logo { font-size: 18px; font-weight: 800; color: var(--yellow); }
-    .footer-logo span { color: var(--yellow); }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-logo img {
+      height: 20px;
+      width: auto;
+      opacity: 0.7;
+    }
+    .footer-logo span {
+      font-size: 13px;
+      color: #555;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
     .footer-links { display: flex; gap: 32px; }
     .footer-links a { color: #555; font-size: 13px; text-decoration: none; transition: color 0.3s; }
     .footer-links a:hover { color: var(--yellow); }
@@ -730,7 +746,7 @@
 
 <!-- ── NAV ── -->
 <nav>
-  <div class="nav-logo">MARK<span>FORGED</span></div>
+  <div class="nav-logo"><img src="images/markforged_logo_white.png" alt="Markforged" /></div>
   <div class="nav-badge">💎 VIP 預約制</div>
   <a href="#register" class="nav-cta">申請體驗名額</a>
 </nav>
@@ -1048,7 +1064,7 @@
 
 <!-- ── FOOTER ── -->
 <footer>
-  <div class="footer-logo">MARK<span>FORGED</span> GCR</div>
+  <div class="footer-logo"><img src="images/markforged_logo_white.png" alt="Markforged" /><span>GCR</span></div>
   <div class="footer-links">
     <a href="https://markforged.com" target="_blank">官網</a>
     <a href="https://markforged.com/3d-printers/fx10" target="_blank">FX10</a>
