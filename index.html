@@ -1105,7 +1105,9 @@
       <div class="form-head-icon">🏆</div>
     </div>
     <div class="form-body" id="form-area">
-      <form id="vip-form" class="fgrid" novalidate>
+      <form id="vip-form" class="fgrid" novalidate
+            action="https://docs.google.com/forms/d/e/1FAIpQLScR_phPm9NNG53l9yS2W_c_LZzFP2jYrb0E2n2BAXnH2Owdmw/formResponse"
+            method="POST" target="hidden_iframe">
         <!-- 基本資料 -->
         <div class="flabel">基本資料</div>
         <div class="fg">
@@ -1144,10 +1146,16 @@
         <div class="fg">
           <label>偏好體驗地點 <span class="req">*</span></label>
           <select name="entry.738778395" required>
-            <option value="">請選擇</option>
-            <option>北部（台北）</option>
-            <option>中部（台中）</option>
-            <option>均可配合</option>
+            <option value="">請選擇地區</option>
+            <option>台灣北部（台北）</option>
+            <option>台灣中部（台中）</option>
+            <option>台灣南部（高雄）</option>
+            <option>中國華東（上海）</option>
+            <option>中國華南（深圳）</option>
+            <option>香港</option>
+            <option>越南（胡志明市）</option>
+            <option>線上展示</option>
+            <option>其他（請於備註說明）</option>
           </select>
         </div>
         <div class="fg">
@@ -1226,19 +1234,17 @@
 </footer>
 
 <script>
-  // VIP Form submission to Google Forms via hidden iframe
+  // VIP Form — submit via hidden iframe (bypasses CORS)
   (function() {
     const form = document.getElementById('vip-form');
     const btn = document.getElementById('submit-btn');
     if (!form) return;
 
     form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      // Validate required fields
+      // Validate required fields before allowing submit
       const requiredFields = form.querySelectorAll('[required]');
       let valid = true;
-      requiredFields.forEach(f => {
+      requiredFields.forEach(function(f) {
         if (!f.value.trim()) {
           f.style.borderColor = '#e74c3c';
           valid = false;
@@ -1246,34 +1252,27 @@
           f.style.borderColor = '#2a2a2a';
         }
       });
-      if (!valid) return;
 
-      // Disable button
+      if (!valid) {
+        e.preventDefault();
+        return;
+      }
+
+      // Form will POST to hidden iframe via action/target attributes
       btn.disabled = true;
       btn.textContent = '送出中...';
 
-      // Build form data and submit via fetch (no-cors)
-      const formData = new FormData(form);
-      const url = 'https://docs.google.com/forms/d/e/1FAIpQLScR_phPm9NNG53l9yS2W_c_LZzFP2jYrb0E2n2BAXnH2Owdmw/formResponse';
-
-      fetch(url, {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors'
-      }).then(function() {
-        // Show success (no-cors always resolves, so we assume success)
+      // Show success after a short delay (iframe response can't be read cross-origin)
+      setTimeout(function() {
         document.getElementById('form-area').style.display = 'none';
         document.getElementById('form-success').style.display = 'block';
-      }).catch(function() {
-        document.getElementById('form-area').style.display = 'none';
-        document.getElementById('form-success').style.display = 'block';
-      });
+      }, 1500);
     });
 
-    // Reset border on input focus
-    form.querySelectorAll('input, select, textarea').forEach(f => {
-      f.addEventListener('focus', () => { f.style.borderColor = 'var(--yellow)'; });
-      f.addEventListener('blur', () => { if (f.value) f.style.borderColor = '#2a2a2a'; });
+    // Visual feedback on focus/blur
+    form.querySelectorAll('input, select, textarea').forEach(function(f) {
+      f.addEventListener('focus', function() { f.style.borderColor = 'var(--yellow)'; });
+      f.addEventListener('blur', function() { if (f.value) f.style.borderColor = '#2a2a2a'; });
     });
   })();
 
