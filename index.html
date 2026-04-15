@@ -635,7 +635,7 @@
       background: #000;
     }
     .form-wrap {
-      max-width: 760px;
+      max-width: 820px;
       margin: 0 auto;
       background: #0a0a0a;
       border: 1px solid #222;
@@ -653,38 +653,94 @@
     .form-head h2 { font-size: 24px; font-weight: 900; color: var(--black); }
     .form-head p { font-size: 13px; color: #333; margin-top: 4px; }
     .form-head-icon { font-size: 48px; }
-    .form-body {
-      padding: 40px 48px;
-      text-align: center;
+    .form-body { padding: 40px 48px; }
+    .fgrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
     }
-    .form-body p {
-      color: #888;
-      font-size: 15px;
-      margin-bottom: 32px;
-      line-height: 1.7;
+    .fg {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
     }
-    .form-body .form-cta {
-      display: inline-block;
-      background: var(--yellow);
-      color: #000;
-      font-size: 18px;
-      font-weight: 800;
-      padding: 20px 48px;
-      border-radius: 6px;
-      text-decoration: none;
-      letter-spacing: 1px;
-      transition: opacity .2s, box-shadow .3s, transform .2s;
-    }
-    .form-body .form-cta:hover {
-      opacity: 0.88;
-      box-shadow: 0 4px 24px rgba(255, 197, 0, 0.3);
-      transform: translateY(-1px);
-    }
-    .form-note {
-      color: #555;
+    .fg.full { grid-column: 1 / -1; }
+    .fg label {
       font-size: 12px;
-      margin-top: 20px;
+      font-weight: 600;
+      color: #999;
+      letter-spacing: .5px;
     }
+    .fg label .req { color: var(--yellow); margin-left: 2px; }
+    .fg input, .fg select, .fg textarea {
+      background: #141414;
+      border: 1px solid #2a2a2a;
+      border-radius: 6px;
+      padding: 12px 14px;
+      color: #fff;
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+      width: 100%;
+    }
+    .fg input:focus, .fg select:focus, .fg textarea:focus {
+      border-color: var(--yellow);
+      box-shadow: 0 0 0 2px rgba(255,197,0,0.1);
+    }
+    .fg select { cursor: pointer; }
+    .fg select option { background: #141414; }
+    .fg textarea { min-height: 80px; resize: vertical; }
+    .fdivider {
+      grid-column: 1/-1;
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      margin: 8px 0;
+    }
+    .flabel {
+      grid-column: 1/-1;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--yellow);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding-top: 4px;
+    }
+    .submit-wrap {
+      grid-column: 1/-1;
+      margin-top: 12px;
+    }
+    .submit-btn {
+      width: 100%;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 16px;
+      font-weight: 800;
+      padding: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: opacity .2s, box-shadow .3s;
+      letter-spacing: .5px;
+    }
+    .submit-btn:hover { opacity: .88; box-shadow: 0 4px 24px rgba(255,197,0,0.3); }
+    .submit-btn:disabled { opacity: .5; cursor: not-allowed; }
+    .form-footnote {
+      grid-column: 1/-1;
+      font-size: 11px;
+      color: #444;
+      text-align: center;
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+    #form-success {
+      display: none;
+      text-align: center;
+      padding: 60px 40px;
+    }
+    #form-success .s-icon { font-size: 64px; margin-bottom: 20px; }
+    #form-success h3 { font-size: 26px; font-weight: 800; margin-bottom: 14px; }
+    #form-success p { font-size: 15px; color: #888; line-height: 1.8; }
 
     /* ── FOOTER ── */
     footer {
@@ -731,6 +787,7 @@
       .workflow-grid { grid-template-columns: 1fr; }
       .form-head { padding: 24px 20px; }
       .form-body { padding: 24px 20px; }
+      .fgrid { grid-template-columns: 1fr; }
       footer { padding: 28px 20px; flex-direction: column; align-items: flex-start; }
       .brian-banner-content { padding: 40px 20px; }
       .line-section { padding: 40px 20px; }
@@ -1042,25 +1099,120 @@
   <div class="form-wrap reveal">
     <div class="form-head">
       <div>
-        <h2 class="form-title">申請 VIP 體驗名額</h2>
-        <p class="form-subtitle">點擊下方按鈕填寫申請表，Markforged 將在 3 個工作日內與您聯繫確認時間。</p>
+        <h2>申請 VIP 體驗名額</h2>
+        <p>填寫以下資訊，Markforged 將在 3 個工作日內與您聯繫確認。</p>
       </div>
       <div class="form-head-icon">🏆</div>
     </div>
-    <div class="form-body">
-      <p>
-        填寫您的基本資料及需求，我們的原廠工程師將為您安排專屬一對一展示。<br/>
-        <strong style="color:#ccc;">名額有限，歡迎盡早申請。</strong>
-      </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScR_phPm9NNG53l9yS2W_c_LZzFP2jYrb0E2n2BAXnH2Owdmw/viewform"
-         target="_blank"
-         class="form-cta">
-        📋 立即填寫 VIP 申請表
-      </a>
-      <p class="form-note">點擊後將跳轉至 Google 表單，填寫完成即送出</p>
+    <div class="form-body" id="form-area">
+      <form id="vip-form" class="fgrid" novalidate>
+        <!-- 基本資料 -->
+        <div class="flabel">基本資料</div>
+        <div class="fg">
+          <label>姓名 <span class="req">*</span></label>
+          <input type="text" name="entry.792149782" required placeholder="您的姓名" />
+        </div>
+        <div class="fg">
+          <label>公司名稱 <span class="req">*</span></label>
+          <input type="text" name="entry.1649468181" required placeholder="公司名稱" />
+        </div>
+        <div class="fg">
+          <label>職稱 <span class="req">*</span></label>
+          <input type="text" name="entry.471465998" required placeholder="您的職稱" />
+        </div>
+        <div class="fg">
+          <label>Email <span class="req">*</span></label>
+          <input type="email" name="entry.1697880856" required placeholder="name@company.com" />
+        </div>
+        <div class="fg">
+          <label>手機號碼 <span class="req">*</span></label>
+          <input type="tel" name="entry.256791019" required placeholder="0912-345-678" />
+        </div>
+        <div class="fg">
+          <label>公司規模 <span class="req">*</span></label>
+          <select name="entry.2116358872" required>
+            <option value="">請選擇員工人數</option>
+            <option>50 人以下</option>
+            <option>51 – 200 人</option>
+            <option>201 – 500 人</option>
+            <option>500 人以上</option>
+          </select>
+        </div>
+        <hr class="fdivider" />
+        <!-- 需求資訊 -->
+        <div class="flabel">需求資訊</div>
+        <div class="fg">
+          <label>偏好體驗地點 <span class="req">*</span></label>
+          <select name="entry.738778395" required>
+            <option value="">請選擇</option>
+            <option>北部（台北）</option>
+            <option>中部（台中）</option>
+            <option>均可配合</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>產業別 <span class="req">*</span></label>
+          <select name="entry.1368468737" required>
+            <option value="">請選擇產業</option>
+            <option>汽車與交通</option>
+            <option>航太與國防</option>
+            <option>醫療與生技</option>
+            <option>精密機械與模具</option>
+            <option>電子與半導體</option>
+            <option>能源與重工業</option>
+            <option>學術與研究機構</option>
+            <option>其他</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>目前零件製造方式 <span class="req">*</span></label>
+          <select name="entry.1833368579" required>
+            <option value="">請選擇</option>
+            <option>完全自製</option>
+            <option>完全外包</option>
+            <option>自製 + 外包並行</option>
+            <option>尚無固定製程</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>預計導入時程 <span class="req">*</span></label>
+          <select name="entry.620567071" required>
+            <option value="">請選擇</option>
+            <option>3 個月內</option>
+            <option>6 個月內</option>
+            <option>1 年內</option>
+            <option>評估中，尚未確定</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>預算範圍（新台幣） <span class="req">*</span></label>
+          <select name="entry.853849451" required>
+            <option value="">請選擇</option>
+            <option>100 萬以下</option>
+            <option>100 萬 – 300 萬</option>
+            <option>300 萬 – 500 萬</option>
+            <option>500 萬以上</option>
+            <option>尚未確認</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>感興趣的應用場景（選填）</label>
+          <input type="text" name="entry.1078220418" placeholder="例：治具夾具、金屬零件、原型驗證…" />
+        </div>
+        <div class="submit-wrap">
+          <button type="submit" class="submit-btn" id="submit-btn">🚀 送出 VIP 體驗申請</button>
+        </div>
+        <p class="form-footnote">名額有限，我們將優先安排符合資格的申請者。您的資料僅用於安排體驗，不會分享給第三方。</p>
+      </form>
+    </div>
+    <div id="form-success">
+      <div class="s-icon">🎉</div>
+      <h3>申請已送出！</h3>
+      <p>感謝您的申請，Markforged 團隊將在 3 個工作日內<br/>與您聯繫確認專屬體驗時間。</p>
     </div>
   </div>
 </section>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
 <!-- ── FOOTER ── -->
 <footer>
@@ -1074,6 +1226,57 @@
 </footer>
 
 <script>
+  // VIP Form submission to Google Forms via hidden iframe
+  (function() {
+    const form = document.getElementById('vip-form');
+    const btn = document.getElementById('submit-btn');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Validate required fields
+      const requiredFields = form.querySelectorAll('[required]');
+      let valid = true;
+      requiredFields.forEach(f => {
+        if (!f.value.trim()) {
+          f.style.borderColor = '#e74c3c';
+          valid = false;
+        } else {
+          f.style.borderColor = '#2a2a2a';
+        }
+      });
+      if (!valid) return;
+
+      // Disable button
+      btn.disabled = true;
+      btn.textContent = '送出中...';
+
+      // Build form data and submit via fetch (no-cors)
+      const formData = new FormData(form);
+      const url = 'https://docs.google.com/forms/d/e/1FAIpQLScR_phPm9NNG53l9yS2W_c_LZzFP2jYrb0E2n2BAXnH2Owdmw/formResponse';
+
+      fetch(url, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      }).then(function() {
+        // Show success (no-cors always resolves, so we assume success)
+        document.getElementById('form-area').style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      }).catch(function() {
+        document.getElementById('form-area').style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      });
+    });
+
+    // Reset border on input focus
+    form.querySelectorAll('input, select, textarea').forEach(f => {
+      f.addEventListener('focus', () => { f.style.borderColor = 'var(--yellow)'; });
+      f.addEventListener('blur', () => { if (f.value) f.style.borderColor = '#2a2a2a'; });
+    });
+  })();
+
   // Smooth scroll for all anchor links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function(e) {
