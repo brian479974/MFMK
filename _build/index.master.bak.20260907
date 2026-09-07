@@ -709,27 +709,15 @@
       .hero-pills { flex-direction: column; }
       .specs-grid { grid-template-columns: 1fr; }
     }
-/* langbar */
-  .langbar{display:flex;gap:6px;align-items:center;margin-left:auto;margin-right:14px}
-  .langbar span{display:none}
-  .langbar a{color:#9a9a9a;text-decoration:none;font-size:11.5px;font-weight:700;
-    padding:4px 10px;border:1px solid #2e2e2e;border-radius:20px;white-space:nowrap;line-height:1}
-  .langbar a:hover{color:#FFC500;border-color:#FFC500}
-  .langbar a.on{background:#FFC500;color:#000;border-color:#FFC500}
-  @media(max-width:600px){.langbar{margin-right:8px;gap:4px}.langbar a{padding:3px 7px;font-size:10.5px}}
-/* end langbar */
-</style>
-
-  <link rel="alternate" hreflang="zh-TW" href="https://mfmk.markforged.tw/index.html">
-  <link rel="alternate" hreflang="zh-CN" href="https://mfmk.markforged.tw/index-sc.html">
-  <link rel="alternate" hreflang="en" href="https://mfmk.markforged.tw/index-en.html">
+  </style>
 </head>
 <body>
 
+<!-- ── NAV ── -->
 <nav>
   <div class="nav-logo"><img src="images/markforged_logo_white.png" alt="Markforged" /></div>
   <div class="nav-badge">💎 VIP 預約制</div>
-  <div class="langbar"><span>語言</span><a href="index.html" class="on">繁體中文</a><a href="index-sc.html">简体中文</a><a href="index-en.html">English</a></div><a href="#register" class="nav-cta">申請體驗名額</a>
+  <a href="#register" class="nav-cta">申請體驗名額</a>
 </nav>
 
 <!-- ── HERO ── -->
