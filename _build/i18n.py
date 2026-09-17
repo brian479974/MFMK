@@ -21,7 +21,7 @@ EN = {
     # ── nav / hero
     "💎 VIP 預約制": "💎 By appointment",
     "申請體驗名額": "Request a place",
-    "🌏 大中華區 · 一對一 VIP 專屬展示": "🌏 Greater China · one-to-one VIP demonstration",
+    "大中華區 · 一對一 VIP 專屬展示": "Greater China · one-to-one VIP demonstration",
     "AI實體化": "Making AI",
     "製造新紀元": "Physical",
     "Markforged FX10 大中華區體驗日": "Markforged FX10 Greater China Experience Day",
@@ -34,14 +34,14 @@ EN = {
     "立即申請 VIP 體驗名額 →": "Request your VIP place →",
     # ── product
     "全球首台金屬複合材料工業列印機": "The first industrial printer for metal and composites",
-    "最大列印尺寸（寬）": "Maximum print size (width)",
+    "建構體積（寬）": "Build volume (width)",
     "複合材料 + 金屬 一機雙用": "Composite and metal on one machine",
     "一對一客製化展示，名額有限": "One-to-one demonstration, limited places",
     "★ 主打產品": "★ Featured",
     "主打產品": "Featured",
     "FX10 是 Markforged 革命性的里程碑 — 全球首台同時具備複合材料與金屬列印能力的工業機。\n        模組化設計讓您輕鬆切換材料，自動校準讓人人都能操作，無需專職技術人員。":
         "The FX10 is the first industrial machine to carry both continuous-fibre composite and metal printing.\n        A modular design lets you switch material, and automatic calibration means no dedicated operator is required.",
-    "列印尺寸": "Build volume",
+    "建構體積": "Build volume",
     "列印技術": "Process",
     "FFF + 連續碳纖維": "FFF with continuous carbon fibre",
     "層厚精度": "Layer height",
@@ -59,7 +59,7 @@ EN = {
     "不再依賴外包，不再等待漫長交期，不再為小批量零件頭痛。":
         "No more waiting on an outside shop, no more multi-week lead times, no more pain over low-volume parts.",
     "大幅縮短交期": "Lead time cut",
-    "從設計到成品最快當天完成。告別傳統外包 4～8 週等待，即時響應生產與維修需求。":
+    "從設計到成品最快當天完成。告別傳統外包 4 至 8 週等待，即時響應生產與維修需求。":
         "From design to finished part in as little as a day, against the four to eight weeks an outside shop takes.",
     "降低模具與庫存成本": "Lower tooling and inventory cost",
     "小批量、多樣化零件無需開模。按需生產，大幅減少庫存壓力與高昂模具費用。":
@@ -103,9 +103,9 @@ EN = {
     "大尺寸旗艦": "Large format",
     "超大列印空間，專為大型工業零件設計。高強度連續碳纖維，媲美鋁合金強度。":
         "A large build volume for big industrial parts, with continuous carbon fibre for strength close to aluminium.",
-    "金屬黏結劑噴射": "Metal binder jetting",
-    "Digital Metal® 下一代金屬黏結劑噴射技術。高精度、高可靠性，專為高量金屬零件生產設計。":
-        "Digital Metal® binder jetting for higher-volume metal production, with high accuracy and repeatability.",
+    "現場與產線": "Field and production line",
+    "連續碳纖維複合材料主力機種。X7 Field Edition 採耐衝擊運輸箱設計，可在資源受限的現場直接列印。":
+        "The core continuous-carbon-fibre composite platform. The X7 Field Edition ships in a ruggedised case and prints on site where resources are limited.",
     # ── experience flow
     "體驗流程": "What the day looks like",
     "您的專屬": "Your own",
@@ -137,7 +137,7 @@ EN = {
     "填寫您的基本資料及需求，我們的原廠工程師將為您安排專屬一對一展示。":
         "Give us your details and requirement, and our engineers will arrange a one-to-one session.",
     "名額有限，歡迎盡早申請。": "Places are limited.",
-    "📋 立即填寫 VIP 申請表": "📋 Open the VIP application form",
+    "立即填寫 VIP 申請表": "Open the VIP application form",
     "點擊後將開啟申請表單": "The form opens in a new tab",
     "官網": "Website",
     "申請體驗": "Apply",
