@@ -7,7 +7,7 @@
 
   <!-- ── SEO Meta Tags ── -->
   <meta name="description" content="The Markforged FX10 Greater China VIP Experience Day. The first industrial printer to run both metal and continuous-fibre composites, shown one to one by appointment. Apply now." />
-  <meta name="keywords" content="Markforged,Markforged Greater China,Markforged GCR,Markforged China,Markforged Hong Kong,Markforged Vietnam,Markforged Taiwan,Markforged 台灣,Markforged FX10,Markforged FX20,Markforged PX100,Markforged Metal X,Markforged Mark Two,FX10,FX10 Metal Kit,FX20,PX100,Metal X Gen2,Mark Two Gen2,Eiger,金屬3D列印,Metal printing,工業3D列印,複合材料3D列印,碳纖維列印,連續碳纖維列印,3D列印台灣,metal 3D printing Taiwan,積層製造,additive manufacturing,Onyx,Carbon Fiber,Fiberglass,Kevlar,17-4 PH Stainless Steel,H13 Tool Steel,Inconel 625,工業列印機,數位製造,智慧製造,製造業數位轉型,AI製造,Making AI製造,快速成型,快速原型,小批量生產,按需生產,治具製作,夾具製作,模具替代,工裝治具,零件製造,金屬零件,功能性零件,汽車零件,航太零件,國防製造,醫療器材,精密機械,半導體設備,縮短交期,降低模具成本,RAIC,實威國際,SWTC,馬路科技,工業4.0,Industry 4.0,智慧工廠" />
+  <meta name="keywords" content="Markforged,Markforged Greater China,Markforged GCR,Markforged China,Markforged Hong Kong,Markforged Vietnam,Markforged Taiwan,Markforged 台灣,Markforged FX10,Markforged FX20,Markforged X7,Markforged X7 Field Edition,FX10,FX10 Metal Kit,FX20,X7,X7 Field Edition,Eiger,金屬3D列印,Metal printing,工業3D列印,複合材料3D列印,碳纖維列印,連續碳纖維列印,3D列印台灣,metal 3D printing Taiwan,積層製造,additive manufacturing,Onyx,Carbon Fiber,Fiberglass,Kevlar,17-4 PH Stainless Steel,H13 Tool Steel,Inconel 625,工業列印機,數位製造,智慧製造,製造業數位轉型,AI製造,Making AI製造,快速成型,快速原型,小批量生產,按需生產,治具製作,夾具製作,模具替代,工裝治具,零件製造,金屬零件,功能性零件,汽車零件,航太零件,國防製造,醫療器材,精密機械,半導體設備,縮短交期,降低模具成本,RAIC,實威國際,SWTC,馬路科技,工業4.0,Industry 4.0,智慧工廠" />
   <meta name="author" content="Markforged GCR" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://mfmk.markforged.tw/" />
@@ -26,7 +26,7 @@
 
   <style>
     :root {
-      --yellow: #FFC500;
+      --yellow: #FFFF00;
       --black: #000;
       --white: #fff;
     }
@@ -144,8 +144,8 @@
       position: absolute;
       inset: 0;
       background: url('images/fx10.jpg') center/cover no-repeat;
-      opacity: 0.28;
-      filter: brightness(0.7);
+      opacity: 0.46;
+      filter: brightness(0.95) contrast(1.05);
     }
     .hero-overlay {
       position: absolute;
@@ -376,7 +376,8 @@
       transform: translateY(-4px);
       box-shadow: 0 8px 32px rgba(255, 197, 0, 0.08);
     }
-    .why-icon { font-size: 36px; margin-bottom: 18px; }
+    .why-icon { margin-bottom: 18px; color: var(--yellow); }
+    .why-icon svg { width: 30px; height: 30px; display: block; }
     .why-card h3 { font-size: 18px; font-weight: 800; margin-bottom: 10px; }
     .why-card p { font-size: 14px; color: #666; line-height: 1.7; }
 
@@ -437,19 +438,19 @@
     .brian-banner {
       position: relative;
       overflow: hidden;
-      min-height: 480px;
+      min-height: 560px;
       display: flex;
       align-items: center;
     }
     .brian-banner-bg {
       position: absolute;
       inset: 0;
-      background: url('images/brian_fx10.jpg') center/cover no-repeat;
+      background: url('images/brian_fx10_2026.jpg') 68% 22% / cover no-repeat;
     }
     .brian-banner-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(0,0,0,0.85) 50%, rgba(0,0,0,0.3) 100%);
+      background: linear-gradient(90deg, rgba(0,0,0,0.92) 38%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.15) 100%);
     }
     .brian-banner-content {
       position: relative;
@@ -501,7 +502,7 @@
     }
     .prod-card.featured { border-color: var(--yellow); }
     .prod-img-wrap {
-      background: #111;
+      background: radial-gradient(ellipse at 50% 42%, #2b2b2b 0%, #171717 55%, #101010 100%);
       padding: 32px;
       display: flex;
       align-items: center;
@@ -652,7 +653,8 @@
     }
     .form-head h2 { font-size: 24px; font-weight: 900; color: var(--black); }
     .form-head p { font-size: 13px; color: #333; margin-top: 4px; }
-    .form-head-icon { font-size: 48px; }
+    .form-head-icon { color: var(--black); }
+    .form-head-icon svg { width: 34px; height: 34px; display: block; }
 
     /* ── FOOTER ── */
     footer {
@@ -737,7 +739,7 @@
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-tag">🌏 Greater China · one-to-one VIP demonstration</div>
+    <div class="hero-tag">Greater China · one-to-one VIP demonstration</div>
     <h1 class="hero-title">
       Making AI<br/>
       <span class="yl">Physical</span>
@@ -766,7 +768,7 @@
   </div>
   <div class="stat reveal">
     <div class="stat-num">375mm</div>
-    <div class="stat-label">Maximum print size (width)</div>
+    <div class="stat-label">Build volume (width)</div>
   </div>
   <div class="stat reveal">
     <div class="stat-num">2 in 1</div>
@@ -832,32 +834,32 @@
   </div>
   <div class="why-grid">
     <div class="why-card reveal">
-      <div class="why-icon">⚡</div>
+      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/></svg></div>
       <h3>Lead time cut</h3>
       <p>From design to finished part in as little as a day, against the four to eight weeks an outside shop takes.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon">💰</div>
+      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M3 7h13a2 2 0 0 1 2 2v1"/><path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H8"/><circle cx="17" cy="14" r="1.2"/><path d="M3 7a2 2 0 0 1 2-2h9"/></svg></div>
       <h3>Lower tooling and inventory cost</h3>
       <p>Low-volume and varied parts need no tooling. Produce on demand and hold less stock.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon">🔩</div>
+      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="m12 2 8.5 5v10L12 22 3.5 17V7Z"/><path d="M12 7.5 16.5 10v4L12 16.5 7.5 14v-4Z"/></svg></div>
       <h3>Metal and composite on one machine</h3>
       <p>The only industrial machine that switches between metal and continuous-fibre composite. One machine, two material routes.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon">🏭</div>
+      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M3 21V10l6 4V10l6 4V7l6 4v10Z"/><path d="M7 21v-3M12 21v-3M17 21v-3"/></svg></div>
       <h3>Built for the factory floor</h3>
       <p>A precision aluminium bed, dimensional accuracy verified by optical sensor, and automatic calibration; no dedicated operator needed.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon">☁️</div>
+      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M17.5 19H7a4.5 4.5 0 0 1-.4-8.98A6 6 0 0 1 18 9.5a4.75 4.75 0 0 1-.5 9.5Z"/></svg></div>
       <h3>Managed in Eiger</h3>
       <p>Monitor, manage and queue prints from anywhere. Eiger lets several sites run under one system.</p>
     </div>
     <div class="why-card reveal">
-      <div class="why-icon">🎯</div>
+      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M3 17.5 9.5 11l3.5 3.5L21 6"/><path d="M15.5 6H21v5.5"/></svg></div>
       <h3>Fast payback</h3>
       <p>Start with jigs, fixtures and spares made in house, recover the investment, then extend into end-use parts.</p>
     </div>
@@ -935,12 +937,12 @@
     </div>
     <div class="prod-card reveal">
       <div class="prod-img-wrap">
-        <img src="images/prod_px100.png" alt="Markforged PX100" loading="lazy" />
+        <img src="images/prod_x7.png" alt="Markforged X7" loading="lazy" />
       </div>
       <div class="prod-info">
-        <span class="prod-badge">Metal binder jetting</span>
-        <div class="prod-name">PX100</div>
-        <div class="prod-desc">Digital Metal® binder jetting for higher-volume metal production, with high accuracy and repeatability.</div>
+        <span class="prod-badge">Field and production line</span>
+        <div class="prod-name">X7 · X7 Field Edition</div>
+        <div class="prod-desc">The core continuous-carbon-fibre composite platform. The X7 Field Edition ships in a ruggedised case and prints on site where resources are limited.</div>
       </div>
     </div>
   </div>
@@ -993,7 +995,7 @@
     <div class="steps-visual reveal">
       <img src="images/fx10_iso.png" alt="The Markforged FX10, isometric view" loading="lazy" />
       <div class="overlay-box">
-        <div class="icon">📍</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
         <div>
           <h5>Taiwan · China · Hong Kong · Vietnam</h5>
           <p>Scheduled around you</p>
@@ -1026,7 +1028,7 @@
         <h2>Request a VIP place</h2>
         <p>Fill in the form below and we will come back to you within three working days.</p>
       </div>
-      <div class="form-head-icon">🏆</div>
+      <div class="form-head-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 4h10v5a5 5 0 0 1-10 0Z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4M17 6h2.5a2.5 2.5 0 0 1-2.5 4"/><path d="M10 14h4l-.5 4h-3Z"/><path d="M8.5 20h7"/></svg></div>
     </div>
     <div style="padding:40px 48px; text-align:center;">
       <p style="color:#888; font-size:15px; margin-bottom:32px; line-height:1.7;">
@@ -1036,7 +1038,7 @@
       <a href="https://docs.google.com/forms/d/1QVoS_NBUD8-cVzbirNctZfZ6z5vNOSF02_7hHejYFZk/viewform"
          target="_blank"
          style="display:inline-block; background:var(--yellow); color:#000; font-size:18px; font-weight:800; padding:20px 48px; border-radius:6px; text-decoration:none; letter-spacing:1px; transition:opacity .2s, box-shadow .3s;">
-        📋 Open the VIP application form
+        Open the VIP application form
       </a>
       <p style="color:#555; font-size:12px; margin-top:20px;">The form opens in a new tab</p>
     </div>
