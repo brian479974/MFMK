@@ -118,7 +118,13 @@
       font-size: 12px;
       color: var(--yellow);
       font-weight: 600;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-left: 16px;
     }
+    .nav-logo { flex-shrink: 0; }
+    /* 2026-10-06：手機寬度下標籤被擠成直排、壓到 logo（Brian 截圖）。hero 已有「一對一 VIP 專屬展示」，手機上隱藏 */
+    @media (max-width: 600px) { .nav-badge { display: none; } }
     .nav-cta {
       background: var(--yellow);
       color: var(--black);
