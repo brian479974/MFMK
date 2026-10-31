@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Would Your Non-Red Supply Chain Survive a Teardown? — Markforged</title>
+<meta name="description" content="Between August and October, at least three companies in Taiwan came under investigation for mainland-made parts in military drones, and each problem surfaced only when the airframes were opened at acceptance. Markforged sets out the three checks a non-red supply chain has to pass, and how to hold the one most likely to fail: after the next revision.">
+<meta property="og:title" content="Would Your Non-Red Supply Chain Survive a Teardown?">
+<meta property="og:description" content="Between August and October, at least three companies in Taiwan came under investigation for mainland-made parts in military drones, and each problem surfaced only when the airframes were opened at acceptance. Markforged sets out the three checks a non-red supply chain has to pass, and how to hold the one most likely to fail: after the next revision.">
+<meta property="og:image" content="https://mfmk.markforged.tw/images/non-red-three-checks-2026-10-og.jpg">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://mfmk.markforged.tw/non-red-three-checks-2026-10-en.html">
+<link rel="alternate" hreflang="zh-TW" href="https://mfmk.markforged.tw/non-red-three-checks-2026-10.html"><link rel="alternate" hreflang="en" href="https://mfmk.markforged.tw/non-red-three-checks-2026-10-en.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#e8e8e8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'Noto Sans TC','Noto Sans SC',sans-serif;color:#1a1a1a}
+.wrap{max-width:700px;margin:0 auto;background:#fff}
+.hdr{background:#000;padding:20px 40px;display:flex;align-items:center;justify-content:space-between}
+.hdr img{height:26px;display:block}
+.hdr-ev{color:rgba(255,255,255,.6);font-size:12px;text-align:right;line-height:1.6}
+.langbar{background:#111;padding:8px 40px;display:flex;gap:6px;align-items:center;border-top:1px solid #222}
+.langbar span{color:#666;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-right:4px}
+.langbar a{font-size:11.5px;font-weight:700;color:#888;text-decoration:none;padding:3px 10px;border-radius:20px;border:1px solid #333}
+.langbar a:hover{color:#FFFF00;border-color:#FFFF00}
+.langbar a.on{background:#FFFF00;color:#000;border-color:#FFFF00}
+.hero{position:relative;overflow:hidden}
+.hero img{width:100%;display:block}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(100deg,rgba(0,0,0,.93) 0%,rgba(0,0,0,.84) 42%,rgba(0,0,0,.34) 70%,rgba(0,0,0,.08) 92%)}
+.hero-top{position:absolute;top:0;left:0;right:0;padding:30px 38px}
+.hero-kicker{color:#FFFF00;font-size:10px;font-weight:700;letter-spacing:.14em;margin-bottom:10px}
+.hero-title{color:#fff;font-size:27px;font-weight:900;line-height:1.3;max-width:64%;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.hero-title .y{color:#FFFF00}
+.hero-btm{position:absolute;bottom:0;left:0;right:0;padding:15px 38px;background:linear-gradient(transparent,rgba(0,0,0,.78))}
+.hero-meta{color:rgba(255,255,255,.85);font-size:12px;letter-spacing:.04em}
+.ds{background:#FFFF00;padding:10px 38px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.ds-l{font-size:12.5px;font-weight:700;color:#000}
+.ds-r{font-size:11.5px;color:#333}
+.body{padding:34px 38px 0}
+.lead{font-size:16px;line-height:1.85;color:#222;margin-bottom:22px;padding-bottom:22px;border-bottom:2px solid #f0f0f0}
+.qb{margin:4px 0 28px;padding:21px 24px;background:#000;border-radius:6px}
+.qb p{color:#FFFF00;font-size:18.5px;font-weight:800;line-height:1.48;margin-bottom:6px}
+.qb small{color:rgba(255,255,255,.42);font-size:10.5px;letter-spacing:.08em}
+.sec{margin-bottom:30px}
+h2{font-size:11px;font-weight:700;letter-spacing:.13em;color:#111;margin-bottom:11px;padding-left:11px;border-left:5px solid #FFFF00}
+h3{font-size:19px;font-weight:800;color:#111;margin-bottom:13px;line-height:1.34}
+p{font-size:14.6px;line-height:1.85;color:#333;margin-bottom:14px}
+strong{color:#111;font-weight:700}
+figure{margin:20px 0 22px}
+figure img{width:100%;display:block}
+figcaption{font-size:11.5px;color:#777;line-height:1.6;margin-top:8px;padding-left:10px;border-left:3px solid #FFFF00}
+.ly{border:2px solid #111;margin:22px 0}
+.ly-h{background:#111;color:#fff;padding:11px 18px;font-size:12px;font-weight:700;letter-spacing:.09em}
+.ly-r{display:flex;border-top:1px solid #ddd;align-items:stretch}
+.ly-r:first-of-type{border-top:0}
+.ly-n{flex:none;width:58px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:21px;font-weight:900;color:#bbb;border-right:1px solid #ddd}
+.ly-r.on .ly-n{background:#FFFF00;color:#000}
+.ly-b{padding:14px 18px;flex:1}
+.ly-t{font-size:15.5px;font-weight:800;color:#111;margin-bottom:4px}
+.ly-d{font-size:13px;color:#555;line-height:1.65;margin-bottom:7px}
+.ly-s{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.05em;padding:3px 9px;border-radius:20px;background:#eee;color:#666}
+.ly-s.hot{background:#111;color:#FFFF00}
+.ly-f{background:#fafafa;border-top:2px solid #111;padding:12px 18px;font-size:12.5px;color:#444;line-height:1.7}
+.df{display:grid;grid-template-columns:1fr 1fr;border:2px solid #111;margin:22px 0}
+.df>div{padding:16px 18px}
+.df>div:first-child{border-right:2px solid #111;background:#fafafa}
+.df .t{font-size:12.5px;font-weight:800;margin-bottom:11px;letter-spacing:.04em}
+.df .t.k{color:#999}
+.df ul{list-style:none}
+.df li{font-size:12.5px;line-height:1.6;color:#555;padding:5px 0 5px 15px;position:relative}
+.df li:before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;background:#ccc;border-radius:50%}
+.df .ok li:before{background:#FFFF00;border:1px solid #111}
+.df .ok li{color:#222}
+.df .vd{margin-top:11px;padding-top:10px;border-top:1px dashed #ccc;font-size:11.5px;font-weight:700;color:#999}
+.df .ok .vd{color:#111}
+.pc{display:grid;grid-template-columns:1fr 1fr;border:2px solid #111;margin:22px 0}
+.pc>div{padding:16px 18px}
+.pc>div:first-child{border-right:2px solid #111}
+.pc .h{font-size:12px;font-weight:800;margin-bottom:8px;letter-spacing:.04em}
+.pc .n{font-size:25px;font-weight:900;letter-spacing:-.02em;line-height:1.15}
+.pc .n small{font-size:12px;font-weight:700}
+.pc .y .n{background:linear-gradient(transparent 62%,#FFFF00 62%);display:inline}
+.pc .d{font-size:12px;color:#666;margin-top:9px;line-height:1.65}
+.cta{margin:30px 0 0;border:3px solid #111;background:#111;color:#fff;padding:24px 26px}
+.cta h4{color:#FFFF00;font-size:18px;font-weight:900;margin-bottom:10px}
+.cta p{color:rgba(255,255,255,.82);font-size:13.5px;line-height:1.78;margin-bottom:13px}
+.cta ul{list-style:none;margin-bottom:17px}
+.cta li{color:rgba(255,255,255,.9);font-size:13px;line-height:1.6;padding:6px 0 6px 18px;position:relative}
+.cta li:before{content:"";position:absolute;left:0;top:13px;width:7px;height:7px;background:#FFFF00}
+.cta a{display:inline-block;background:#FFFF00;color:#000;font-size:13.5px;font-weight:800;padding:12px 24px;text-decoration:none;letter-spacing:.02em}
+.au{margin-top:26px;padding:18px 0 0;border-top:2px solid #f0f0f0}
+.au .n{font-size:14px;font-weight:800;color:#111;margin-bottom:4px}
+.au .r{font-size:12px;color:#777;line-height:1.6}
+.src{margin-top:14px;font-size:10.8px;color:#999;line-height:1.7}
+.tags{display:flex;flex-wrap:wrap;gap:6px;padding:22px 38px 30px}
+.tag{background:#111;color:#FFFF00;font-size:10px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border-radius:30px}
+.ft{background:#000;color:rgba(255,255,255,.45);font-size:11px;padding:18px 38px;line-height:1.7}
+@media(max-width:700px){
+  .hero-title{max-width:100%;font-size:21px} .body{padding:26px 22px 0}
+  .hdr,.ds,.tags,.ft,.langbar{padding-left:22px;padding-right:22px}
+  .df,.pc{grid-template-columns:1fr}
+  .df>div:first-child,.pc>div:first-child{border-right:0;border-bottom:2px solid #111}
+}
+
+.hero-sub{color:rgba(255,255,255,.9);font-size:14px;font-weight:700;margin-top:10px;letter-spacing:.04em}
+.tk{background:#f6f6f6;border-left:6px solid #FFFF00;padding:18px 22px;margin:0 0 24px}
+.tk h4{font-size:12px;letter-spacing:.12em;color:#111;margin-bottom:8px}
+.tk li{font-size:14px;line-height:1.75;color:#222;margin:0 0 6px 18px}
+.st4{display:grid;grid-template-columns:repeat(4,1fr);border:2px solid #111;margin:6px 0 8px}
+.st4>div{padding:14px 12px;border-right:1px solid #ddd}
+.st4>div:last-child{border-right:0}
+.st4 .n{font-size:28px;font-weight:900;line-height:1.05;letter-spacing:-.02em}
+.st4 .n small{font-size:12px;font-weight:800;margin-left:2px}
+.st4 .n span{background:linear-gradient(transparent 60%,#FFFF00 60%)}
+.st4 .d{font-size:11.5px;color:#555;line-height:1.55;margin-top:7px}
+.stn{font-size:10.5px;color:#999;margin-bottom:24px}
+.tl{border:2px solid #111;margin:20px 0 22px}
+.tl-h{background:#111;color:#fff;padding:10px 16px;font-size:12px;font-weight:700;letter-spacing:.08em}
+.tl-r{display:flex;border-top:1px solid #ddd}
+.tl-r:first-of-type{border-top:0}
+.tl-w{flex:none;width:86px;padding:12px 10px;font-size:13px;font-weight:900;background:#f5f5f5;border-right:1px solid #ddd}
+.tl-r.on .tl-w{background:#FFFF00}
+.tl-b{padding:11px 14px}
+.tl-t{font-size:14px;font-weight:800;color:#111}
+.tl-d{font-size:12.5px;color:#555;line-height:1.6;margin-top:2px}
+.bc{border:2px solid #111;padding:16px 18px;margin:20px 0 6px}
+.bc-h{font-size:12.5px;font-weight:800;margin-bottom:12px;letter-spacing:.03em}
+.bc-r{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center;margin:9px 0}
+.bc-l{font-size:12.5px;color:#333;font-weight:700}
+.bc-t{background:#eee;height:30px;position:relative}
+.bc-b{height:100%;background:#bbb;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;
+  font-size:13px;font-weight:900;color:#111;min-width:52px}
+.bc-r.on .bc-b{background:#FFFF00}
+.bc-n{font-size:12px;color:#444;line-height:1.6;margin-top:10px;border-top:1px dashed #ccc;padding-top:9px}
+.fc{font-size:11.5px;color:#777;line-height:1.6;margin:6px 0 20px;padding-left:10px;border-left:3px solid #FFFF00}
+.tr{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0 6px}
+.tr figure{margin:0;border:1px solid #ddd}
+.tr img{width:100%;height:150px;object-fit:cover;display:block;background:#fff}
+.tr img.ct{object-fit:contain;padding:8px}
+.tr .t{font-size:14px;font-weight:900;padding:10px 12px 2px}
+.tr .d{font-size:12px;color:#555;line-height:1.6;padding:0 12px 12px}
+.cs6{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0 6px}
+.cs6 .c{border:2px solid #111;display:flex;flex-direction:column}
+.cs6 .c.big{grid-column:1 / -1}
+.cs6 .c:nth-child(even):last-child{grid-column:1 / -1}
+.cs6 .c:nth-child(even):last-child img{height:220px}
+.cs6 img{width:100%;height:170px;object-fit:cover;display:block}
+.cs6 .c.big img{height:260px}
+.cs6 .tile{height:170px;background:#111;color:#FFFF00;display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:900;letter-spacing:.08em;text-align:center;padding:0 12px}
+.cs6 .b{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.cs6 .g{font-size:10.5px;font-weight:800;letter-spacing:.06em;color:#666;margin-bottom:4px}
+.cs6 .t{font-size:15px;font-weight:900;color:#111;line-height:1.35;margin-bottom:6px}
+.cs6 .d{font-size:12.5px;color:#444;line-height:1.65;margin-bottom:10px;flex:1}
+.cs6 .s{font-size:11px;color:#666;line-height:1.7;border-top:1px dashed #ccc;padding-top:8px}
+.cs6 .s a{color:#111;text-decoration:underline;text-decoration-color:#FFFF00;text-decoration-thickness:2px;margin-right:8px}
+.adv{display:grid;grid-template-columns:1fr 1fr 1fr;border:2px solid #111;margin:20px 0 0}
+.adv>div{padding:14px 14px 16px;border-right:1px solid #ddd;border-bottom:1px solid #ddd}
+.adv>div:nth-child(3n){border-right:0}
+.adv .t{font-size:14px;font-weight:900;margin-bottom:6px}
+.adv .t:before{content:"";display:inline-block;width:9px;height:9px;background:#FFFF00;border:1px solid #111;margin-right:7px}
+.adv .d{font-size:12px;color:#444;line-height:1.65}
+.adv .d a{color:#111;text-decoration:underline;text-decoration-color:#FFFF00;text-decoration-thickness:2px}
+.bn{background:#111;color:#fff;padding:14px 18px;margin:0 0 20px;border:2px solid #111;border-top:0}
+.bn h5{color:#FFFF00;font-size:12px;letter-spacing:.1em;margin-bottom:6px}
+.bn ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;list-style:none}
+.bn li{font-size:12.5px;line-height:1.6;padding-left:14px;position:relative}
+.bn li:before{content:"→";position:absolute;left:0;color:#FFFF00}
+.pd{display:grid;grid-template-columns:42% 1fr;border:2px solid #111;margin:16px 0 6px}
+.pd .im{background:#fff;display:flex;align-items:center;justify-content:center;border-right:2px solid #111;padding:10px}
+.pd .im img{width:100%;display:block}
+.pd .tx{padding:16px 18px}
+.pd .nm{font-size:19px;font-weight:900}
+.pd .tg{font-size:12.5px;color:#555;margin:2px 0 10px}
+.pd li{font-size:12.5px;line-height:1.65;color:#222;margin:0 0 5px 16px}
+.pd .lk{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:800;color:#111;text-decoration:underline;
+  text-decoration-color:#FFFF00;text-decoration-thickness:3px}
+.sv{margin:34px 0 0;border:3px solid #111;padding:26px 26px 22px;scroll-margin-top:20px}
+.sv h2{margin-bottom:8px}
+.sv h3{margin-bottom:8px}
+.sv .intro{font-size:13.5px;color:#555;line-height:1.75;margin-bottom:18px}
+.sv fieldset{border:0;border-top:1px solid #e6e6e6;padding:14px 0 10px}
+.sv legend{font-size:14px;font-weight:800;color:#111;padding:0;margin-bottom:9px}
+.sv .opts{display:flex;flex-wrap:wrap;gap:7px}
+.sv .opts label{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#333;border:1px solid #ccc;
+  border-radius:20px;padding:6px 12px;cursor:pointer;background:#fff}
+.sv .opts input{accent-color:#111}
+.sv .opts label:has(input:checked){background:#111;color:#FFFF00;border-color:#111}
+.sv .ct{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.sv .ct label{font-size:12px;font-weight:700;color:#444;display:flex;flex-direction:column;gap:4px}
+.sv .ct input{font-size:14px;padding:9px 10px;border:1px solid #bbb;border-radius:4px}
+.sv .cs{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:#555;line-height:1.6;margin:14px 0 4px}
+.sv button{margin-top:12px;background:#FFFF00;color:#000;border:2px solid #111;font-size:14px;font-weight:900;
+  padding:12px 26px;cursor:pointer;letter-spacing:.02em}
+.sv button:disabled{opacity:.6;cursor:wait}
+.sv .err{display:none;color:#b00020;font-size:12.5px;font-weight:700;margin-top:10px}
+.rs{display:none;margin-top:6px;background:#111;color:#fff;padding:22px 24px}
+.rs .k{color:rgba(255,255,255,.6);font-size:11px;letter-spacing:.1em}
+.rs .st{color:#FFFF00;font-size:22px;font-weight:900;margin:4px 0 8px}
+.rs .d{color:rgba(255,255,255,.85);font-size:13.5px;line-height:1.75;margin-bottom:10px}
+.rs ol{margin:0 0 10px 18px}
+.rs li{color:#fff;font-size:13px;line-height:1.7;padding:3px 0}
+.rs .ty{color:rgba(255,255,255,.75);font-size:12.5px;border-top:1px solid #333;padding-top:12px}
+.rs .ty a{display:inline-block;margin-top:10px;background:#FFFF00;color:#000;font-weight:900;padding:10px 20px;text-decoration:none}
+.srcs{margin:10px 0 0 18px}
+.srcs li{font-size:11px;color:#888;line-height:1.7}
+.srcs a, .sec p a{color:#111;text-decoration:underline;text-decoration-color:#FFFF00;text-decoration-thickness:2px}
+@media(max-width:700px){
+  .sv{padding:20px 16px} .sv .ct{grid-template-columns:1fr}
+  .st4{grid-template-columns:1fr 1fr} .st4>div:nth-child(2){border-right:0} .st4>div:nth-child(-n+2){border-bottom:1px solid #ddd}
+  .tr,.cs6,.adv,.pd,.bn ul{grid-template-columns:1fr} .adv>div{border-right:0}
+  .pd .im{border-right:0;border-bottom:2px solid #111} .bc-r{grid-template-columns:110px 1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hdr"><img src="images/markforged-logo-white.png" alt="Markforged">
+  <div class="hdr-ev">Markforged<br>Greater China</div></div>
+<div class="langbar"><span>Language</span><a href="non-red-three-checks-2026-10.html">繁體中文</a><a href="non-red-three-checks-2026-10-en.html" class="on">English</a></div>
+<div class="hero"><img src="images/non-red-three-checks-2026-10-hero.jpg" alt="X7 Field Edition deployed on open sand dunes">
+  <div class="hero-ov"></div>
+  <div class="hero-top"><div class="hero-kicker">INDUSTRY INSIGHT</div>
+    <div class="hero-title">Would Your<br>Non-Red Survive<br>a <span class='y'>Teardown</span>?</div><div class="hero-sub">Three checks for Taiwan’s drone supply chain</div></div>
+  <div class="hero-btm"><div class="hero-meta">Markforged Industry Insight | 31 October 2026</div></div></div>
+<div class="ds"><div class="ds-l">Non-red supply chain · Three checks</div><div class="ds-r">7-minute read + 2-minute self-check</div></div>
+<div class="body">
+<div class="tk"><h4>Key takeaways</h4><ul><li>In these cases the origin paperwork had been filed; the mainland chips were found only when the army opened the drones at acceptance. Paper checks catch mistakes, not deliberate fakes.</li><li>Non-red has to pass three checks: on paper, in the teardown, and after the revision. The third slips most easily, because drones change every quarter.</li><li>Keep the parts that change most — structures, fixtures and spares — in-house, on equipment and materials of simple, known origin, and far less has to be re-verified at the third check.</li></ul></div>
+<p class="lead">None of the military drones referred to prosecutors in Taiwan over the past two months were stopped by a document check. The contracts banned parts made in mainland China, and the origin paperwork had been filed. The drones were caught at acceptance, when the army opened the airframes and found chips marked “CN”. They had passed the paper check long before.</p>
+<div class="st4" data-fig="stats"><div><div class="n"><span>44.2</span><small>NT$ bn</small></div><div class="d">Executive Yuan uncrewed-vehicle industry programme, 2025–2030</div></div><div><div class="n"><span>115.85</span><small>US$ m</small></div><div class="d">Drone exports in Q1 2026 alone, more than in all of 2025</div></div><div><div class="n"><span>3</span><small>cases</small></div><div class="d">Military drone cases investigated for mainland parts, Aug–Oct</div></div><div><div class="n"><span>100</span><small>%</small></div><div class="d">Non-red requirement set by the Vice President for military and public-sector drones</div></div></div><div class="stn">Sources are listed at the end of the article.</div>
+<div class="qb"><p>Non-red is not a certificate.<br>It is a supply chain that still checks out when you open the box.</p><small>NON-RED · THREE CHECKS</small></div>
+<div class="sec"><h2>NEWS · THE LAST TWO MONTHS</h2><h3>Three companies, three prosecutors’ offices, one way of being caught</h3><p>Between August and October, at least three companies came under investigation by prosecutors in Qiaotou, Taoyuan and Taichung for fitting mainland-made chips, flight-control boards or cameras into drones delivered to Taiwan’s armed forces. The heads of two of them have been detained (<a href="https://udn.com/news/story/7321/9845703" target="_blank" rel="noopener">United Daily News, 29 October</a>). These are allegations under investigation and have not been ruled on by a court.</p><div class="tl" data-fig="timeline"><div class="tl-h">Timeline of the three cases</div><div class="tl-r"><div class="tl-w">Aug</div><div class="tl-b"><div class="tl-t">Qiaotou prosecutors search</div><div class="tl-d">Alleged assembly with mainland chips and flight-control boards, with false origin papers, for the army</div></div></div><div class="tl-r"><div class="tl-w">Oct</div><div class="tl-b"><div class="tl-t">Taoyuan prosecutors investigate</div><div class="tl-d">Alleged mainland chips and cameras in drones for the military; company head detained</div></div></div><div class="tl-r on"><div class="tl-w">Mid-Oct</div><div class="tl-b"><div class="tl-t">Taichung prosecutors search</div><div class="tl-d">Triggered by an acceptance teardown that found chips marked “CN”</div></div></div><div class="tl-r"><div class="tl-w">Late Oct</div><div class="tl-b"><div class="tl-t">Taichung company head detained</div><div class="tl-d">Investigated under the National Security Act and for fraud</div></div></div></div><div class="fc">Compiled from United Daily News, 29 October 2026. All are allegations under investigation and have not been ruled on by a court.</div><p>Policy has not softened. In January the Vice President said that government drone production and procurement, for the military and the public sector alike, must reach a 100% non-red supply chain (<a href="https://wantrich.chinatimes.com/news/20260128900702-420501" target="_blank" rel="noopener">China Times</a>). With budgets, orders and policy all moving forward, scrutiny will only tighten.</p><p>What the industry should take from these cases is not who broke the rules, but where in the chain the problem was found.</p></div><div class="sec"><h2>HISTORY · REMOVING COSTS MORE THAN CHECKING</h2><h3>Ripping out Huawei cost the US 2.6 times the original budget</h3><p>Section 889 of the US National Defense Authorization Act for fiscal 2019 named Huawei and ZTE. A 2020 law then paid telecom carriers to tear the two companies’ equipment out of networks already in service and replace it — the programme known as rip and replace.</p><div class="bc" data-fig="bars_rip"><div class="bc-h">Rip and replace funding (US$ billion)</div><div class="bc-r"><div class="bc-l">Appropriated by Congress</div><div class="bc-t"><div class="bc-b" style="width:38.2%">1.9</div></div></div><div class="bc-r on"><div class="bc-l">FCC-assessed actual need</div><div class="bc-t"><div class="bc-b" style="width:100.0%">4.98</div></div></div><div class="bc-n">A shortfall of US$3.08 billion; eligible small carriers initially received 39.5% of approved costs.</div></div><div class="fc">Source: Congressional Research Service, IN11663.</div><p>The lesson is about sequence, not the amount. Checking origin before equipment goes in costs procurement time. Finding out after it is installed and running costs removal, redesign, downtime and a full re-qualification.</p><p>Taiwan’s drone industry is still at the stage before the equipment goes in. This is when getting the checks right costs least.</p></div><div class="sec"><h2>FRAMEWORK · THREE CHECKS</h2><h3>Non-red has three checks, and the third is the one that slips</h3><p>Lay these cases side by side and non-red turns out to be three checks, each harder than the last.</p><div class="ly" data-fig="gates"><div class="ly-h">THE THREE CHECKS OF NON-RED</div><div class="ly-r"><div class="ly-n">1</div><div class="ly-b"><div class="ly-t">On paper</div><div class="ly-d">Certificates of origin, contract clauses, supplier declarations</div><span class="ly-s">Passed in every case here</span></div></div><div class="ly-r"><div class="ly-n">2</div><div class="ly-b"><div class="ly-t">In the teardown</div><div class="ly-d">Acceptance inspection, part numbers matched to hardware</div><span class="ly-s">Where these cases were caught</span></div></div><div class="ly-r on"><div class="ly-n">3</div><div class="ly-b"><div class="ly-t">After the revision</div><div class="ly-d">New design, new source, end-of-life part — prove it all again</div><span class="ly-s hot">Most schedule pressure, least oversight</span></div></div><div class="ly-f">For any non-red dispute in the news, ask first: which check did it fail?</div></div><p><strong>The first check is paper.</strong> Certificates of origin, contract clauses, supplier declarations. It stops mistakes, not deliberate fakes. In these cases the paperwork had been filed.</p><p><strong>The second check is the hardware.</strong> Open the box and the markings on a chip do not lie. But teardowns are sampled, and they only cover the batch being delivered.</p><p><strong>The third check is time.</strong> A drone is not a frozen product; it is a platform that changes every quarter. A longer arm, a different motor, a part going end-of-life — every change brings in new parts and new suppliers, and the first two checks start over. That is also the moment of greatest schedule pressure and the strongest temptation to cut corners.</p></div><div class="sec"><h2>MARKET · HOME AND ABROAD</h2><h3>At home a requirement, abroad still a bonus — both meet at the third check</h3><p>Taiwan’s military contracts already make non-red a requirement, with criminal liability for breaches. The first two checks will only get tighter.</p><p>Exports look different. Czechia became the largest market for Taiwanese drones in the first quarter, yet CzechInvest says European procurement still treats non-red as a preference rather than a rule; on the Ukrainian front line, buyers still look at volume, price and lead time (<a href="https://technews.tw/2026/10/24/non-red-supply-chain-bonus-czech-taiwan-largest-drone-market-defense-startups-two-hurdles/" target="_blank" rel="noopener">TechNews</a>). The same report quotes a Ukrainian National Guard liaison officer with one example:</p><div class="bc" data-fig="bars_speed"><div class="bc-h">Time to turn the same modification after a test report</div><div class="bc-r"><div class="bc-l">One European start-up</div><div class="bc-t"><div class="bc-b" style="width:100.0%">6–8 months</div></div></div><div class="bc-r on"><div class="bc-l">Ukrainian makers</div><div class="bc-t"><div class="bc-b" style="width:10.0%">3 weeks</div></div></div></div><div class="fc">A single example quoted by TechNews from a Ukrainian National Guard liaison officer; 6–8 months shown as about 30 weeks.</div><p>Both kinds of buyer end up at the third check. The military wants a drone that is still non-red a year and three revisions later; overseas integrators want revisions that keep pace with the battlefield. Only a supplier that can prove origin after every revision, without re-running supplier qualification for each new part, passes both.</p></div><div class="sec"><h2>CASE · ONE DISCONTINUED PART</h2><h3>Find a new supplier, or make it on site</h3><p>At a US Army training base, a hatch plug on one of its vehicles had gone out of production. Reproducing it would have cost roughly US$10,000, with a three-month lead time — which means a new supplier, a new origin check and a new place in someone else’s queue.</p><p>The base printed it on site on Markforged printers in Onyx composite instead, for about US$230, and cut the design from ten parts to four; that application alone has saved US$244,000 (<a href="https://markforged.com/resources/case-studies/united-states-army" target="_blank" rel="noopener">Markforged case study</a>).</p><figure data-fig="swap"><div class="df"><div><div class="t k">Find a new outside supplier</div><ul><li>Re-quote and wait for capacity</li><li>One more set of origin papers</li><li>Repeat at the next revision</li></ul><div class="vd">About US$10,000 · 3 months</div></div><div class="ok"><div class="t">Make it on site on a qualified platform</div><ul><li>Equipment and material origin already known</li><li>Only a material lot record to add</li><li>New parts on your own schedule</li></ul><div class="vd">About US$230 · ten parts down to four</div></div></div><figcaption>Two routes for the same discontinued part. Cost, lead time and part count from the Markforged US Army case study.</figcaption></figure><p>From a non-red point of view the saving is secondary. Instead of one more outside supplier and one more set of origin papers to verify, there is an on-site machine that has already been qualified and a material lot record. What the third check has to re-verify shrinks from an unfamiliar new vendor to a platform checked long ago.</p></div><div class="sec"><h2>CASES · ARMED FORCES AND DRONES, BY COUNTRY</h2><h3>The same logic, already at work in armed forces abroad and in Taiwan</h3><p>The cases below are grouped by country and service, each with its original sources: the military or press report, the Markforged case study, and the full write-up on the Markforged media hub.</p><div class="cs6" data-fig="cases"><div class="c big" data-case><img src="images/aster-swarm-hero.jpg" alt="ASTER-SWARM: an FPV airframe printed in Taiwan"><div class="b"><div class="g">Taiwan · Drone industry</div><div class="t">ASTER-SWARM: an FPV airframe printed in Taiwan</div><div class="d">ASTER Technology prints every structural part of its ASTER-SWARM airframe on an X7 Field Edition, with continuous carbon fibre along the load paths. It passed a Beaufort Force 9 wind test, with revision, repair and production all in Taiwan.</div><div class="s">Sources：<a href="https://news.markforged.tw/aster-swarm-fpv-airframe-x7-field-edition-en.html" target="_blank" rel="noopener">Markforged media hub case</a></div></div></div><div class="c" data-case><img src="images/cjlots26-hero.jpg" alt="A missing strainer at an exercise"><div class="b"><div class="g">US Marine Corps · Korea</div><div class="t">A missing strainer at an exercise</div><div class="d">During CJLOTS 26, Marines reverse-engineered and printed a boat strainer inside an X-FAB expeditionary shelter in under half a day, cutting a two-to-three-week resupply to a few hours. The X-FAB system includes Markforged Mark Two printers.</div><div class="s">Sources：<a href="https://www.dvidshub.net/news/570729/advanced-manufacturing-supports-joint-and-bilateral-readiness-cjlots-26-south-korea" target="_blank" rel="noopener">DVIDS (US Department of Defense)</a><a href="https://3dprintingindustry.com/news/marine-corps-x-fab-saves-coast-guard-patrol-boats-253447/" target="_blank" rel="noopener">3D Printing Industry</a><a href="https://news.markforged.tw/usmc-cjlots26-expeditionary-am-en.html" target="_blank" rel="noopener">Media hub case</a></div></div></div><div class="c" data-case><img src="images/british-army-pc22-hero.jpg" alt="US forces send the files, British troops print on site"><div class="b"><div class="g">British Army · US</div><div class="t">US forces send the files, British troops print on site</div><div class="d">At Project Convergence 22, the British Army’s Royal Electrical and Mechanical Engineers (REME) received files for spares US forces could not get through their own supply chains, printed them on site on mobile printers and handed the parts over.</div><div class="s">Sources：<a href="https://www.youtube.com/watch?v=cILzyK0uai4" target="_blank" rel="noopener">Mark3D video: British Army is utilizing Markforged</a><a href="https://news.markforged.tw/british-army-project-convergence-22-en.html" target="_blank" rel="noopener">Media hub case</a></div></div></div><div class="c" data-case><img src="images/non-red-three-checks-2026-10-usaf.jpg" alt="Night-vision goggle mounts: from weeks to hours"><div class="b"><div class="g">US Air Force · Cannon AFB</div><div class="t">Night-vision goggle mounts: from weeks to hours</div><div class="d">A commercial NVG mount costs US$100 or more and takes weeks to arrive. The base prints replacements on a Markforged X7 for under US$5 in a few hours, and its user rates them as strong as the commercial aluminium ones.</div><div class="s">Sources：<a href="https://markforged.com/resources/case-studies/u-s-air-force-cannon-air-force-base" target="_blank" rel="noopener">Markforged case study</a></div></div></div><div class="c" data-case><img src="images/non-red-three-checks-2026-10-usarmy.jpg" alt="A discontinued hatch plug: US$244,000 saved"><div class="b"><div class="g">US Army · Training base</div><div class="t">A discontinued hatch plug: US$244,000 saved</div><div class="d">A vehicle hatch plug went out of production; reproducing it would cost about US$10,000 with a three-month lead time. Printed on base in Onyx for about US$230, its design went from ten parts to four.</div><div class="s">Sources：<a href="https://markforged.com/resources/case-studies/united-states-army" target="_blank" rel="noopener">Markforged case study</a></div></div></div><div class="c" data-case><img src="images/eiger-inspection.jpg" alt="A US$7.5M distributed-manufacturing proof"><div class="b"><div class="g">US Army · Distributed manufacturing</div><div class="t">A US$7.5M distributed-manufacturing proof</div><div class="d">In Phase I of the US Army’s IBAS programme, led by Automation Alley with NCDMM as prime contractor and Markforged and Fraunhofer USA as partners, the aim is to prove IP-protected manufacturing instructions can be streamed securely to distributed printers.</div><div class="s">Sources：<a href="https://www.prnewswire.com/news-releases/automation-alley-awarded-contract-to-advance-secure-distributed-additive-manufacturing-forthe-us-departmentof-war-302909514.html" target="_blank" rel="noopener">PR Newswire release</a><a href="https://news.markforged.tw/secure-distributed-am-ibas-en.html" target="_blank" rel="noopener">Media hub case</a></div></div></div></div></div><div class="sec"><h2>WHERE · WHERE TO START</h2><h3>The three kinds of part that change most</h3><p>For drone makers and tier-1 suppliers, the parts revised most often and outsourced at shortest notice fall into three groups. They share small volumes, frequent changes and urgent lead times — and they are where origin is hardest to pin down.</p><div class="tr" data-fig="trio"><figure><img src="images/non-red-three-checks-2026-10-drone.jpg" alt="Structures"><div class="t">Structures</div><div class="d">Arms, frames and brackets. They change with every revision and are the first to be outsourced in a hurry.</div></figure><figure><img src="images/non-red-three-checks-2026-10-fixture.jpg" alt="Fixtures"><div class="t">Fixtures</div><div class="d">Every line change needs new ones, and they compete with production parts for the same CNC time.</div></figure><figure><img class="ct" src="images/non-red-three-checks-2026-10-cfpart.jpg" alt="Spares"><div class="t">Spares</div><div class="d">Low volume, needed now. Continuous carbon-fibre parts can replace some metal brackets.</div></figure></div><div class="fc">Images: Markforged</div><p>Keep these three in-house, on equipment and materials of simple, known origin, and far less has to be re-verified at the third check. Revision cycles shorten, and with them the temptation to cut corners under schedule pressure.</p></div><div class="sec"><h2>WHY MARKFORGED · ADVANTAGES, SECURITY, BENEFITS</h2><h3>Non-red, secure, deployable: keep revisions on your own ground</h3><p>For defence and high-security sites, Markforged’s focus is not machine specifications but letting customers make revised parts on their own ground, under their own access control — with a clear origin at every step.</p><div class="adv" data-fig="adv"><div><div class="t">100% non-red</div><div class="d">Markforged is a US company; its equipment, software and materials are 100% non-red.</div></div><div><div class="t">Certified security</div><div class="d">ISO/IEC 27001:2022 certified (valid to December 2028) and CSA STAR Level 1; Markforged says it was the first FDM/FFF additive company to achieve ISO 27001.（<a href="https://web-objects.markforged.com/craft/common/Certificate-Markforged-2025-ISO-27001.pdf" target="_blank" rel="noopener">ISO 27001 certificate</a>）</div></div><div><div class="t">Data protection</div><div class="d">Data encrypted in transit and at rest; third-party penetration testing and secure design reviews; two-factor authentication, single sign-on and organisation-level admin.（<a href="https://markforged.com/security" target="_blank" rel="noopener">Markforged security</a>）</div></div><div><div class="t">Fit for secure sites</div><div class="d">The X7 Field Edition runs a STIG-compliant operating system and comes in a no-Wi-Fi version, so design files and process data stay on your site.（<a href="https://markforged.com/3d-printers/x7-field-edition" target="_blank" rel="noopener">X7 Field Edition</a>）</div></div><div><div class="t">Deployable to the front</div><div class="d">Ruggedised transit case, two-person carry, 150 W and generator-ready; included in US military MIL-STD-810 testing.（<a href="https://markforged.com/3d-printers/x7-field-edition" target="_blank" rel="noopener">X7 Field Edition</a>）</div></div><div><div class="t">Strong enough to replace metal</div><div class="d">Continuous carbon-fibre reinforcement with 800 MPa tensile strength can replace some machined aluminium parts and brackets.</div></div></div><div class="bn"><h5>What it means for you</h5><ul><li>One fewer outside supplier to verify, so the third check shrinks</li><li>Revisions run on your own schedule, not a subcontractor’s</li><li>Discontinued parts can be remade on site without a new source</li><li>Design files never leave your site</li></ul></div><p>The model most often asked for in the field is the X7 Field Edition:</p><div class="pd" data-fig="product"><div class="im"><img src="images/non-red-three-checks-2026-10-x7fe-case.jpg" alt="X7 Field Edition"></div><div class="tx"><div class="nm">X7 Field Edition</div><div class="tg">A continuous-fibre composite printer that deploys to the point of need</div><ul><li>Packed in a ruggedised Pelican transit case; a two-person carry</li><li>150 W power draw; can run on a generator</li><li>Included in US military MIL-STD-810 testing in support of a DoD Program of Record</li><li>STIG-compliant operating system; a no-Wi-Fi version is available for secure sites</li><li>Continuous carbon-fibre reinforcement with 800 MPa tensile strength</li></ul><a class="lk" href="https://markforged.com/3d-printers/x7-field-edition" target="_blank" rel="noopener">X7 Field Edition product page →</a></div></div><div class="fc">X7 Field Edition transit-case layout (Markforged). Specifications per Markforged product data.</div><p>For drone makers and tier-1 suppliers with an existing factory, the same continuous-fibre technology comes in production models (X7, FX10, FX20). Most start with fixtures, then extend to structures and spares.</p></div><div class="sec"><h2>CONCLUSION · ONE THING TO DO NOW</h2><h3>Start with the last revision</h3><p>Pick one drone in service and list every part number added or replaced in its most recent revision. For each one, confirm two things: whether its origin paperwork matches what you would find if you opened it up, and where the replacement would come from if it went out of production next month.</p><p><strong>If a revision leaves you without fresh proof, you have only passed the first check.</strong></p></div>
+<div class="cta"><h4>Take the two-minute self-check</h4><p>Ten questions below. When you submit, you will see which check you have reached and what to do next. If useful, the Markforged team can visit your site to work out which structures, fixtures and spares are worth making in-house.</p>
+  <ul><li>How often structures and fixtures change, and how much is outsourced</li><li>Where replacement and end-of-life parts would come from</li><li>Offline deployment for defence and high-security sites</li></ul>
+  <a href="#survey">Start the self-check →</a></div>
+
+<div class="sv" id="survey" data-mode="lite">
+<h2>SELF-CHECK</h2><h3>Non-red drone supply chain self-check</h3><p class="intro">Ten questions, about two minutes. When you submit, you will see which check you have reached and three matching recommendations.</p>
+<form id="svf" novalidate>
+<fieldset data-q="role"><legend>1. Your role</legend><div class="opts"><label><input type="radio" name="role" value="0" data-t="Drone maker / integrator">Drone maker / integrator</label><label><input type="radio" name="role" value="1" data-t="Tier-1 supplier">Tier-1 supplier</label><label><input type="radio" name="role" value="2" data-t="Component maker">Component maker</label><label><input type="radio" name="role" value="3" data-t="Research or academic">Research or academic</label><label><input type="radio" name="role" value="4" data-t="Other">Other</label></div></fieldset><fieldset data-q="buyer"><legend>2. Main customers (select all that apply)</legend><div class="opts"><label><input type="checkbox" name="buyer" value="0" data-t="Armed forces">Armed forces</label><label><input type="checkbox" name="buyer" value="1" data-t="Government, civil use">Government, civil use</label><label><input type="checkbox" name="buyer" value="2" data-t="Export: United States">Export: United States</label><label><input type="checkbox" name="buyer" value="3" data-t="Export: Europe">Export: Europe</label><label><input type="checkbox" name="buyer" value="4" data-t="Commercial">Commercial</label></div></fieldset><fieldset data-q="struct"><legend>3. How are structures (arms, frames, brackets) made today?</legend><div class="opts"><label><input type="radio" name="struct" value="0" data-t="Outsourced CNC">Outsourced CNC</label><label><input type="radio" name="struct" value="1" data-t="Injection moulding">Injection moulding</label><label><input type="radio" name="struct" value="2" data-t="In-house 3D printing">In-house 3D printing</label><label><input type="radio" name="struct" value="3" data-t="Imported">Imported</label></div></fieldset><fieldset data-q="fixture"><legend>4. Who makes your fixtures and poka-yoke plates?</legend><div class="opts"><label><input type="radio" name="fixture" value="0" data-t="Outsourced">Outsourced</label><label><input type="radio" name="fixture" value="1" data-t="In-house CNC">In-house CNC</label><label><input type="radio" name="fixture" value="2" data-t="In-house 3D printing">In-house 3D printing</label></div></fieldset><fieldset data-q="freq"><legend>5. How often do structural parts change?</legend><div class="opts"><label><input type="radio" name="freq" value="0" data-t="Every month">Every month</label><label><input type="radio" name="freq" value="1" data-t="Every quarter">Every quarter</label><label><input type="radio" name="freq" value="2" data-t="Every six months or less often">Every six months or less often</label></div></fieldset><fieldset data-q="wait"><legend>6. After a change, how long until you have the new part?</legend><div class="opts"><label><input type="radio" name="wait" value="0" data-t="Within 3 days">Within 3 days</label><label><input type="radio" name="wait" value="1" data-t="1–2 weeks">1–2 weeks</label><label><input type="radio" name="wait" value="2" data-t="More than 2 weeks">More than 2 weeks</label></div></fieldset><fieldset data-q="trace"><legend>7. How far does your part-origin traceability go?</legend><div class="opts"><label><input type="radio" name="trace" value="0" data-t="Every part number">Every part number</label><label><input type="radio" name="trace" value="1" data-t="Main components only">Main components only</label><label><input type="radio" name="trace" value="2" data-t="Not yet">Not yet</label></div></fieldset><fieldset data-q="data"><legend>8. Where are your design and manufacturing files stored?</legend><div class="opts"><label><input type="radio" name="data" value="0" data-t="On premises">On premises</label><label><input type="radio" name="data" value="1" data-t="Cloud platform">Cloud platform</label><label><input type="radio" name="data" value="2" data-t="Not sure">Not sure</label></div></fieldset><fieldset data-q="plan"><legend>9. Plans for the next 12 months (select all that apply)</legend><div class="opts"><label><input type="checkbox" name="plan" value="0" data-t="Scale up production">Scale up production</label><label><input type="checkbox" name="plan" value="1" data-t="Seek non-red certification or audit">Seek non-red certification or audit</label><label><input type="checkbox" name="plan" value="2" data-t="Bring structures or fixtures in-house">Bring structures or fixtures in-house</label><label><input type="checkbox" name="plan" value="3" data-t="Still evaluating">Still evaluating</label></div></fieldset><fieldset data-q="want"><legend>10. What would help (select all that apply)</legend><div class="opts"><label><input type="checkbox" name="want" value="0" data-t="Non-red production briefing">Non-red production briefing</label><label><input type="checkbox" name="want" value="1" data-t="Site assessment">Site assessment</label><label><input type="checkbox" name="want" value="2" data-t="Sample print">Sample print</label><label><input type="checkbox" name="want" value="3" data-t="Hands-on equipment demo">Hands-on equipment demo</label></div></fieldset>
+
+<button type="submit" id="svb">Submit and see my result</button>
+<div class="err" id="sve"></div>
+</form>
+<div class="rs" id="svr"><div class="k">You have reached:</div><div class="st" id="svs"></div>
+<div class="d" id="svd"></div><ol id="svt"></ol><div class="ty" id="svy"></div></div>
+</div>
+<div class="au"><div class="n">Markforged</div><div class="r">Industrial continuous-fibre composite and metal 3D printing</div>
+  <div class="src"><strong>Sources</strong><ol class="srcs"><li><a href="https://udn.com/news/story/7321/9845703" target="_blank" rel="noopener">United Daily News (29 Oct 2026), in Chinese: non-red supply chain breached again by mainland chips in military drones</a></li><li><a href="https://wantrich.chinatimes.com/news/20260128900702-420501" target="_blank" rel="noopener">China Times (28 Jan 2026), in Chinese: Vice President visits the Asia UAV AI Innovation Application R&D Center, Chiayi</a></li><li><a href="https://www.ctee.com.tw/news/20260215700023-439901" target="_blank" rel="noopener">Commercial Times (15 Feb 2026), in Chinese: NT$44.2 billion for Taiwan’s drone industry</a></li><li><a href="https://technews.tw/2026/10/24/non-red-supply-chain-bonus-czech-taiwan-largest-drone-market-defense-startups-two-hurdles/" target="_blank" rel="noopener">TechNews (24 Oct 2026), in Chinese: “non-red” is only a bonus for Taiwan’s drone makers</a></li><li><a href="https://www.everycrsreport.com/reports/IN11663.html" target="_blank" rel="noopener">Congressional Research Service IN11663: FCC Secure and Trusted Communications Networks Reimbursement Program</a></li><li><a href="https://markforged.com/resources/case-studies/united-states-army" target="_blank" rel="noopener">Markforged case study: United States Army</a></li><li><a href="https://markforged.com/3d-printers/x7-field-edition" target="_blank" rel="noopener">Markforged product page: X7 Field Edition</a></li><li><a href="https://markforged.com/security" target="_blank" rel="noopener">Markforged security overview</a></li><li><a href="https://web-objects.markforged.com/craft/common/Certificate-Markforged-2025-ISO-27001.pdf" target="_blank" rel="noopener">Markforged ISO/IEC 27001:2022 certificate</a></li></ol>The investigations mentioned are allegations as reported and have not been ruled on by a court. This article contains no customer names, amounts or non-public project information.</div></div>
+</div>
+<div class="tags"><span class="tag">Non-Red Supply Chain</span><span class="tag">UAV</span><span class="tag">Defense Self-Reliance</span><span class="tag">Supply-Chain Security</span><span class="tag">Additive Manufacturing</span><span class="tag">X7 Field Edition</span></div>
+<div class="ft">© 2026 Markforged, Inc. The investigations mentioned are allegations as reported and have not been ruled on by a court.</div>
+</div>
+<script>
+(function(){
+var C={"mode": "lite", "stages": {"1": "Check one (on paper)", "2": "Check two (in the teardown)", "3": "Check three (after the revision)", "ok": "All three checks covered"}, "desc": {"1": "There is no origin record for your parts yet. At an acceptance teardown it would be hard to prove where your material came from.", "2": "Main components are documented, but minor part numbers are not — and those untracked small parts are often what a teardown picks.", "3": "Traceability is complete, but frequent revisions and outsourced structures or fixtures bring in new sources to re-verify every time.", "ok": "Traceability is complete and most revisions are made in-house. Next, write the practice down so your customers can verify it."}, "tips": {"trace": "Start with the part numbers added in your latest revision and complete the origin proof for each one.", "outsrc": "List the structures and fixtures that change most often and assess which could be made in-house.", "wait": "If a change takes more than two weeks, schedule pressure invites shortcuts; a shorter revision cycle is itself non-red insurance.", "data": "Where design and manufacturing files live is part of the supply chain too; check whether you need offline deployment.", "doc": "Turn your traceability and in-house practice into a document customers can audit, so checks two and three have evidence."}, "thanks": "We have your details and will be in touch within three working days.", "err_req": "Please answer questions 1–8.", "err_net": "Your result is shown, but your details may not have reached us. Please try submitting again later.", "sending": "Sending…", "lang": "en", "action": "", "entries": {}, "consent_yes": "Agreed", "lite_next": "To discuss a site review, a sample print or a hands-on demo:", "lite_btn": "Contact the Markforged team", "lite_href": "index-en.html?utm_source=mfmk-article&utm_medium=article&utm_campaign=non-red-three-checks"};
+var f=document.getElementById('svf'),b=document.getElementById('svb'),er=document.getElementById('sve');
+function one(n){var x=f.querySelector('input[name="'+n+'"]:checked');return x?{i:+x.value,t:x.dataset.t}:null;}
+function many(n){return [].map.call(f.querySelectorAll('input[name="'+n+'"]:checked'),function(x){return x.dataset.t;}).join('; ');}
+function val(n){return f.elements[n]?(f.elements[n].value||'').trim():'';}
+f.addEventListener('submit',function(ev){
+  ev.preventDefault(); er.style.display='none';
+  var need=['role','struct','fixture','freq','wait','trace','data'],miss=need.some(function(n){return !one(n);})||!many('buyer');
+  if(C.mode==='full'){var email=val('email');
+    miss=miss||!val('name')||!val('company')||!val('title')||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)||!f.elements.consent.checked;}
+  if(miss){er.textContent=C.err_req; er.style.display='block'; return;}
+  var tr=one('trace').i, st=one('struct').i, fx=one('fixture').i, fq=one('freq').i, wt=one('wait').i, dt=one('data').i;
+  var outsrc=(st===0||st===1||st===3||fx===0), stage;
+  if(tr===2) stage='1'; else if(tr===1) stage='2';
+  else if(fq<=1&&(outsrc||wt>=1)) stage='3'; else stage='ok';
+  var tips=[]; if(tr!==0) tips.push('trace'); if(outsrc) tips.push('outsrc'); if(wt===2) tips.push('wait');
+  if(dt!==0) tips.push('data'); tips.push('doc'); ['outsrc','wait','data'].forEach(function(t){if(tips.indexOf(t)<0)tips.push(t);});
+  tips=tips.slice(0,3);
+  try{fetch('https://hits.sh/news.markforged.tw/non-red-three-checks-2026-10-survey-'+C.mode+'.svg?_='+Date.now(),{mode:'no-cors',cache:'no-store'}).catch(function(){});}catch(e){}
+  function show(msgHtml){
+    document.getElementById('svs').textContent=C.stages[stage];
+    document.getElementById('svd').textContent=C.desc[stage];
+    document.getElementById('svt').innerHTML=tips.map(function(t){return '<li>'+C.tips[t]+'</li>';}).join('');
+    document.getElementById('svy').innerHTML=msgHtml;
+    f.style.display='none'; var r=document.getElementById('svr'); r.style.display='block';
+    r.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  if(C.mode!=='full'){show(C.lite_next+'<br><a id="svl" href="'+C.lite_href+'&stage='+stage+'#register" target="_blank" rel="noopener">'+C.lite_btn+' →</a>');return;}
+  var ans={lang:C.lang,role:one('role').t,buyer:many('buyer'),struct:one('struct').t,fixture:one('fixture').t,
+    freq:one('freq').t,wait:one('wait').t,trace:one('trace').t,data:one('data').t,plan:many('plan'),want:many('want'),
+    result:C.stages[stage],name:val('name'),company:val('company'),title:val('title'),email:val('email'),phone:val('phone'),
+    consent:C.consent_yes,page:location.href.split('#')[0]};
+  b.disabled=true; b.textContent=C.sending;
+  var body=new URLSearchParams();
+  Object.keys(C.entries).forEach(function(k){body.append(C.entries[k],ans[k]||'');});
+  fetch(C.action,{method:'POST',mode:'no-cors',body:body}).then(function(){show(C.thanks);}).catch(function(){show(C.err_net);});
+});
+})();
+</script>
+</body></html>

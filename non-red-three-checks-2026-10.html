@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你的非紅，經得起拆檢嗎？ — Markforged</title>
+<meta name="description" content="今年 8 到 10 月，至少三家廠商因無人機使用陸製零件遭檢方偵辦，問題都在驗收拆檢時才浮現。Markforged 從這幾起案件整理出非紅供應鏈的三道驗證，並說明最容易失守的第三道——改版之後——該怎麼守。">
+<meta property="og:title" content="你的非紅，經得起拆檢嗎？">
+<meta property="og:description" content="今年 8 到 10 月，至少三家廠商因無人機使用陸製零件遭檢方偵辦，問題都在驗收拆檢時才浮現。Markforged 從這幾起案件整理出非紅供應鏈的三道驗證，並說明最容易失守的第三道——改版之後——該怎麼守。">
+<meta property="og:image" content="https://mfmk.markforged.tw/images/non-red-three-checks-2026-10-og.jpg">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://mfmk.markforged.tw/non-red-three-checks-2026-10.html">
+<link rel="alternate" hreflang="zh-TW" href="https://mfmk.markforged.tw/non-red-three-checks-2026-10.html"><link rel="alternate" hreflang="en" href="https://mfmk.markforged.tw/non-red-three-checks-2026-10-en.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#e8e8e8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'Noto Sans TC','Noto Sans SC',sans-serif;color:#1a1a1a}
+.wrap{max-width:700px;margin:0 auto;background:#fff}
+.hdr{background:#000;padding:20px 40px;display:flex;align-items:center;justify-content:space-between}
+.hdr img{height:26px;display:block}
+.hdr-ev{color:rgba(255,255,255,.6);font-size:12px;text-align:right;line-height:1.6}
+.langbar{background:#111;padding:8px 40px;display:flex;gap:6px;align-items:center;border-top:1px solid #222}
+.langbar span{color:#666;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-right:4px}
+.langbar a{font-size:11.5px;font-weight:700;color:#888;text-decoration:none;padding:3px 10px;border-radius:20px;border:1px solid #333}
+.langbar a:hover{color:#FFFF00;border-color:#FFFF00}
+.langbar a.on{background:#FFFF00;color:#000;border-color:#FFFF00}
+.hero{position:relative;overflow:hidden}
+.hero img{width:100%;display:block}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(100deg,rgba(0,0,0,.93) 0%,rgba(0,0,0,.84) 42%,rgba(0,0,0,.34) 70%,rgba(0,0,0,.08) 92%)}
+.hero-top{position:absolute;top:0;left:0;right:0;padding:30px 38px}
+.hero-kicker{color:#FFFF00;font-size:10px;font-weight:700;letter-spacing:.14em;margin-bottom:10px}
+.hero-title{color:#fff;font-size:27px;font-weight:900;line-height:1.3;max-width:64%;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.hero-title .y{color:#FFFF00}
+.hero-btm{position:absolute;bottom:0;left:0;right:0;padding:15px 38px;background:linear-gradient(transparent,rgba(0,0,0,.78))}
+.hero-meta{color:rgba(255,255,255,.85);font-size:12px;letter-spacing:.04em}
+.ds{background:#FFFF00;padding:10px 38px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.ds-l{font-size:12.5px;font-weight:700;color:#000}
+.ds-r{font-size:11.5px;color:#333}
+.body{padding:34px 38px 0}
+.lead{font-size:16px;line-height:1.85;color:#222;margin-bottom:22px;padding-bottom:22px;border-bottom:2px solid #f0f0f0}
+.qb{margin:4px 0 28px;padding:21px 24px;background:#000;border-radius:6px}
+.qb p{color:#FFFF00;font-size:18.5px;font-weight:800;line-height:1.48;margin-bottom:6px}
+.qb small{color:rgba(255,255,255,.42);font-size:10.5px;letter-spacing:.08em}
+.sec{margin-bottom:30px}
+h2{font-size:11px;font-weight:700;letter-spacing:.13em;color:#111;margin-bottom:11px;padding-left:11px;border-left:5px solid #FFFF00}
+h3{font-size:19px;font-weight:800;color:#111;margin-bottom:13px;line-height:1.34}
+p{font-size:14.6px;line-height:1.85;color:#333;margin-bottom:14px}
+strong{color:#111;font-weight:700}
+figure{margin:20px 0 22px}
+figure img{width:100%;display:block}
+figcaption{font-size:11.5px;color:#777;line-height:1.6;margin-top:8px;padding-left:10px;border-left:3px solid #FFFF00}
+.ly{border:2px solid #111;margin:22px 0}
+.ly-h{background:#111;color:#fff;padding:11px 18px;font-size:12px;font-weight:700;letter-spacing:.09em}
+.ly-r{display:flex;border-top:1px solid #ddd;align-items:stretch}
+.ly-r:first-of-type{border-top:0}
+.ly-n{flex:none;width:58px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;font-size:21px;font-weight:900;color:#bbb;border-right:1px solid #ddd}
+.ly-r.on .ly-n{background:#FFFF00;color:#000}
+.ly-b{padding:14px 18px;flex:1}
+.ly-t{font-size:15.5px;font-weight:800;color:#111;margin-bottom:4px}
+.ly-d{font-size:13px;color:#555;line-height:1.65;margin-bottom:7px}
+.ly-s{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.05em;padding:3px 9px;border-radius:20px;background:#eee;color:#666}
+.ly-s.hot{background:#111;color:#FFFF00}
+.ly-f{background:#fafafa;border-top:2px solid #111;padding:12px 18px;font-size:12.5px;color:#444;line-height:1.7}
+.df{display:grid;grid-template-columns:1fr 1fr;border:2px solid #111;margin:22px 0}
+.df>div{padding:16px 18px}
+.df>div:first-child{border-right:2px solid #111;background:#fafafa}
+.df .t{font-size:12.5px;font-weight:800;margin-bottom:11px;letter-spacing:.04em}
+.df .t.k{color:#999}
+.df ul{list-style:none}
+.df li{font-size:12.5px;line-height:1.6;color:#555;padding:5px 0 5px 15px;position:relative}
+.df li:before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;background:#ccc;border-radius:50%}
+.df .ok li:before{background:#FFFF00;border:1px solid #111}
+.df .ok li{color:#222}
+.df .vd{margin-top:11px;padding-top:10px;border-top:1px dashed #ccc;font-size:11.5px;font-weight:700;color:#999}
+.df .ok .vd{color:#111}
+.pc{display:grid;grid-template-columns:1fr 1fr;border:2px solid #111;margin:22px 0}
+.pc>div{padding:16px 18px}
+.pc>div:first-child{border-right:2px solid #111}
+.pc .h{font-size:12px;font-weight:800;margin-bottom:8px;letter-spacing:.04em}
+.pc .n{font-size:25px;font-weight:900;letter-spacing:-.02em;line-height:1.15}
+.pc .n small{font-size:12px;font-weight:700}
+.pc .y .n{background:linear-gradient(transparent 62%,#FFFF00 62%);display:inline}
+.pc .d{font-size:12px;color:#666;margin-top:9px;line-height:1.65}
+.cta{margin:30px 0 0;border:3px solid #111;background:#111;color:#fff;padding:24px 26px}
+.cta h4{color:#FFFF00;font-size:18px;font-weight:900;margin-bottom:10px}
+.cta p{color:rgba(255,255,255,.82);font-size:13.5px;line-height:1.78;margin-bottom:13px}
+.cta ul{list-style:none;margin-bottom:17px}
+.cta li{color:rgba(255,255,255,.9);font-size:13px;line-height:1.6;padding:6px 0 6px 18px;position:relative}
+.cta li:before{content:"";position:absolute;left:0;top:13px;width:7px;height:7px;background:#FFFF00}
+.cta a{display:inline-block;background:#FFFF00;color:#000;font-size:13.5px;font-weight:800;padding:12px 24px;text-decoration:none;letter-spacing:.02em}
+.au{margin-top:26px;padding:18px 0 0;border-top:2px solid #f0f0f0}
+.au .n{font-size:14px;font-weight:800;color:#111;margin-bottom:4px}
+.au .r{font-size:12px;color:#777;line-height:1.6}
+.src{margin-top:14px;font-size:10.8px;color:#999;line-height:1.7}
+.tags{display:flex;flex-wrap:wrap;gap:6px;padding:22px 38px 30px}
+.tag{background:#111;color:#FFFF00;font-size:10px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border-radius:30px}
+.ft{background:#000;color:rgba(255,255,255,.45);font-size:11px;padding:18px 38px;line-height:1.7}
+@media(max-width:700px){
+  .hero-title{max-width:100%;font-size:21px} .body{padding:26px 22px 0}
+  .hdr,.ds,.tags,.ft,.langbar{padding-left:22px;padding-right:22px}
+  .df,.pc{grid-template-columns:1fr}
+  .df>div:first-child,.pc>div:first-child{border-right:0;border-bottom:2px solid #111}
+}
+
+.hero-sub{color:rgba(255,255,255,.9);font-size:14px;font-weight:700;margin-top:10px;letter-spacing:.04em}
+.tk{background:#f6f6f6;border-left:6px solid #FFFF00;padding:18px 22px;margin:0 0 24px}
+.tk h4{font-size:12px;letter-spacing:.12em;color:#111;margin-bottom:8px}
+.tk li{font-size:14px;line-height:1.75;color:#222;margin:0 0 6px 18px}
+.st4{display:grid;grid-template-columns:repeat(4,1fr);border:2px solid #111;margin:6px 0 8px}
+.st4>div{padding:14px 12px;border-right:1px solid #ddd}
+.st4>div:last-child{border-right:0}
+.st4 .n{font-size:28px;font-weight:900;line-height:1.05;letter-spacing:-.02em}
+.st4 .n small{font-size:12px;font-weight:800;margin-left:2px}
+.st4 .n span{background:linear-gradient(transparent 60%,#FFFF00 60%)}
+.st4 .d{font-size:11.5px;color:#555;line-height:1.55;margin-top:7px}
+.stn{font-size:10.5px;color:#999;margin-bottom:24px}
+.tl{border:2px solid #111;margin:20px 0 22px}
+.tl-h{background:#111;color:#fff;padding:10px 16px;font-size:12px;font-weight:700;letter-spacing:.08em}
+.tl-r{display:flex;border-top:1px solid #ddd}
+.tl-r:first-of-type{border-top:0}
+.tl-w{flex:none;width:86px;padding:12px 10px;font-size:13px;font-weight:900;background:#f5f5f5;border-right:1px solid #ddd}
+.tl-r.on .tl-w{background:#FFFF00}
+.tl-b{padding:11px 14px}
+.tl-t{font-size:14px;font-weight:800;color:#111}
+.tl-d{font-size:12.5px;color:#555;line-height:1.6;margin-top:2px}
+.bc{border:2px solid #111;padding:16px 18px;margin:20px 0 6px}
+.bc-h{font-size:12.5px;font-weight:800;margin-bottom:12px;letter-spacing:.03em}
+.bc-r{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center;margin:9px 0}
+.bc-l{font-size:12.5px;color:#333;font-weight:700}
+.bc-t{background:#eee;height:30px;position:relative}
+.bc-b{height:100%;background:#bbb;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;
+  font-size:13px;font-weight:900;color:#111;min-width:52px}
+.bc-r.on .bc-b{background:#FFFF00}
+.bc-n{font-size:12px;color:#444;line-height:1.6;margin-top:10px;border-top:1px dashed #ccc;padding-top:9px}
+.fc{font-size:11.5px;color:#777;line-height:1.6;margin:6px 0 20px;padding-left:10px;border-left:3px solid #FFFF00}
+.tr{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0 6px}
+.tr figure{margin:0;border:1px solid #ddd}
+.tr img{width:100%;height:150px;object-fit:cover;display:block;background:#fff}
+.tr img.ct{object-fit:contain;padding:8px}
+.tr .t{font-size:14px;font-weight:900;padding:10px 12px 2px}
+.tr .d{font-size:12px;color:#555;line-height:1.6;padding:0 12px 12px}
+.cs6{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0 6px}
+.cs6 .c{border:2px solid #111;display:flex;flex-direction:column}
+.cs6 .c.big{grid-column:1 / -1}
+.cs6 .c:nth-child(even):last-child{grid-column:1 / -1}
+.cs6 .c:nth-child(even):last-child img{height:220px}
+.cs6 img{width:100%;height:170px;object-fit:cover;display:block}
+.cs6 .c.big img{height:260px}
+.cs6 .tile{height:170px;background:#111;color:#FFFF00;display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:900;letter-spacing:.08em;text-align:center;padding:0 12px}
+.cs6 .b{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.cs6 .g{font-size:10.5px;font-weight:800;letter-spacing:.06em;color:#666;margin-bottom:4px}
+.cs6 .t{font-size:15px;font-weight:900;color:#111;line-height:1.35;margin-bottom:6px}
+.cs6 .d{font-size:12.5px;color:#444;line-height:1.65;margin-bottom:10px;flex:1}
+.cs6 .s{font-size:11px;color:#666;line-height:1.7;border-top:1px dashed #ccc;padding-top:8px}
+.cs6 .s a{color:#111;text-decoration:underline;text-decoration-color:#FFFF00;text-decoration-thickness:2px;margin-right:8px}
+.adv{display:grid;grid-template-columns:1fr 1fr 1fr;border:2px solid #111;margin:20px 0 0}
+.adv>div{padding:14px 14px 16px;border-right:1px solid #ddd;border-bottom:1px solid #ddd}
+.adv>div:nth-child(3n){border-right:0}
+.adv .t{font-size:14px;font-weight:900;margin-bottom:6px}
+.adv .t:before{content:"";display:inline-block;width:9px;height:9px;background:#FFFF00;border:1px solid #111;margin-right:7px}
+.adv .d{font-size:12px;color:#444;line-height:1.65}
+.adv .d a{color:#111;text-decoration:underline;text-decoration-color:#FFFF00;text-decoration-thickness:2px}
+.bn{background:#111;color:#fff;padding:14px 18px;margin:0 0 20px;border:2px solid #111;border-top:0}
+.bn h5{color:#FFFF00;font-size:12px;letter-spacing:.1em;margin-bottom:6px}
+.bn ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;list-style:none}
+.bn li{font-size:12.5px;line-height:1.6;padding-left:14px;position:relative}
+.bn li:before{content:"→";position:absolute;left:0;color:#FFFF00}
+.pd{display:grid;grid-template-columns:42% 1fr;border:2px solid #111;margin:16px 0 6px}
+.pd .im{background:#fff;display:flex;align-items:center;justify-content:center;border-right:2px solid #111;padding:10px}
+.pd .im img{width:100%;display:block}
+.pd .tx{padding:16px 18px}
+.pd .nm{font-size:19px;font-weight:900}
+.pd .tg{font-size:12.5px;color:#555;margin:2px 0 10px}
+.pd li{font-size:12.5px;line-height:1.65;color:#222;margin:0 0 5px 16px}
+.pd .lk{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:800;color:#111;text-decoration:underline;
+  text-decoration-color:#FFFF00;text-decoration-thickness:3px}
+.sv{margin:34px 0 0;border:3px solid #111;padding:26px 26px 22px;scroll-margin-top:20px}
+.sv h2{margin-bottom:8px}
+.sv h3{margin-bottom:8px}
+.sv .intro{font-size:13.5px;color:#555;line-height:1.75;margin-bottom:18px}
+.sv fieldset{border:0;border-top:1px solid #e6e6e6;padding:14px 0 10px}
+.sv legend{font-size:14px;font-weight:800;color:#111;padding:0;margin-bottom:9px}
+.sv .opts{display:flex;flex-wrap:wrap;gap:7px}
+.sv .opts label{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#333;border:1px solid #ccc;
+  border-radius:20px;padding:6px 12px;cursor:pointer;background:#fff}
+.sv .opts input{accent-color:#111}
+.sv .opts label:has(input:checked){background:#111;color:#FFFF00;border-color:#111}
+.sv .ct{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.sv .ct label{font-size:12px;font-weight:700;color:#444;display:flex;flex-direction:column;gap:4px}
+.sv .ct input{font-size:14px;padding:9px 10px;border:1px solid #bbb;border-radius:4px}
+.sv .cs{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:#555;line-height:1.6;margin:14px 0 4px}
+.sv button{margin-top:12px;background:#FFFF00;color:#000;border:2px solid #111;font-size:14px;font-weight:900;
+  padding:12px 26px;cursor:pointer;letter-spacing:.02em}
+.sv button:disabled{opacity:.6;cursor:wait}
+.sv .err{display:none;color:#b00020;font-size:12.5px;font-weight:700;margin-top:10px}
+.rs{display:none;margin-top:6px;background:#111;color:#fff;padding:22px 24px}
+.rs .k{color:rgba(255,255,255,.6);font-size:11px;letter-spacing:.1em}
+.rs .st{color:#FFFF00;font-size:22px;font-weight:900;margin:4px 0 8px}
+.rs .d{color:rgba(255,255,255,.85);font-size:13.5px;line-height:1.75;margin-bottom:10px}
+.rs ol{margin:0 0 10px 18px}
+.rs li{color:#fff;font-size:13px;line-height:1.7;padding:3px 0}
+.rs .ty{color:rgba(255,255,255,.75);font-size:12.5px;border-top:1px solid #333;padding-top:12px}
+.rs .ty a{display:inline-block;margin-top:10px;background:#FFFF00;color:#000;font-weight:900;padding:10px 20px;text-decoration:none}
+.srcs{margin:10px 0 0 18px}
+.srcs li{font-size:11px;color:#888;line-height:1.7}
+.srcs a, .sec p a{color:#111;text-decoration:underline;text-decoration-color:#FFFF00;text-decoration-thickness:2px}
+@media(max-width:700px){
+  .sv{padding:20px 16px} .sv .ct{grid-template-columns:1fr}
+  .st4{grid-template-columns:1fr 1fr} .st4>div:nth-child(2){border-right:0} .st4>div:nth-child(-n+2){border-bottom:1px solid #ddd}
+  .tr,.cs6,.adv,.pd,.bn ul{grid-template-columns:1fr} .adv>div{border-right:0}
+  .pd .im{border-right:0;border-bottom:2px solid #111} .bc-r{grid-template-columns:110px 1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hdr"><img src="images/markforged-logo-white.png" alt="Markforged">
+  <div class="hdr-ev">Markforged<br>Greater China</div></div>
+<div class="langbar"><span>語言</span><a href="non-red-three-checks-2026-10.html" class="on">繁體中文</a><a href="non-red-three-checks-2026-10-en.html">English</a></div>
+<div class="hero"><img src="images/non-red-three-checks-2026-10-hero.jpg" alt="X7 Field Edition 部署於戶外沙丘">
+  <div class="hero-ov"></div>
+  <div class="hero-top"><div class="hero-kicker">INDUSTRY INSIGHT · 產業觀點</div>
+    <div class="hero-title">你的非紅<br>經得起<span class='y'>拆檢</span>嗎？</div><div class="hero-sub">台灣無人機供應鏈的三道驗證</div></div>
+  <div class="hero-btm"><div class="hero-meta">Markforged 產業觀點｜2026 年 10 月 31 日</div></div></div>
+<div class="ds"><div class="ds-l">非紅供應鏈 · 三道驗證</div><div class="ds-r">閱讀 7 分鐘＋自我檢核 2 分鐘</div></div>
+<div class="body">
+<div class="tk"><h4>重點摘要</h4><ul><li>這幾起案件的產地文件都交了，是軍方驗收拆檢才發現晶片來自大陸。紙上審查擋得住疏失，擋不住刻意造假。</li><li>非紅要過三道驗證：紙上、拆開、改版之後。第三道最容易漏，因為無人機每一季都在改。</li><li>改得最勤的結構件、夾治具與備品，留在場內、用來源單純的設備與材料自己做，第三道要重驗的範圍就小得多。</li></ul></div>
+<p class="lead">這兩個月被移送偵辦的軍用無人機，沒有一架是在文件審查被擋下的。契約寫明不得使用大陸地區產製的產品，產地文件也都交了；最後是軍方驗收時拆開機身，看到晶片上印著「CN」，才報請檢方偵辦。紙上那一關，它們早就過了。</p>
+<div class="st4" data-fig="stats"><div><div class="n"><span>442</span><small>億元</small></div><div class="d">行政院無人載具產業統籌型計畫，2025–2030 年投入</div></div><div><div class="n"><span>1.16</span><small>億美元</small></div><div class="d">2026 年第一季無人機整機出口，已超過 2025 年全年</div></div><div><div class="n"><span>3</span><small>起</small></div><div class="d">8–10 月因陸製零件遭檢方偵辦的軍用無人機案件</div></div><div><div class="n"><span>100</span><small>%</small></div><div class="d">副總統對軍方與公部門無人機產製與採購的非紅要求</div></div></div><div class="stn">數字出處見文末資料來源。</div>
+<div class="qb"><p>非紅不是一張證明。<br>是一條拆開來也對得上的供應鏈。</p><small>NON-RED · THREE CHECKS</small></div>
+<div class="sec"><h2>NEWS · 這兩個月發生的事</h2><h3>三家廠商、三個地檢署，同一種發現方式</h3><p>8 月到 10 月，至少三家廠商因為把陸製晶片、飛控板或鏡頭裝進交給國軍的無人機，分別遭橋頭、桃園、台中地檢署偵辦，其中兩家的負責人已遭羈押（<a href="https://udn.com/news/story/7321/9845703" target="_blank" rel="noopener">聯合報，10 月 29 日</a>）。這些都還是偵查中的指控，尚未經法院認定。</p><div class="tl" data-fig="timeline"><div class="tl-h">三起案件的時間軸</div><div class="tl-r"><div class="tl-w">8 月</div><div class="tl-b"><div class="tl-t">橋頭地檢署搜索</div><div class="tl-d">涉以陸製晶片、飛控板組裝無人機，並提出不實產地證明交付陸軍</div></div></div><div class="tl-r"><div class="tl-w">10 月</div><div class="tl-b"><div class="tl-t">桃園地檢署偵辦</div><div class="tl-d">涉將陸製晶片與鏡頭裝入交付軍方的無人機，負責人遭羈押</div></div></div><div class="tl-r on"><div class="tl-w">10 月中</div><div class="tl-b"><div class="tl-t">台中地檢署搜索</div><div class="tl-d">起因是軍方驗收拆檢，發現晶片印有「CN」</div></div></div><div class="tl-r"><div class="tl-w">10 月底</div><div class="tl-b"><div class="tl-t">台中案負責人遭羈押</div><div class="tl-d">檢方以國家安全法與詐欺罪偵辦</div></div></div></div><div class="fc">依聯合報 2026 年 10 月 29 日報導整理。均為偵查中指控，尚未經法院認定。</div><p>政策並沒有因此鬆動。副總統今年 1 月在嘉義表示，政府的無人機產製與採購，無論軍方或公部門，都必須達到百分之百非紅供應鏈（<a href="https://wantrich.chinatimes.com/news/20260128900702-420501" target="_blank" rel="noopener">中時新聞網</a>）。預算、訂單與政策同時往前推，查核只會越來越嚴。</p><p>這幾起案件真正值得產業注意的，不是有誰違規，而是問題在哪一個環節才被發現。</p></div><div class="sec"><h2>HISTORY · 事後拆，比事前驗貴</h2><h3>美國拆除華為設備，實際花費是原預算的 2.6 倍</h3><p>美國 2019 會計年度國防授權法第 889 條點名華為與中興。2020 年再立法，由政府出資補助電信業者，把已經裝在網路上的這兩家設備拆除換新，計畫通稱 rip and replace。</p><div class="bc" data-fig="bars_rip"><div class="bc-h">rip and replace 經費（億美元）</div><div class="bc-r"><div class="bc-l">國會撥款</div><div class="bc-t"><div class="bc-b" style="width:38.2%">19</div></div></div><div class="bc-r on"><div class="bc-l">FCC 審定實際需求</div><div class="bc-t"><div class="bc-b" style="width:100.0%">49.8</div></div></div><div class="bc-n">缺口 30.8 億美元；符合資格的小型業者，先只拿到核定成本的 39.5%。</div></div><div class="fc">資料來源：美國國會研究處 IN11663。</div><p>這筆帳的重點在順序，不在金額。設備裝上去之前確認來源，花的是採購流程的時間；裝上去、跑起來之後才發現，花的是拆除、重新設計、停機，以及整套系統重新驗證。</p><p>台灣的無人機產業，現在還在設備裝上去之前的階段。現在把驗證做對，成本最低。</p></div><div class="sec"><h2>FRAMEWORK · 三道驗證</h2><h3>非紅要過三道關，第三道最容易漏</h3><p>把這幾起案件攤開來看，非紅其實是三道驗證，一道比一道難。</p><div class="ly" data-fig="gates"><div class="ly-h">非紅的三道驗證</div><div class="ly-r"><div class="ly-n">1</div><div class="ly-b"><div class="ly-t">紙上</div><div class="ly-d">產地證明、契約條款、供應商聲明</div><span class="ly-s">這次的案件都過了</span></div></div><div class="ly-r"><div class="ly-n">2</div><div class="ly-b"><div class="ly-t">拆開</div><div class="ly-d">驗收拆檢，料號對到實物</div><span class="ly-s">這次在這一道被發現</span></div></div><div class="ly-r on"><div class="ly-n">3</div><div class="ly-b"><div class="ly-t">改版之後</div><div class="ly-d">設計改了、料源換了、零件停產了，要重新證明一次</div><span class="ly-s hot">交期壓力最大，也最少人在管</span></div></div><div class="ly-f">看到任何一則非紅爭議，都可以先問：它是在第幾道失守的。</div></div><p><strong>第一道是文件。</strong>產地證明、契約條款、供應商聲明。它擋得住疏失，擋不住刻意的假。這次的案件，文件都交了。</p><p><strong>第二道是實物。</strong>拆開來，晶片上的字不會說謊。但拆檢是抽樣，而且只驗交貨當下的那一批。</p><p><strong>第三道是時間。</strong>無人機不是定型產品，是每一季都在改的平台。機臂加長、換一顆馬達、某個料號停產，每一次變更都會帶進新的零件與新的供應商，前兩道就得重來一次。交期壓力最大、最容易找捷徑的，也正是這一刻。</p></div><div class="sec"><h2>MARKET · 國內與海外</h2><h3>國內已是門檻，海外還是加分，兩邊在第三道會合</h3><p>國軍契約已經把非紅寫成門檻，違反要負刑責，第一道與第二道只會越收越緊。</p><p>出口端的情況不同。捷克今年第一季成為台灣無人機最大出口市場，但捷克投資局的說法是，歐洲採購目前把非紅當成偏好，還不是硬性規定；在烏克蘭前線，買家看的仍是數量、價格與交期（<a href="https://technews.tw/2026/10/24/non-red-supply-chain-bonus-czech-taiwan-largest-drone-market-defense-startups-two-hurdles/" target="_blank" rel="noopener">科技新報</a>）。同一篇報導裡，烏克蘭國民警衛隊的聯絡官舉了一個例子：</p><div class="bc" data-fig="bars_speed"><div class="bc-h">同一項修改，從測試報告到改好要多久</div><div class="bc-r"><div class="bc-l">一家歐洲新創</div><div class="bc-t"><div class="bc-b" style="width:100.0%">6–8 個月</div></div></div><div class="bc-r on"><div class="bc-l">烏克蘭廠商</div><div class="bc-t"><div class="bc-b" style="width:10.0%">3 週</div></div></div></div><div class="fc">科技新報引述烏克蘭國民警衛隊聯絡官的單一舉例；6–8 個月以約 30 週示意。</div><p>兩種買家最後會在第三道會合。國軍要的是一年後、改了三版之後依然非紅；海外整機廠要的是改版速度跟得上戰場。改版之後還拿得出證明，又不必為了換料源重跑一輪供應商審核，才同時過得了兩邊。</p></div><div class="sec"><h2>CASE · 一個停產零件</h2><h3>重新找供應商，還是在場內做</h3><p>美國陸軍一處訓練基地的車輛上，有一個艙口塞停產了。重新製作一個約 1 萬美元，交期三個月——也就是重新找一家供應商、重新驗一次來源、重新排一次產能。</p><p>基地改用 Markforged 印表機，以 Onyx 複合材料在基地內列印，成本約 230 美元，原本十個零件的設計也簡化成四個；光這一項應用就省下 24.4 萬美元（<a href="https://markforged.com/resources/case-studies/united-states-army" target="_blank" rel="noopener">Markforged 官方案例</a>）。</p><figure data-fig="swap"><div class="df"><div><div class="t k">找一家新的外部供應商</div><ul><li>重新詢價、等排程</li><li>多一份產地文件要驗</li><li>下次改版再來一次</li></ul><div class="vd">約 US$10,000 · 3 個月</div></div><div class="ok"><div class="t">在場內用已驗過的平台做</div><ul><li>設備與材料來源已確認</li><li>只多一份材料批號紀錄</li><li>改版後照自己的排程出件</li></ul><div class="vd">約 US$230 · 十件簡化成四件</div></div></div><figcaption>同一個停產零件的兩條路。金額、交期與件數取自 Markforged 美國陸軍官方案例。</figcaption></figure><p>從非紅的角度看，省錢是次要的。原本要多出一家外部供應商、多一份要驗的產地文件；現在是場內一台已經驗過的設備，加上一份材料批號紀錄。第三道要重驗的對象，從一家陌生的新供應商，縮成一個早就驗過的平台。</p></div><div class="sec"><h2>CASES · 各國軍方與無人機案例</h2><h3>同一個邏輯，已經在各國軍方與台灣發生</h3><p>以下案例依國家與軍種整理，每一則都附原始出處：軍方或媒體的原文、Markforged 官方案例，以及 Markforged 媒體中心的完整報導。</p><div class="cs6" data-fig="cases"><div class="c big" data-case><img src="images/aster-swarm-hero.jpg" alt="ASTER-SWARM：FPV 無人機機體在台灣列印"><div class="b"><div class="g">台灣 · 無人機產業</div><div class="t">ASTER-SWARM：FPV 無人機機體在台灣列印</div><div class="d">艾斯特物聯科技以 X7 Field Edition 列印 ASTER-SWARM 全部機體結構件，受力路徑嵌入連續碳纖維；通過蒲福風級九級抗風測試，改版、維修到量產都在台灣完成。</div><div class="s">原始出處：<a href="https://news.markforged.tw/aster-swarm-fpv-airframe-x7-field-edition.html" target="_blank" rel="noopener">Markforged 媒體中心案例</a></div></div></div><div class="c" data-case><img src="images/cjlots26-hero.jpg" alt="演習現場缺一個濾網"><div class="b"><div class="g">美國陸戰隊 · 韓國</div><div class="t">演習現場缺一個濾網</div><div class="d">美韓聯合演習 CJLOTS 26 期間，陸戰隊在遠征製造方艙 X-FAB 內逆向工程並列印艇用濾網，不到半天完成，把兩到三週的補給縮成幾個小時。X-FAB 系統配備 Markforged Mark Two 印表機。</div><div class="s">原始出處：<a href="https://www.dvidshub.net/news/570729/advanced-manufacturing-supports-joint-and-bilateral-readiness-cjlots-26-south-korea" target="_blank" rel="noopener">DVIDS（美國國防部）</a><a href="https://3dprintingindustry.com/news/marine-corps-x-fab-saves-coast-guard-patrol-boats-253447/" target="_blank" rel="noopener">3D Printing Industry</a><a href="https://news.markforged.tw/usmc-cjlots26-expeditionary-am.html" target="_blank" rel="noopener">媒體中心案例</a></div></div></div><div class="c" data-case><img src="images/british-army-pc22-hero.jpg" alt="美軍傳檔，英軍現場列印"><div class="b"><div class="g">英國陸軍 · 美國</div><div class="t">美軍傳檔，英軍現場列印</div><div class="d">Project Convergence 22 期間，英國陸軍皇家電子機械工兵（REME）接收美軍傳來、自家供應鏈拿不到的備件檔案，在現場以移動式列印機印出，交給美軍使用。</div><div class="s">原始出處：<a href="https://www.youtube.com/watch?v=cILzyK0uai4" target="_blank" rel="noopener">Mark3D 影片：British Army is utilizing Markforged</a><a href="https://news.markforged.tw/british-army-project-convergence-22.html" target="_blank" rel="noopener">媒體中心案例</a></div></div></div><div class="c" data-case><img src="images/non-red-three-checks-2026-10-usaf.jpg" alt="夜視鏡支架：從數週等貨到幾小時"><div class="b"><div class="g">美國空軍 · Cannon 空軍基地</div><div class="t">夜視鏡支架：從數週等貨到幾小時</div><div class="d">一個商用夜視鏡支架要價 100 美元以上、等貨數週。基地以 Markforged X7 列印替換件，每件不到 5 美元、幾小時完成，使用者評估強度與商用鋁件相當。</div><div class="s">原始出處：<a href="https://markforged.com/resources/case-studies/u-s-air-force-cannon-air-force-base" target="_blank" rel="noopener">Markforged 官方案例</a></div></div></div><div class="c" data-case><img src="images/non-red-three-checks-2026-10-usarmy.jpg" alt="停產艙口塞：省下 24.4 萬美元"><div class="b"><div class="g">美國陸軍 · 訓練基地</div><div class="t">停產艙口塞：省下 24.4 萬美元</div><div class="d">車輛艙口塞停產，重新製作約 1 萬美元、交期三個月；改以 Onyx 在基地內列印約 230 美元，設計從十個零件簡化成四個。</div><div class="s">原始出處：<a href="https://markforged.com/resources/case-studies/united-states-army" target="_blank" rel="noopener">Markforged 官方案例</a></div></div></div><div class="c" data-case><img src="images/eiger-inspection.jpg" alt="750 萬美元分散式製造實證"><div class="b"><div class="g">美國陸軍 · 分散式製造</div><div class="t">750 萬美元分散式製造實證</div><div class="d">美國陸軍 IBAS 計畫第一階段，由 Automation Alley 主導、NCDMM 為主承包商，Markforged 與 Fraunhofer USA 為合作夥伴，驗證受智慧財產保護的製造指令，能安全串流到分散各地的列印設備。</div><div class="s">原始出處：<a href="https://www.prnewswire.com/news-releases/automation-alley-awarded-contract-to-advance-secure-distributed-additive-manufacturing-forthe-us-departmentof-war-302909514.html" target="_blank" rel="noopener">PR Newswire 新聞稿</a><a href="https://news.markforged.tw/secure-distributed-am-ibas.html" target="_blank" rel="noopener">媒體中心案例</a></div></div></div></div></div><div class="sec"><h2>WHERE · 從哪裡開始</h2><h3>改得最勤的三類零件</h3><p>無人機整機廠與一階供應商，改版最頻繁、最常臨時外包的，集中在三類零件。它們的共同點是量小、改得勤、交期急，也是來源最容易說不清楚的地方。</p><div class="tr" data-fig="trio"><figure><img src="images/non-red-three-checks-2026-10-drone.jpg" alt="結構件"><div class="t">結構件</div><div class="d">機臂、機身、支架。每次改版都跟著調整，最常臨時外包。</div></figure><figure><img src="images/non-red-three-checks-2026-10-fixture.jpg" alt="夾治具"><div class="t">夾治具</div><div class="d">產線換型就要跟著換，長年和工件搶同一條 CNC 排程。</div></figure><figure><img class="ct" src="images/non-red-three-checks-2026-10-cfpart.jpg" alt="備品"><div class="t">備品</div><div class="d">量小、急用。連續碳纖維強化件可取代部分金屬支架。</div></figure></div><div class="fc">圖片：Markforged</div><p>把這三類留在場內，用來源單純的設備與材料自己做，第三道驗證要重驗的範圍就小得多；改版週期縮短，交期壓力下找捷徑的誘因也跟著消失。</p></div><div class="sec"><h2>WHY MARKFORGED · 優勢、資安與好處</h2><h3>非紅、資安、可部署：把改版留在自己的場域</h3><p>面對國防與高資安場域，Markforged 的重點不在機台規格，而在讓客戶在自己的場域、用自己的權限，把改版後的零件做出來，而且每一個環節都說得清楚來源。</p><div class="adv" data-fig="adv"><div><div class="t">100% 非紅</div><div class="d">Markforged 是美國公司，設備、軟體與材料 100% 非紅。</div></div><div><div class="t">國際資安認證</div><div class="d">ISO/IEC 27001:2022 認證（有效至 2028 年 12 月）與 CSA STAR Level 1；官方表示為 FDM/FFF 積層製造業第一家取得 ISO 27001 的公司。（<a href="https://web-objects.markforged.com/craft/common/Certificate-Markforged-2025-ISO-27001.pdf" target="_blank" rel="noopener">ISO 27001 證書</a>）</div></div><div><div class="t">資料保護</div><div class="d">資料在傳輸與儲存時皆加密；委由第三方做滲透測試與安全設計審查；支援雙因素驗證、單一登入與組織管理權限。（<a href="https://markforged.com/security" target="_blank" rel="noopener">原廠資安說明</a>）</div></div><div><div class="t">保密場域可用</div><div class="d">X7 Field Edition 作業系統符合美國國防部 STIG；另有無 Wi-Fi 版本，設計檔與製程留在自己的場域。（<a href="https://markforged.com/3d-printers/x7-field-edition" target="_blank" rel="noopener">X7 Field Edition</a>）</div></div><div><div class="t">前線可部署</div><div class="d">強固運輸箱、兩人搬運、150 W 可接發電機；已納入美軍執行的 MIL-STD-810 測試。（<a href="https://markforged.com/3d-printers/x7-field-edition" target="_blank" rel="noopener">X7 Field Edition</a>）</div></div><div><div class="t">強度取代部分金屬</div><div class="d">連續碳纖維強化，拉伸強度 800 MPa，可取代部分機械加工鋁件與支架。</div></div></div><div class="bn"><h5>帶來的好處</h5><ul><li>少一家外部供應商要驗，第三道驗證的範圍變小</li><li>改版照自己的排程出件，不必等外包排程</li><li>停產零件可以在場內重做，不必重新找料源</li><li>設計檔不離開自己的場域</li></ul></div><p>其中最常被要求到現場的，是 X7 Field Edition：</p><div class="pd" data-fig="product"><div class="im"><img src="images/non-red-three-checks-2026-10-x7fe-case.jpg" alt="X7 Field Edition"></div><div class="tx"><div class="nm">X7 Field Edition</div><div class="tg">可部署到需求現場的連續纖維複合材料印表機</div><ul><li>整機收納於 Pelican 強固運輸箱，兩人即可搬運</li><li>功耗 150 W，可由發電機供電</li><li>納入美軍執行的 MIL-STD-810 測試（美國國防部列裝計畫）</li><li>作業系統符合 STIG；另有無 Wi-Fi 版本供保密場域使用</li><li>連續碳纖維強化，拉伸強度 800 MPa</li></ul><a class="lk" href="https://markforged.com/3d-printers/x7-field-edition" target="_blank" rel="noopener">X7 Field Edition 產品頁 →</a></div></div><div class="fc">X7 Field Edition 運輸箱結構示意（Markforged 原廠圖）。規格依原廠資料。</div><p>已經有工廠的整機廠與一階供應商，同一套連續纖維技術也有產線型號（X7、FX10、FX20），通常從夾治具開始導入，再延伸到結構件與備品。</p></div><div class="sec"><h2>CONCLUSION · 現在就能做的一件事</h2><h3>從最近一次改版開始</h3><p>挑一架現役機型，把最近一次改版新增或替換的料號列出來，逐一確認兩件事：這一顆的產地證明，拆開來對不對得上；下個月它如果停產，替代料要從哪裡來。</p><p><strong>改版之後拿不出新的證明，就只過了第一道。</strong></p></div>
+<div class="cta"><h4>先做一份兩分鐘的自我檢核</h4><p>下面十題，交卷後會直接告訴您目前停在第幾道驗證，以及對應的建議。需要的話，Markforged 團隊可以到廠協助盤點：結構件、夾治具與備品，哪些適合留在場內做。</p>
+  <ul><li>結構件與夾治具的改版頻率與外包占比</li><li>替代料與停產零件的來源盤點</li><li>國防與高資安場域的離線部署配置</li></ul>
+  <a href="#survey">開始自我檢核 →</a></div>
+
+<div class="sv" id="survey" data-mode="lite">
+<h2>SELF-CHECK · 自我檢核</h2><h3>無人機非紅供應鏈自我檢核</h3><p class="intro">十題，約兩分鐘。交卷後立即顯示您停在第幾道驗證，以及三條對應的建議。</p>
+<form id="svf" novalidate>
+<fieldset data-q="role"><legend>1. 您的角色</legend><div class="opts"><label><input type="radio" name="role" value="0" data-t="整機廠">整機廠</label><label><input type="radio" name="role" value="1" data-t="一階供應商">一階供應商</label><label><input type="radio" name="role" value="2" data-t="零組件廠">零組件廠</label><label><input type="radio" name="role" value="3" data-t="研究或學術單位">研究或學術單位</label><label><input type="radio" name="role" value="4" data-t="其他">其他</label></div></fieldset><fieldset data-q="buyer"><legend>2. 主要客戶（可複選）</legend><div class="opts"><label><input type="checkbox" name="buyer" value="0" data-t="國軍">國軍</label><label><input type="checkbox" name="buyer" value="1" data-t="政府民用">政府民用</label><label><input type="checkbox" name="buyer" value="2" data-t="出口：美國">出口：美國</label><label><input type="checkbox" name="buyer" value="3" data-t="出口：歐洲">出口：歐洲</label><label><input type="checkbox" name="buyer" value="4" data-t="商用">商用</label></div></fieldset><fieldset data-q="struct"><legend>3. 結構件（機臂、機身、支架）目前怎麼做</legend><div class="opts"><label><input type="radio" name="struct" value="0" data-t="外包 CNC">外包 CNC</label><label><input type="radio" name="struct" value="1" data-t="射出成型">射出成型</label><label><input type="radio" name="struct" value="2" data-t="自有 3D 列印">自有 3D 列印</label><label><input type="radio" name="struct" value="3" data-t="進口">進口</label></div></fieldset><fieldset data-q="fixture"><legend>4. 夾治具、防呆板誰做</legend><div class="opts"><label><input type="radio" name="fixture" value="0" data-t="外包">外包</label><label><input type="radio" name="fixture" value="1" data-t="自家 CNC">自家 CNC</label><label><input type="radio" name="fixture" value="2" data-t="自有 3D 列印">自有 3D 列印</label></div></fieldset><fieldset data-q="freq"><legend>5. 結構件多久改一次版</legend><div class="opts"><label><input type="radio" name="freq" value="0" data-t="每個月">每個月</label><label><input type="radio" name="freq" value="1" data-t="每一季">每一季</label><label><input type="radio" name="freq" value="2" data-t="半年以上">半年以上</label></div></fieldset><fieldset data-q="wait"><legend>6. 改一次結構件，要等多久才拿到新件</legend><div class="opts"><label><input type="radio" name="wait" value="0" data-t="3 天內">3 天內</label><label><input type="radio" name="wait" value="1" data-t="1–2 週">1–2 週</label><label><input type="radio" name="wait" value="2" data-t="2 週以上">2 週以上</label></div></fieldset><fieldset data-q="trace"><legend>7. 零件產地追溯做到哪一層</legend><div class="opts"><label><input type="radio" name="trace" value="0" data-t="每個料號都有">每個料號都有</label><label><input type="radio" name="trace" value="1" data-t="只有主要零組件">只有主要零組件</label><label><input type="radio" name="trace" value="2" data-t="還沒有">還沒有</label></div></fieldset><fieldset data-q="data"><legend>8. 設計與製造檔案存在哪裡</legend><div class="opts"><label><input type="radio" name="data" value="0" data-t="自家地端">自家地端</label><label><input type="radio" name="data" value="1" data-t="雲端平台">雲端平台</label><label><input type="radio" name="data" value="2" data-t="不確定">不確定</label></div></fieldset><fieldset data-q="plan"><legend>9. 未來 12 個月的計畫（可複選）</legend><div class="opts"><label><input type="checkbox" name="plan" value="0" data-t="擴產">擴產</label><label><input type="checkbox" name="plan" value="1" data-t="送驗或爭取非紅認證">送驗或爭取非紅認證</label><label><input type="checkbox" name="plan" value="2" data-t="把結構件或治具改成自製">把結構件或治具改成自製</label><label><input type="checkbox" name="plan" value="3" data-t="評估中">評估中</label></div></fieldset><fieldset data-q="want"><legend>10. 希望我們提供（可複選）</legend><div class="opts"><label><input type="checkbox" name="want" value="0" data-t="非紅產製方案說明">非紅產製方案說明</label><label><input type="checkbox" name="want" value="1" data-t="到廠評估">到廠評估</label><label><input type="checkbox" name="want" value="2" data-t="樣件試印">樣件試印</label><label><input type="checkbox" name="want" value="3" data-t="設備體驗">設備體驗</label></div></fieldset>
+
+<button type="submit" id="svb">交卷，看我的結果</button>
+<div class="err" id="sve"></div>
+</form>
+<div class="rs" id="svr"><div class="k">您目前停在：</div><div class="st" id="svs"></div>
+<div class="d" id="svd"></div><ol id="svt"></ol><div class="ty" id="svy"></div></div>
+</div>
+<div class="au"><div class="n">Markforged</div><div class="r">工業級連續纖維複合材料與金屬 3D 列印</div>
+  <div class="src"><strong>資料來源</strong><ol class="srcs"><li><a href="https://udn.com/news/story/7321/9845703" target="_blank" rel="noopener">聯合報（2026-10-29）：非紅供應鏈再破功！涉用陸製晶片供軍方</a></li><li><a href="https://wantrich.chinatimes.com/news/20260128900702-420501" target="_blank" rel="noopener">中時新聞網（2026-01-28）：副總統參訪嘉義亞洲無人機 AI 創新應用研發中心</a></li><li><a href="https://www.ctee.com.tw/news/20260215700023-439901" target="_blank" rel="noopener">工商時報（2026-02-15）：442 億砸下去！台灣無人機起飛？「非紅供應鏈」成最大關鍵字</a></li><li><a href="https://technews.tw/2026/10/24/non-red-supply-chain-bonus-czech-taiwan-largest-drone-market-defense-startups-two-hurdles/" target="_blank" rel="noopener">科技新報（2026-10-24）：「非紅」標籤只是加分，台灣無人機突圍須先擠進大廠供應鏈</a></li><li><a href="https://www.everycrsreport.com/reports/IN11663.html" target="_blank" rel="noopener">Congressional Research Service IN11663：FCC Secure and Trusted Communications Networks Reimbursement Program</a></li><li><a href="https://markforged.com/resources/case-studies/united-states-army" target="_blank" rel="noopener">Markforged 官方案例：United States Army</a></li><li><a href="https://markforged.com/3d-printers/x7-field-edition" target="_blank" rel="noopener">Markforged 官方產品頁：X7 Field Edition</a></li><li><a href="https://markforged.com/security" target="_blank" rel="noopener">Markforged 官方資安說明（Security）</a></li><li><a href="https://web-objects.markforged.com/craft/common/Certificate-Markforged-2025-ISO-27001.pdf" target="_blank" rel="noopener">Markforged ISO/IEC 27001:2022 證書</a></li></ol>偵查中案件均為報導所載指控，尚未經法院認定。本文不含任何客戶名稱、金額或未公開的專案資訊。</div></div>
+</div>
+<div class="tags"><span class="tag">非紅供應鏈</span><span class="tag">無人機</span><span class="tag">國防自主</span><span class="tag">供應鏈安全</span><span class="tag">積層製造</span><span class="tag">X7 Field Edition</span></div>
+<div class="ft">© 2026 Markforged, Inc. 文中涉及之偵查案件均為報導所載指控，尚未經法院認定。</div>
+</div>
+<script>
+(function(){
+var C={"mode": "lite", "stages": {"1": "第一道（紙上）", "2": "第二道（拆開）", "3": "第三道（改版之後）", "ok": "三道都有守住"}, "desc": {"1": "零件產地還沒有追溯紀錄。一旦驗收拆檢，很難證明手上的料是什麼來源。", "2": "主要零組件有文件，但次要料號沒有。拆檢抽到的往往正是這些沒人追的小料。", "3": "追溯做得完整，但改版頻繁、結構件或治具仰賴外部，每一次改版都會帶進要重驗的新料源。", "ok": "追溯完整，改版也多在場內完成。下一步是把這套做法寫成文件，讓客戶驗得到。"}, "tips": {"trace": "先從最近一次改版新增的料號開始，補齊每一顆的產地證明。", "outsrc": "把改得最頻繁的結構件與夾治具列出來，評估哪些可以留在場內自己做。", "wait": "改一次要等兩週以上，交期壓力會逼出捷徑；縮短改版週期本身就是非紅的保險。", "data": "設計與製造檔案的存放位置也屬於供應鏈的一部分，建議確認是否需要離線部署。", "doc": "把追溯與場內製造的做法整理成可交給客戶的文件，讓第二、三道驗證有據可查。"}, "thanks": "我們已收到您的資料，會在 3 個工作天內與您聯繫。", "err_req": "請完成第 1–8 題。", "err_net": "結果已顯示；資料傳送可能沒有成功，請稍後再送一次。", "sending": "送出中…", "lang": "zh-TW", "action": "", "entries": {}, "consent_yes": "同意", "lite_next": "想進一步討論到廠盤點、樣件試印或設備體驗：", "lite_btn": "預約 Markforged 團隊", "lite_href": "index.html?utm_source=mfmk-article&utm_medium=article&utm_campaign=non-red-three-checks"};
+var f=document.getElementById('svf'),b=document.getElementById('svb'),er=document.getElementById('sve');
+function one(n){var x=f.querySelector('input[name="'+n+'"]:checked');return x?{i:+x.value,t:x.dataset.t}:null;}
+function many(n){return [].map.call(f.querySelectorAll('input[name="'+n+'"]:checked'),function(x){return x.dataset.t;}).join('; ');}
+function val(n){return f.elements[n]?(f.elements[n].value||'').trim():'';}
+f.addEventListener('submit',function(ev){
+  ev.preventDefault(); er.style.display='none';
+  var need=['role','struct','fixture','freq','wait','trace','data'],miss=need.some(function(n){return !one(n);})||!many('buyer');
+  if(C.mode==='full'){var email=val('email');
+    miss=miss||!val('name')||!val('company')||!val('title')||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)||!f.elements.consent.checked;}
+  if(miss){er.textContent=C.err_req; er.style.display='block'; return;}
+  var tr=one('trace').i, st=one('struct').i, fx=one('fixture').i, fq=one('freq').i, wt=one('wait').i, dt=one('data').i;
+  var outsrc=(st===0||st===1||st===3||fx===0), stage;
+  if(tr===2) stage='1'; else if(tr===1) stage='2';
+  else if(fq<=1&&(outsrc||wt>=1)) stage='3'; else stage='ok';
+  var tips=[]; if(tr!==0) tips.push('trace'); if(outsrc) tips.push('outsrc'); if(wt===2) tips.push('wait');
+  if(dt!==0) tips.push('data'); tips.push('doc'); ['outsrc','wait','data'].forEach(function(t){if(tips.indexOf(t)<0)tips.push(t);});
+  tips=tips.slice(0,3);
+  try{fetch('https://hits.sh/news.markforged.tw/non-red-three-checks-2026-10-survey-'+C.mode+'.svg?_='+Date.now(),{mode:'no-cors',cache:'no-store'}).catch(function(){});}catch(e){}
+  function show(msgHtml){
+    document.getElementById('svs').textContent=C.stages[stage];
+    document.getElementById('svd').textContent=C.desc[stage];
+    document.getElementById('svt').innerHTML=tips.map(function(t){return '<li>'+C.tips[t]+'</li>';}).join('');
+    document.getElementById('svy').innerHTML=msgHtml;
+    f.style.display='none'; var r=document.getElementById('svr'); r.style.display='block';
+    r.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  if(C.mode!=='full'){show(C.lite_next+'<br><a id="svl" href="'+C.lite_href+'&stage='+stage+'#register" target="_blank" rel="noopener">'+C.lite_btn+' →</a>');return;}
+  var ans={lang:C.lang,role:one('role').t,buyer:many('buyer'),struct:one('struct').t,fixture:one('fixture').t,
+    freq:one('freq').t,wait:one('wait').t,trace:one('trace').t,data:one('data').t,plan:many('plan'),want:many('want'),
+    result:C.stages[stage],name:val('name'),company:val('company'),title:val('title'),email:val('email'),phone:val('phone'),
+    consent:C.consent_yes,page:location.href.split('#')[0]};
+  b.disabled=true; b.textContent=C.sending;
+  var body=new URLSearchParams();
+  Object.keys(C.entries).forEach(function(k){body.append(C.entries[k],ans[k]||'');});
+  fetch(C.action,{method:'POST',mode:'no-cors',body:body}).then(function(){show(C.thanks);}).catch(function(){show(C.err_net);});
+});
+})();
+</script>
+</body></html>
