@@ -141,10 +141,11 @@ EN = {
     # ── 2026-10-31 優化新增
     "50 – 250 µm（複合材料）": "50–250 µm (composites)",
     "產業觀點 · 國防與無人機": "Industry insight · Defence and drones",
-    "你的非紅，經得起拆檢嗎？": "Would your non-red supply chain survive a teardown?",
-    "今年 8 到 10 月，至少三家廠商因無人機使用陸製零件遭檢方偵辦。非紅要過三道驗證：紙上、拆開、改版之後。文章整理了各國軍方案例，並附兩分鐘自我檢核。":
-        "Between August and October, at least three companies in Taiwan came under investigation for mainland parts in military drones. Non-red has to pass three checks: on paper, in the teardown, and after the revision. The article covers armed-forces cases by country, with a two-minute self-check.",
-    "閱讀文章並做自我檢核 →": "Read the article and take the self-check →",
+    # 2026-10-31 v3（Bella）：非紅觀點文改成生產韌性主軸，導流區跟著換
+    "機身、治具與備品，你能自己做嗎？": "Airframes, fixtures, spares: can you make them yourself?",
+    "三起軍用無人機陸製零件案之後，合格料源只會更少。晶片要靠合格供應商把關；機身結構件、夾治具與停產備品，可以用工業級 3D 列印收回廠內。文章整理各國軍方與台灣 ASTER-SWARM 的做法，並附到廠盤點自我檢核。":
+        "After three cases of mainland-made parts in Taiwan’s military drones, fewer sources will qualify. Chips depend on qualified suppliers; airframe structures, fixtures and end-of-life spares can be brought in-house with industrial 3D printing. The article covers what armed forces and Taiwan’s ASTER-SWARM already do, with a self-check before a site review.",
+    "閱讀文章並預約到廠盤點 →": "Read the article and request a site review →",
     'href="non-red-three-checks-2026-10.html"': 'href="non-red-three-checks-2026-10-en.html"',
     # ── 2026-10-31 VIP 頁內申請表
     "台灣北部 台北": "Northern Taiwan · Taipei",
