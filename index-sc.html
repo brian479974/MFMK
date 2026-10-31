@@ -1,1195 +1,173 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI实体化制造新纪元 | Markforged FX10 大中华区 VIP 体验日</title>
-
-  <!-- ── SEO Meta Tags ── -->
-  <meta name="description" content="Markforged FX10 大中华区 VIP 专属体验日。全球首台工业级金属复合材料 3D 打印机，一对一客制化展示，预约制。立即申请，感受 AI 实体化制造新纪元。" />
-  <meta name="keywords" content="Markforged,Markforged 大中华区,Markforged China,Markforged Hong Kong,Markforged Vietnam,Markforged Taiwan,Markforged 台灣,Markforged FX10,Markforged FX20,Markforged X7,Markforged X7 Field Edition,FX10,FX10 Metal Kit,FX20,X7,X7 Field Edition,Eiger,金屬3D列印,金属打印,工業3D列印,複合材料3D列印,碳纖維列印,連續碳纖維列印,3D列印台灣,metal 3D printing Taiwan,積層製造,additive manufacturing,Onyx,Carbon Fiber,Fiberglass,Kevlar,17-4 PH Stainless Steel,H13 Tool Steel,Inconel 625,工業列印機,數位製造,智慧製造,製造業數位轉型,AI製造,AI实体化製造,快速成型,快速原型,小批量生產,按需生產,治具製作,夾具製作,模具替代,工裝治具,零件製造,金屬零件,功能性零件,汽車零件,航太零件,國防製造,醫療器材,精密機械,半導體設備,縮短交期,降低模具成本,RAIC,實威國際,SWTC,馬路科技,工業4.0,Industry 4.0,智慧工廠" />
-  <meta name="author" content="Markforged" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://mfmk.markforged.tw/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mfmk.markforged.tw/" />
-  <meta property="og:title" content="AI实体化制造新纪元 | Markforged FX10 大中华区 VIP 体验日" />
-  <meta property="og:description" content="全球首台工业级金属复合材料 3D 打印机 FX10，大中华区一对一 VIP 体验日。预约制，由 Markforged 原厂工程师亲自展示。" />
-  <meta property="og:image" content="https://mfmk.markforged.tw/images/fx10.jpg" />
-  <meta property="og:locale" content="zh_CN" />
-  <meta property="og:site_name" content="Markforged" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AI实体化制造新纪元 | Markforged FX10 大中华区 VIP 体验日" />
-  <meta name="twitter:description" content="全球首台工业级金属复合材料 3D 打印机，大中华区 VIP 专属体验日。预约制，一对一展示。" />
-  <meta name="twitter:image" content="https://mfmk.markforged.tw/images/fx10.jpg" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"AI实体化制造新纪元 | Markforged FX10 大中华区 VIP 体验日","description":"全球首台工业级金属复合材料 3D 打印机 FX10，大中华区一对一 VIP 体验日。预约制，由 Markforged 原厂工程师亲自展示。","url":"https://mfmk.markforged.tw/","publisher":{"@type":"Organization","name":"Markforged","url":"https://markforged.com"}}</script>
-
-  <style>
-    :root {
-      --yellow: #FFFF00;
-      --black: #000;
-      --white: #fff;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background: var(--black);
-      color: var(--white);
-    }
-
-    /* ── ANIMATIONS ── */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideInLeft {
-      from {
-        opacity: 0;
-        transform: translateX(-40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    .reveal {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    @media (prefers-reduced-motion: no-preference) {
-      .reveal {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .reveal.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 48px;
-      background: rgba(0,0,0,0.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid #1a1a1a;
-    }
-    nav::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--yellow), transparent);
-      opacity: 0.6;
-    }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-    }
-    .nav-logo img {
-      height: 24px;
-      width: auto;
-    }
-    .nav-badge {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      padding: 6px 16px;
-      border-radius: 20px;
-      font-size: 12px;
-      color: var(--yellow);
-      font-weight: 600;
-      white-space: nowrap;
-      flex-shrink: 0;
-      margin-left: 16px;
-    }
-    .nav-logo { flex-shrink: 0; }
-    /* 2026-10-06：手機寬度下標籤被擠成直排、壓到 logo（Brian 截圖）。hero 已有「一對一 VIP 專屬展示」，手機上隱藏 */
-    @media (max-width: 600px) { .nav-badge { display: none; } }
-    .nav-cta {
-      background: var(--yellow);
-      color: var(--black);
-      padding: 10px 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 700;
-      transition: opacity .2s, transform .2s;
-    }
-    .nav-cta:hover { opacity: .85; transform: translateY(-1px); }
-
-    /* ── HERO ── */
-    .hero {
-      position: relative;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      background: #000;
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background: url('images/fx10.jpg') center/cover no-repeat;
-      opacity: 0.46;
-      filter: brightness(0.95) contrast(1.05);
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(0,0,0,0.95) 45%, rgba(0,0,0,0.2) 100%);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      padding: 80px 48px;
-      max-width: 680px;
-      animation: fadeInUp 1s ease-out;
-    }
-    .hero-tag {
-      display: inline-block;
-      background: var(--yellow);
-      color: var(--black);
-      font-size: 11px;
-      font-weight: 700;
-      padding: 6px 16px;
-      border-radius: 4px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 28px;
-    }
-    .hero-title {
-      font-size: clamp(36px, 5vw, 64px);
-      font-weight: 900;
-      line-height: 1.1;
-      margin-bottom: 12px;
-    }
-    .hero-title .yl { color: var(--yellow); }
-    .hero-sub {
-      font-size: 22px;
-      font-weight: 400;
-      color: #bbb;
-      margin-bottom: 28px;
-    }
-    .hero-desc {
-      font-size: 16px;
-      color: #888;
-      line-height: 1.8;
-      margin-bottom: 40px;
-      max-width: 520px;
-    }
-    .hero-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 40px;
-    }
-    .pill {
-      background: #111;
-      border: 1px solid #333;
-      border-radius: 20px;
-      padding: 8px 18px;
-      font-size: 13px;
-      color: #ccc;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: border-color 0.3s, background 0.3s;
-    }
-    .pill:hover {
-      border-color: var(--yellow);
-      background: #1a1a0a;
-    }
-    .pill .dot { width: 6px; height: 6px; background: var(--yellow); border-radius: 50%; }
-    .btn-yellow {
-      display: inline-block;
-      background: var(--yellow);
-      color: var(--black);
-      font-size: 16px;
-      font-weight: 700;
-      padding: 18px 44px;
-      border-radius: 4px;
-      text-decoration: none;
-      cursor: pointer;
-      border: none;
-      transition: opacity .2s, transform .2s, box-shadow .3s;
-    }
-    .btn-yellow:hover {
-      opacity: .88;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 24px rgba(255, 197, 0, 0.3);
-    }
-
-    /* ── STATS ── */
-    .stats {
-      background: var(--yellow);
-      padding: 48px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0;
-    }
-    .stat {
-      text-align: center;
-      padding: 16px;
-      border-right: 1px solid rgba(0,0,0,0.15);
-    }
-    .stat:last-child { border-right: none; }
-    .stat-num {
-      font-size: 36px;
-      font-weight: 900;
-      color: var(--black);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .stat-label { font-size: 13px; color: #333; font-weight: 600; }
-
-    /* ── PRODUCT SPOTLIGHT ── */
-    .spotlight {
-      padding: 100px 48px;
-      background: #000;
-    }
-    .spotlight-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .spotlight-img {
-      position: relative;
-    }
-    .spotlight-img img {
-      width: 100%;
-      border-radius: 8px;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-    .spotlight-img:hover img {
-      transform: scale(1.02);
-    }
-    .spotlight-img .img-badge {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      background: var(--yellow);
-      color: var(--black);
-      font-size: 11px;
-      font-weight: 700;
-      padding: 6px 14px;
-      border-radius: 4px;
-      letter-spacing: 1px;
-    }
-    .spotlight-info .label {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--yellow);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-    .spotlight-info h2 {
-      font-size: clamp(28px, 3vw, 44px);
-      font-weight: 900;
-      margin-bottom: 16px;
-      line-height: 1.15;
-    }
-    .spotlight-info p {
-      font-size: 15px;
-      color: #888;
-      line-height: 1.8;
-      margin-bottom: 32px;
-    }
-    .specs-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-bottom: 36px;
-    }
-    .spec {
-      background: #0d0d0d;
-      border: 1px solid #222;
-      border-radius: 6px;
-      padding: 14px 16px;
-      transition: border-color 0.3s, box-shadow 0.3s;
-    }
-    .spec:hover {
-      border-color: var(--yellow);
-      box-shadow: 0 0 12px rgba(255, 197, 0, 0.08);
-    }
-    .spec-key { font-size: 10px; color: #555; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
-    .spec-val { font-size: 15px; font-weight: 700; color: var(--yellow); }
-
-    /* ── WHY SECTION ── */
-    .why {
-      padding: 100px 48px;
-      background: #060606;
-    }
-    .why-header {
-      text-align: center;
-      max-width: 640px;
-      margin: 0 auto 64px;
-    }
-    .section-label {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--yellow);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-    }
-    .section-title {
-      font-size: clamp(26px, 3vw, 40px);
-      font-weight: 900;
-      margin-bottom: 16px;
-    }
-    .section-desc { font-size: 15px; color: #777; line-height: 1.8; }
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .why-card {
-      background: #0d0d0d;
-      border: 1px solid #1a1a1a;
-      border-radius: 10px;
-      padding: 36px 28px;
-      transition: border-color .3s, transform .3s, box-shadow .3s;
-    }
-    .why-card:hover {
-      border-color: var(--yellow);
-      transform: translateY(-4px);
-      box-shadow: 0 8px 32px rgba(255, 197, 0, 0.08);
-    }
-    .why-icon { margin-bottom: 18px; color: var(--yellow); }
-    .why-icon svg { width: 30px; height: 30px; display: block; }
-    .why-card h3 { font-size: 18px; font-weight: 800; margin-bottom: 10px; }
-    .why-card p { font-size: 14px; color: #666; line-height: 1.7; }
-
-    /* ── WORKFLOW ── */
-    .workflow-section {
-      padding: 100px 48px;
-      background: #000;
-    }
-    .workflow-header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    .workflow-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .workflow-card {
-      background: #0a0a0a;
-      border: 1px solid #1a1a1a;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: border-color 0.3s, box-shadow 0.3s;
-    }
-    .workflow-card:hover {
-      border-color: var(--yellow);
-      box-shadow: 0 4px 24px rgba(255, 197, 0, 0.06);
-    }
-    .workflow-card img {
-      width: 100%;
-      display: block;
-    }
-    .workflow-card-body {
-      padding: 24px;
-    }
-    .workflow-card-label {
-      font-size: 11px;
-      color: var(--yellow);
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    .workflow-card-body h3 {
-      font-size: 18px;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-    .workflow-card-body p {
-      font-size: 13px;
-      color: #666;
-      line-height: 1.7;
-    }
-
-
-    /* ── NONRED 產業觀點導流（2026-10-31）── */
-    .nonred { padding: 72px 24px; background: #000; }
-    .nonred-in { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-    .nonred-img img { width: 100%; display: block; border: 3px solid #FFFF00; }
-    .nonred-p { font-size: 15px; line-height: 1.85; color: rgba(255,255,255,.82); margin: 14px 0 22px; }
-    .nonred-btn { display: inline-block; background: var(--yellow); color: #000; font-weight: 900; padding: 14px 26px; text-decoration: none; border: 2px solid #111; }
-    @media (max-width: 768px) { .nonred-in { grid-template-columns: 1fr; gap: 22px; } .nonred { padding: 48px 20px; } }
-    /* ── BRIAN BANNER ── */
-    .brian-banner {
-      position: relative;
-      overflow: hidden;
-      min-height: 560px;
-      display: flex;
-      align-items: center;
-    }
-    .brian-banner-bg {
-      position: absolute;
-      inset: 0;
-      background: url('images/brian_fx10_2026.jpg') 68% 22% / cover no-repeat;
-    }
-    .brian-banner-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(0,0,0,0.92) 38%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.15) 100%);
-    }
-    .brian-banner-content {
-      position: relative;
-      z-index: 2;
-      padding: 80px 48px;
-      max-width: 620px;
-    }
-    .brian-banner-content .quote-text {
-      font-size: clamp(28px, 4vw, 52px);
-      font-weight: 900;
-      line-height: 1.2;
-      margin-bottom: 24px;
-    }
-    .brian-banner-content .quote-text .yl { color: var(--yellow); }
-    .brian-banner-content .quote-desc {
-      font-size: 16px;
-      color: #aaa;
-      line-height: 1.8;
-      margin-bottom: 36px;
-    }
-
-    /* ── PRODUCT LINE ── */
-    .products {
-      padding: 100px 48px;
-      background: #000;
-    }
-    .products-header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .prod-card {
-      background: #0d0d0d;
-      border: 1px solid #1a1a1a;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: border-color .3s, box-shadow .3s, transform .3s;
-    }
-    .prod-card:hover {
-      border-color: var(--yellow);
-      box-shadow: 0 8px 32px rgba(255, 197, 0, 0.08);
-      transform: translateY(-2px);
-    }
-    .prod-card.featured { border-color: var(--yellow); }
-    .prod-img-wrap {
-      background: radial-gradient(ellipse at 50% 42%, #2b2b2b 0%, #171717 55%, #101010 100%);
-      padding: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 220px;
-    }
-    .prod-img-wrap img {
-      max-height: 160px;
-      max-width: 100%;
-      object-fit: contain;
-      filter: drop-shadow(0 4px 20px rgba(255,197,0,0.15));
-      transition: transform 0.4s ease;
-    }
-    .prod-card:hover .prod-img-wrap img {
-      transform: scale(1.05);
-    }
-    .prod-info { padding: 24px; }
-    .prod-badge {
-      display: inline-block;
-      background: var(--yellow);
-      color: var(--black);
-      font-size: 10px;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 3px;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-    .prod-name { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
-    .prod-desc { font-size: 13px; color: #666; line-height: 1.6; }
-
-    /* ── STEPS ── */
-    .steps-section {
-      padding: 100px 48px;
-      background: #060606;
-    }
-    .steps-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .steps-list { display: flex; flex-direction: column; gap: 0; }
-    .step-item {
-      display: flex;
-      gap: 20px;
-      padding: 24px 0;
-      border-bottom: 1px solid #111;
-      transition: background 0.3s;
-    }
-    .step-item:last-child { border-bottom: none; }
-    .step-item:hover {
-      background: rgba(255, 197, 0, 0.02);
-    }
-    .step-num {
-      width: 40px; height: 40px;
-      background: var(--yellow);
-      color: var(--black);
-      font-size: 15px;
-      font-weight: 900;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      transition: box-shadow 0.3s;
-    }
-    .step-item:hover .step-num {
-      box-shadow: 0 0 16px rgba(255, 197, 0, 0.3);
-    }
-    .step-text h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
-    .step-text p { font-size: 13px; color: #666; line-height: 1.6; }
-    .steps-visual {
-      position: relative;
-    }
-    .steps-visual img {
-      width: 100%;
-      border-radius: 12px;
-      display: block;
-    }
-    .steps-visual .overlay-box {
-      position: absolute;
-      bottom: 24px;
-      left: 24px;
-      right: 24px;
-      background: rgba(0,0,0,0.85);
-      backdrop-filter: blur(8px);
-      border: 1px solid #333;
-      border-radius: 8px;
-      padding: 16px 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .overlay-box .icon { font-size: 28px; }
-    .overlay-box h5 { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
-    .overlay-box p { font-size: 12px; color: #888; }
-
-    /* ── LINE QR ── */
-    .line-section {
-      padding: 60px 48px;
-      background: #060606;
-      border-top: 1px solid #1a1a1a;
-      text-align: center;
-    }
-    .line-inner {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .line-qr-wrap {
-      display: inline-block;
-      background: #fff;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 0 40px rgba(255,197,0,0.2);
-      transition: box-shadow 0.3s;
-    }
-    .line-qr-wrap:hover {
-      box-shadow: 0 0 60px rgba(255,197,0,0.35);
-    }
-    .line-qr-wrap img {
-      width: 200px;
-      border-radius: 8px;
-    }
-
-    /* ── FORM ── */
-    .form-section {
-      padding: 100px 48px;
-      background: #000;
-    }
-    .form-wrap {
-      max-width: 760px;
-      margin: 0 auto;
-      background: #0a0a0a;
-      border: 1px solid #222;
-      border-radius: 16px;
-      overflow: hidden;
-    }
-    .form-head {
-      background: var(--yellow);
-      padding: 36px 48px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .form-head h2 { font-size: 24px; font-weight: 900; color: var(--black); }
-    .form-head p { font-size: 13px; color: #333; margin-top: 4px; }
-    .form-head-icon { color: var(--black); }
-    .form-head-icon svg { width: 34px; height: 34px; display: block; }
-
-
-    /* ── VIP 頁內申請表（2026-10-31，同非红自我检核設計）── */
-    .vf { padding: 30px 40px 34px; }
-    .vf-sec { color: var(--yellow); font-size: 12px; font-weight: 900; letter-spacing: 2px; margin: 8px 0 6px; }
-    .vf-q { border: 0; border-top: 1px solid #222; padding: 16px 0 12px; margin: 0; }
-    .vf-q legend { color: #fff; font-size: 15px; font-weight: 800; padding: 0; margin-bottom: 10px; }
-    .vf-opts { display: flex; flex-wrap: wrap; gap: 8px; }
-    .vf-opts label { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #444; border-radius: 22px;
-      padding: 8px 14px; color: #ccc; font-size: 13.5px; cursor: pointer; transition: all .15s; }
-    .vf-opts label:hover { border-color: var(--yellow); color: #fff; }
-    .vf-opts input { position: absolute; opacity: 0; pointer-events: none; }
-    .vf-opts label:has(input:checked) { background: var(--yellow); border-color: var(--yellow); color: #000; font-weight: 800; }
-    .vf textarea, .vf-ct input { width: 100%; background: #111; border: 1px solid #333; border-radius: 6px; color: #fff;
-      font-size: 15px; padding: 11px 12px; font-family: inherit; }
-    .vf textarea:focus, .vf-ct input:focus { outline: none; border-color: var(--yellow); }
-    .vf-ct { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; padding: 12px 0 4px; border-top: 1px solid #222; }
-    .vf-ct label { color: #aaa; font-size: 12.5px; font-weight: 700; display: flex; flex-direction: column; gap: 6px; }
-    .vf-cs { display: flex; gap: 10px; align-items: flex-start; color: #999; font-size: 12.5px; line-height: 1.6; margin: 16px 0 6px; }
-    .vf-cs input { margin-top: 3px; accent-color: #FFFF00; }
-    .vf-btn { margin-top: 14px; width: 100%; background: var(--yellow); color: #000; border: 0; border-radius: 6px; font-size: 17px;
-      font-weight: 900; padding: 18px; cursor: pointer; letter-spacing: 1px; }
-    .vf-btn:disabled { opacity: .6; cursor: wait; }
-    .vf-err { display: none; color: #ff6b6b; font-size: 13px; font-weight: 700; margin-top: 10px; }
-    .vf-alt { display: block; text-align: center; color: #666; font-size: 12px; margin-top: 16px; }
-    .vf-ok { display: none; padding: 46px 40px; text-align: center; }
-    .vf-ok-h { color: var(--yellow); font-size: 24px; font-weight: 900; margin-bottom: 10px; }
-    .vf-ok p { color: #ccc; font-size: 15px; line-height: 1.8; }
-    @media (max-width: 768px) { .vf { padding: 22px 18px 26px; } .vf-ct { grid-template-columns: 1fr; } }
-
-    /* ── FOOTER ── */
-    footer {
-      background: #000;
-      border-top: 1px solid #111;
-      padding: 40px 48px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    .footer-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .footer-logo img {
-      height: 20px;
-      width: auto;
-      opacity: 0.7;
-    }
-    .footer-logo span {
-      font-size: 13px;
-      color: #555;
-      font-weight: 600;
-      letter-spacing: 1px;
-    }
-    .footer-links { display: flex; gap: 32px; }
-    .footer-links a { color: #555; font-size: 13px; text-decoration: none; transition: color 0.3s; }
-    .footer-links a:hover { color: var(--yellow); }
-    .footer-copy { font-size: 12px; color: #333; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      nav { padding: 16px 20px; }
-      .nav-cta { display: none; }
-      .hero-content { padding: 60px 20px; }
-      .stats { grid-template-columns: repeat(2, 1fr); }
-      .stat { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.15); }
-      .spotlight, .why, .products, .steps-section, .form-section, .workflow-section { padding: 60px 20px; }
-      .spotlight-inner, .steps-inner { grid-template-columns: 1fr; gap: 40px; }
-      .why-grid, .products-grid { grid-template-columns: 1fr; }
-      .workflow-grid { grid-template-columns: 1fr; }
-      .form-head { padding: 24px 20px; }
-      .form-head { padding: 24px 20px; }
-      .form-section { padding: 60px 16px; }
-      footer { padding: 28px 20px; flex-direction: column; align-items: flex-start; }
-      .brian-banner-content { padding: 40px 20px; }
-      .line-section { padding: 40px 20px; }
-    }
-    @media (max-width: 480px) {
-      .stats { grid-template-columns: 1fr; }
-      .hero-pills { flex-direction: column; }
-      .specs-grid { grid-template-columns: 1fr; }
-    }
-/* langbar */
-  .langbar{display:flex;gap:6px;align-items:center;margin-left:auto;margin-right:14px}
-  .langbar span{display:none}
-  .langbar a{color:#9a9a9a;text-decoration:none;font-size:11.5px;font-weight:700;
-    padding:4px 10px;border:1px solid #2e2e2e;border-radius:20px;white-space:nowrap;line-height:1}
-  .langbar a:hover{color:#FFFF00;border-color:#FFFF00}
-  .langbar a.on{background:#FFFF00;color:#000;border-color:#FFFF00}
-  @media(max-width:600px){.langbar{margin-right:8px;gap:4px}.langbar a{padding:3px 7px;font-size:10.5px}}
-/* end langbar */
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){var h=location.hash;if(h==='#register'||h==='#form'||h==='#apply'){location.replace('vip/index-sc.html'+location.search+h);}})();</script>
+<title>活动与体验 | Markforged 大中华区</title>
+<meta name="description" content="Markforged 大中华区活动：FX10 VIP 体验日、老客户设备健诊与旧换新。台湾 · 中国 · 香港 · 越南。">
+<link rel="canonical" href="https://mfmk.markforged.tw/index-sc.html">
+<link rel="alternate" hreflang="zh-TW" href="https://mfmk.markforged.tw/index.html"><link rel="alternate" hreflang="zh-CN" href="https://mfmk.markforged.tw/index-sc.html"><link rel="alternate" hreflang="en" href="https://mfmk.markforged.tw/index-en.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="活动与体验 | Markforged 大中华区">
+<meta property="og:description" content="Markforged 大中华区活动：FX10 VIP 体验日、老客户设备健诊与旧换新。台湾 · 中国 · 香港 · 越南。">
+<meta property="og:url" content="https://mfmk.markforged.tw/index-sc.html">
+<meta property="og:image" content="https://mfmk.markforged.tw/images/fx10.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "活动与体验 | Markforged 大中华区", "description": "Markforged 大中华区活动：FX10 VIP 体验日、老客户设备健诊与旧换新。台湾 · 中国 · 香港 · 越南。", "url": "https://mfmk.markforged.tw/index-sc.html", "publisher": {"@type": "Organization", "name": "Markforged", "url": "https://markforged.com"}}</script>
+<style>:root{--font:'Helvetica Neue',Helvetica,Arial,'PingFang SC','Noto Sans SC',sans-serif}
+:root{--y:#FFFF00;--k:#000;--w:#fff;--g1:#0d0d0d;--g2:#1c1c1c;--g3:#2c2c2c;--mut:#a3a3a3}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--k);color:var(--w);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;padding:16px 48px;background:rgba(0,0,0,.92);backdrop-filter:blur(12px);border-bottom:1px solid #1a1a1a}
+nav .logo img{height:24px;display:block}
+.langbar{display:flex;gap:6px;align-items:center;margin-left:auto}
+.langbar a{color:#9a9a9a;text-decoration:none;font-size:11.5px;font-weight:700;padding:4px 10px;border:1px solid #2e2e2e;border-radius:20px;white-space:nowrap;line-height:1}
+.langbar a:hover{color:var(--y);border-color:var(--y)}
+.langbar a.on{background:var(--y);color:#000;border-color:var(--y)}
+.nav-cta{background:var(--y);color:#000;text-decoration:none;font-weight:800;font-size:13px;padding:10px 18px;border-radius:4px;white-space:nowrap}
+.wrap{max-width:1180px;margin:0 auto;padding:0 48px}
+.hero{position:relative;padding:76px 0 40px;overflow:hidden;border-bottom:1px solid #151515}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(#141414 1px,transparent 1px),linear-gradient(90deg,#141414 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(180deg,#000 0%,transparent 90%);-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 90%)}
+.hero .wrap{position:relative}
+.kicker{color:var(--y);font-size:12px;font-weight:800;letter-spacing:.16em;margin-bottom:18px}
+.hero h1{font-size:64px;line-height:1.04;font-weight:900;letter-spacing:-.02em}
+.hero h1 span{color:var(--y)}
+.hero .sub{font-size:18px;line-height:1.7;color:#d6d6d6;margin-top:18px;max-width:640px}
+.hero .regions{font-size:13px;color:var(--mut);margin-top:14px;letter-spacing:.06em}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.jump a{font-size:13px;font-weight:700;text-decoration:none;color:#ddd;border:1px solid var(--g3);padding:8px 14px;border-radius:30px}
+.jump a b{color:var(--y);margin-left:6px}
+.jump a:hover{border-color:var(--y);color:var(--y)}
+.sec{padding:56px 0 8px}
+.sec-h{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.sec-h h2{font-size:26px;font-weight:900;letter-spacing:-.01em}
+.sec-h .ln{flex:1;height:1px;background:linear-gradient(90deg,var(--y),transparent);opacity:.55}
+.sec-h .n{font-size:13px;color:var(--mut);font-weight:700}
+.feat{display:grid;grid-template-columns:1.05fr 1fr;border:1px solid var(--g3);background:var(--g1);border-radius:6px;overflow:hidden}
+.feat .ph{position:relative;min-height:380px;background:#070707}
+.feat .ph img{position:absolute;inset:0;width:100%;height:100%}
+.feat .tx{padding:40px 40px 36px;display:flex;flex-direction:column;border-left:3px solid var(--y)}
+.feat .flag{display:inline-block;align-self:flex-start;background:var(--y);color:#000;font-size:11px;font-weight:900;letter-spacing:.12em;padding:5px 10px;margin-bottom:18px}
+.feat h3{font-size:36px;line-height:1.15;font-weight:900;margin:8px 0 14px}
+.feat p.s{font-size:16px;line-height:1.8;color:#d0d0d0}
+.card{display:flex;flex-direction:column;border:1px solid var(--g3);background:var(--g1);border-radius:6px;overflow:hidden;transition:border-color .2s,transform .2s}
+.card:hover{border-color:#5a5a00;transform:translateY(-2px)}
+.card .ph{position:relative;aspect-ratio:16/9;background:#070707;overflow:hidden}
+.card .ph img{width:100%;height:100%;display:block}
+.card .tx{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:22px;line-height:1.3;font-weight:900;margin:8px 0 10px}
+.card p.s{font-size:14.5px;line-height:1.75;color:#c8c8c8}
+img.fit-cover{object-fit:cover}
+img.fit-contain{object-fit:contain}
+.tagrow{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.tag{color:var(--y);font-size:12px;font-weight:800;letter-spacing:.06em}
+.st{font-size:11px;font-weight:800;padding:3px 9px;border-radius:20px;border:1px solid var(--y);color:var(--y);white-space:nowrap}
+.st.always{background:var(--y);color:#000}
+.st.past{border-color:#555;color:#888}
+.meta{list-style:none;margin:14px 0 0;display:flex;flex-direction:column;gap:5px}
+.meta li{font-size:12.5px;color:var(--mut);padding-left:14px;position:relative}
+.meta li::before{content:'';position:absolute;left:0;top:.55em;width:6px;height:6px;background:var(--y)}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:22px}
+.btn{display:inline-block;text-decoration:none;font-weight:800;font-size:14px;padding:12px 18px;border-radius:4px;border:1px solid var(--y);color:var(--y);white-space:nowrap}
+.btn.p{background:var(--y);color:#000}
+.btn:hover{filter:brightness(1.1)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.card.past{opacity:.6}
+.empty{border:1px dashed var(--g3);border-radius:6px;padding:30px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#cfcfcf;font-size:15px;line-height:1.7}
+.prod{margin-top:64px;padding:56px 0;background:#070707;border-top:1px solid #151515;border-bottom:1px solid #151515}
+.prod .lab,.ct .lab{color:var(--y);font-size:12px;font-weight:800;letter-spacing:.16em}
+.prod h2,.ct h2{font-size:30px;font-weight:900;margin:10px 0 28px}
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.pc{border:1px solid var(--g2);border-radius:6px;padding:18px 18px 20px;background:#0b0b0b}
+.pc img{width:100%;height:150px;object-fit:contain;display:block;margin-bottom:12px}
+.pc h4{font-size:16px;font-weight:900;margin-bottom:6px}
+.pc p{font-size:13px;line-height:1.7;color:#bdbdbd}
+.prod .ctas{padding-top:26px}
+.ct{padding:64px 0 56px}
+.ct .box{display:flex;gap:36px;align-items:center;border:1px solid var(--g3);border-radius:6px;padding:28px 32px;background:var(--g1)}
+.ct img{width:150px;height:150px;border-radius:6px;background:#fff;padding:6px}
+.ct h2{margin:8px 0 10px}
+.ct p{color:#cfcfcf;font-size:15px;line-height:1.7}
+.ct .id{color:var(--y);font-weight:800;margin-top:8px}
+footer{border-top:1px solid #151515;padding:36px 0 44px;text-align:center}
+footer img{height:22px;margin-bottom:16px}
+footer .fl{display:flex;justify-content:center;gap:22px;margin-bottom:12px}
+footer .fl a{color:#9a9a9a;text-decoration:none;font-size:13px}
+footer .fl a:hover{color:var(--y)}
+footer .cp{color:#555;font-size:12px}
+@media(max-width:900px){
+ .wrap{padding:0 20px} nav{padding:12px 16px;gap:8px}
+ .nav-cta{display:none}
+ .langbar{gap:4px}.langbar a{padding:3px 7px;font-size:10.5px}
+ .hero{padding:44px 0 26px}.hero h1{font-size:40px}.hero .sub{font-size:15.5px}
+ .feat{grid-template-columns:1fr}.feat .ph{min-height:0;aspect-ratio:16/10}.feat .tx{padding:24px 22px 26px;border-left:0;border-top:3px solid var(--y)}
+ .feat h3{font-size:27px}
+ .grid,.pgrid{grid-template-columns:1fr}
+ .sec{padding:40px 0 4px}.sec-h h2{font-size:22px}
+ .empty{flex-direction:column;align-items:flex-start}
+ .ct .box{flex-direction:column;align-items:flex-start;padding:22px}
+ .prod h2,.ct h2{font-size:24px}
+}
 </style>
 <script src="analytics.js" defer></script>
-
-  <link rel="alternate" hreflang="zh-TW" href="https://mfmk.markforged.tw/index.html">
-  <link rel="alternate" hreflang="zh-CN" href="https://mfmk.markforged.tw/index-sc.html">
-  <link rel="alternate" hreflang="en" href="https://mfmk.markforged.tw/index-en.html">
 </head>
 <body>
-
-<nav>
-  <div class="nav-logo"><img src="images/markforged_logo_white.png" alt="Markforged" /></div>
-  <div class="nav-badge">💎 VIP 预约制</div>
-  <div class="langbar"><span>语言</span><a href="index.html">繁體中文</a><a href="index-sc.html" class="on">简体中文</a><a href="index-en.html">English</a></div><a href="#register" class="nav-cta">申请体验名额</a>
-</nav>
-
-<!-- ── HERO ── -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-tag">大中华区 · 一对一 VIP 专属展示</div>
-    <h1 class="hero-title">
-      AI实体化<br/>
-      <span class="yl">制造新纪元</span>
-    </h1>
-    <p class="hero-sub">Markforged FX10 大中华区体验日</p>
-    <p class="hero-desc">
-      全球首台工业级金属复合材料 3D 打印机，
-      大中华区 VIP 专属展示，
-      由 Markforged 原厂工程师针对您的需求客制化演示。
-    </p>
-    <div class="hero-pills">
-      <div class="pill"><span class="dot"></span>台湾 · 中国 · 香港 · 越南</div>
-      <div class="pill"><span class="dot"></span>时间弹性预约</div>
-      <div class="pill"><span class="dot"></span>原厂工程师一对一</div>
-      <div class="pill"><span class="dot"></span>免费参加</div>
-    </div>
-    <a href="#register" class="btn-yellow">立即申请 VIP 体验名额 →</a>
-  </div>
-</section>
-
-<!-- ── STATS ── -->
-<div class="stats">
-  <div class="stat reveal">
-    <div class="stat-num">1st</div>
-    <div class="stat-label">全球首台金属复合材料工业打印机</div>
-  </div>
-  <div class="stat reveal">
-    <div class="stat-num">375mm</div>
-    <div class="stat-label">建构体积（宽）</div>
-  </div>
-  <div class="stat reveal">
-    <div class="stat-num">2 in 1</div>
-    <div class="stat-label">复合材料 + 金属 一机双用</div>
-  </div>
-  <div class="stat reveal">
-    <div class="stat-num">VIP</div>
-    <div class="stat-label">一对一客制化展示，名额有限</div>
-  </div>
-</div>
-
-<!-- ── PRODUCT SPOTLIGHT ── -->
-<section class="spotlight">
-  <div class="spotlight-inner">
-    <div class="spotlight-img reveal">
-      <img src="images/fx10_front.jpg" alt="Markforged FX10 工业级 3D 打印机" loading="lazy" />
-      <div class="img-badge">★ 主打产品</div>
-    </div>
-    <div class="spotlight-info reveal">
-      <div class="label">主打产品</div>
-      <h2>FX10 + Metal Kit</h2>
-      <p>
-        FX10 是 Markforged 革命性的里程碑 — 全球首台同时具备复合材料与金属打印能力的工业机。
-        模组化设计让您轻松切换材料，自动校准让人人都能操作，无需专职技术人员。
-      </p>
-      <div class="specs-grid">
-        <div class="spec">
-          <div class="spec-key">建构体积</div>
-          <div class="spec-val">375 × 300 × 300 mm</div>
-        </div>
-        <div class="spec">
-          <div class="spec-key">打印技术</div>
-          <div class="spec-val">FFF + 连续碳纤维</div>
-        </div>
-        <div class="spec">
-          <div class="spec-key">层厚精度</div>
-          <div class="spec-val">50 – 250 µm（复合材料）</div>
-        </div>
-        <div class="spec">
-          <div class="spec-key">材料支援</div>
-          <div class="spec-val">金属 + 复合材料</div>
-        </div>
-        <div class="spec">
-          <div class="spec-key">自动校准</div>
-          <div class="spec-val">光学感测器验证</div>
-        </div>
-        <div class="spec">
-          <div class="spec-key">管理软件</div>
-          <div class="spec-val">Eiger™ 云端平台</div>
-        </div>
-      </div>
-      <a href="#register" class="btn-yellow">预约亲眼看这台机器 →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ── WHY ── -->
-<section class="why">
-  <div class="why-header reveal">
-    <div class="section-label">为什么选 FX10</div>
-    <h2 class="section-title">您的制造痛点，<br/>FX10 一次解决</h2>
-    <p class="section-desc">不再依赖外包，不再等待漫长交付周期，不再为小批量零件头痛。</p>
-  </div>
-  <div class="why-grid">
-    <div class="why-card reveal">
-      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/></svg></div>
-      <h3>大幅缩短交付周期</h3>
-      <p>从设计到成品最快当天完成。告别传统外包 4 至 8 周等待，即时响应生产与维修需求。</p>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M3 7h13a2 2 0 0 1 2 2v1"/><path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H8"/><circle cx="17" cy="14" r="1.2"/><path d="M3 7a2 2 0 0 1 2-2h9"/></svg></div>
-      <h3>降低模具与库存成本</h3>
-      <p>小批量、多样化零件无需开模。按需生产，大幅减少库存压力与高昂模具费用。</p>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="m12 2 8.5 5v10L12 22 3.5 17V7Z"/><path d="M12 7.5 16.5 10v4L12 16.5 7.5 14v-4Z"/></svg></div>
-      <h3>金属 × 复合材料一机双用</h3>
-      <p>全球首部集金属与复合材料于一机的工业级 3D 打印机。一台 FX10，两种材料，无限可能。</p>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M3 21V10l6 4V10l6 4V7l6 4v10Z"/><path d="M7 21v-3M12 21v-3M17 21v-3"/></svg></div>
-      <h3>工厂级可靠度</h3>
-      <p>精密铝制平台，光学感测器自动验证尺寸精度，自动校准，无需专职操作员。</p>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M17.5 19H7a4.5 4.5 0 0 1-.4-8.98A6 6 0 0 1 18 9.5a4.75 4.75 0 0 1-.5 9.5Z"/></svg></div>
-      <h3>Eiger 云端管理</h3>
-      <p>从任何地点远端监控、管理、下单打印。数据传输与储存皆加密，Markforged 通过 ISO/IEC 27001:2022 资安认证。</p>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M3 17.5 9.5 11l3.5 3.5L21 6"/><path d="M15.5 6H21v5.5"/></svg></div>
-      <h3>快速 ROI</h3>
-      <p>以工装、夹具、备件自制为起点，快速回收投资，并逐步扩展到终端零件生产。</p>
-    </div>
-  </div>
-</section>
-
-<!-- ── WORKFLOW ── -->
-<section class="workflow-section">
-  <div class="workflow-header reveal">
-    <div class="section-label">打印流程</div>
-    <h2 class="section-title">从设计到成品，就这么简单</h2>
-  </div>
-  <div class="workflow-grid">
-    <div class="workflow-card reveal">
-      <img src="images/workflow_composite.jpg" alt="Markforged 复合材料打印流程" loading="lazy" />
-      <div class="workflow-card-body">
-        <div class="workflow-card-label">复合材料打印</div>
-        <h3>设计 → 强化 → 打印 → 使用</h3>
-        <p>连续碳纤维强化技术，让打印件强度媲美金属。4 个步骤，当天完成。</p>
-      </div>
-    </div>
-    <div class="workflow-card reveal">
-      <img src="images/workflow_metal.jpg" alt="Markforged 金属打印流程" loading="lazy" />
-      <div class="workflow-card-body">
-        <div class="workflow-card-label">金属打印</div>
-        <h3>设计 → 打印 → 清洗 → 烧结 → 使用</h3>
-        <p>打印、清洗、烧结三步完成，不需传统机械加工即可产出金属零件；烧结炉需三相电源与氩气。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── BRIAN BANNER ── -->
-<section class="brian-banner">
-  <div class="brian-banner-bg"></div>
-  <div class="brian-banner-overlay"></div>
-  <div class="brian-banner-content reveal">
-    <div class="quote-text">
-      <span class="yl">贵</span>从来不是<br/>好产品的缺点
-    </div>
-    <p class="quote-desc">
-      FX10 + Metal Kit 让您省下的每一笔外包费、每一天等待的交付周期损失，
-      都是真实的竞争优势。来现场亲眼见证。
-    </p>
-    <a href="#register" class="btn-yellow">预约 VIP 体验 →</a>
-  </div>
-</section>
-
-<!-- ── PRODUCT LINE ── -->
-<section class="products">
-  <div class="products-header reveal">
-    <div class="section-label">Markforged 产品线</div>
-    <h2 class="section-title">适合每个阶段的解决方案</h2>
-  </div>
-  <div class="products-grid">
-    <div class="prod-card featured reveal">
-      <div class="prod-img-wrap">
-        <img src="images/prod_fx10.png" alt="Markforged FX10" loading="lazy" />
-      </div>
-      <div class="prod-info">
-        <span class="prod-badge">★ 今日主角</span>
-        <div class="prod-name">FX10 + Metal Kit</div>
-        <div class="prod-desc">全球首台金属复合材料工业打印机。复合材料 + 金属一机双用，工厂首选。</div>
-      </div>
-    </div>
-    <div class="prod-card reveal">
-      <div class="prod-img-wrap">
-        <img src="images/prod_fx20.png" alt="Markforged FX20" loading="lazy" />
-      </div>
-      <div class="prod-info">
-        <span class="prod-badge">大尺寸旗舰</span>
-        <div class="prod-name">FX20</div>
-        <div class="prod-desc">超大打印空间，专为大型工业零件设计。高强度连续碳纤维，媲美铝合金强度。</div>
-      </div>
-    </div>
-    <div class="prod-card reveal">
-      <div class="prod-img-wrap">
-        <img src="images/prod_x7.png" alt="Markforged X7" loading="lazy" />
-      </div>
-      <div class="prod-info">
-        <span class="prod-badge">现场与产线</span>
-        <div class="prod-name">X7 · X7 Field Edition</div>
-        <div class="prod-desc">连续碳纤维复合材料主力机种。X7 Field Edition 采耐冲击运输箱设计，可在资源受限的现场直接打印。</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── STEPS ── -->
-<section class="steps-section">
-  <div class="steps-inner">
-    <div>
-      <div class="section-label reveal">体验流程</div>
-      <h2 class="section-title reveal" style="margin-bottom:40px;">您的专属<br/>VIP 体验日</h2>
-      <div class="steps-list">
-        <div class="step-item reveal">
-          <div class="step-num">1</div>
-          <div class="step-text">
-            <h4>填写申请表</h4>
-            <p>提供您的需求信息，让我们为您量身准备最相关的展示内容。</p>
-          </div>
-        </div>
-        <div class="step-item reveal">
-          <div class="step-num">2</div>
-          <div class="step-text">
-            <h4>Markforged 大中华区审核确认</h4>
-            <p>我们在 3 个工作日内与您联系，确认专属体验时间与地点。</p>
-          </div>
-        </div>
-        <div class="step-item reveal">
-          <div class="step-num">3</div>
-          <div class="step-text">
-            <h4>一对一 VIP 展示</h4>
-            <p>原厂工程师针对您的产业与痛点，客制化展示实际应用场景。</p>
-          </div>
-        </div>
-        <div class="step-item reveal">
-          <div class="step-num">4</div>
-          <div class="step-text">
-            <h4>亲手触碰真实成品</h4>
-            <p>现场感受金属零件与复合材料成品，比较传统制程的差异。</p>
-          </div>
-        </div>
-        <div class="step-item reveal">
-          <div class="step-num">5</div>
-          <div class="step-text">
-            <h4>量身规划导入方案</h4>
-            <p>依您需求提供客制化建议与报价，零压力，完全依您步调。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="steps-visual reveal">
-      <img src="images/fx10_iso.png" alt="Markforged FX10 等角视图" loading="lazy" />
-      <div class="overlay-box">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-        <div>
-          <h5>台湾 · 中国 · 香港 · 越南</h5>
-          <p>弹性预约，由您决定时间</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── LINE QR ── -->
-<section class="line-section">
-  <div class="line-inner">
-    <div class="section-label reveal">联络我们</div>
-    <h2 class="section-title reveal" style="margin-bottom:16px;">扫描加入 Markforged 官方 LINE</h2>
-    <p class="reveal" style="font-size:15px; color:#888; margin-bottom:40px; line-height:1.7;">
-      扫描下方 QR Code 加入 Markforged 官方 LINE，<br/>即时获得产品信息、技术支援与最新活动通知。
-    </p>
-    <div class="line-qr-wrap reveal">
-      <img src="images/line_qr.jpg" alt="Markforged LINE QR Code" loading="lazy" />
-      <p style="margin-top:12px; font-size:13px; color:#333; font-weight:600;">@markforged</p>
-    </div>
-  </div>
-</section>
-
-<!-- ── FORM ── -->
-<section class="form-section" id="register">
-  <div class="form-wrap reveal">
-    <div class="form-head">
-      <div>
-        <h2>申请 VIP 体验名额</h2>
-        <p>约一分钟。原厂工程师会依您的产业与零件准备一对一展示，3 个工作天内与您联系。</p>
-      </div>
-      <div class="form-head-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 4h10v5a5 5 0 0 1-10 0Z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4M17 6h2.5a2.5 2.5 0 0 1-2.5 4"/><path d="M10 14h4l-.5 4h-3Z"/><path d="M8.5 20h7"/></svg></div>
-    </div>
-    <form class="vf" id="vipForm" novalidate>
-      <div class="vf-sec">您的需求</div>
-<fieldset class="vf-q"><legend>偏好体验地点</legend><div class="vf-opts"><label><input type="radio" name="loc" value="0"><span>台湾北部 台北</span></label><label><input type="radio" name="loc" value="1"><span>台湾中部 台中</span></label><label><input type="radio" name="loc" value="2"><span>台湾南部 高雄</span></label><label><input type="radio" name="loc" value="3"><span>中国华东 上海</span></label><label><input type="radio" name="loc" value="4"><span>中国华南 深圳</span></label><label><input type="radio" name="loc" value="5"><span>香港</span></label><label><input type="radio" name="loc" value="6"><span>越南 胡志明市</span></label><label><input type="radio" name="loc" value="7"><span>线上展示</span></label><label><input type="radio" name="loc" value="8"><span>其他地点</span></label></div></fieldset>
-<fieldset class="vf-q"><legend>产业别</legend><div class="vf-opts"><label><input type="radio" name="ind" value="0"><span>汽车与交通</span></label><label><input type="radio" name="ind" value="1"><span>航太与国防</span></label><label><input type="radio" name="ind" value="2"><span>无人机与无人载具</span></label><label><input type="radio" name="ind" value="3"><span>医疗与生技</span></label><label><input type="radio" name="ind" value="4"><span>精密机械与模具</span></label><label><input type="radio" name="ind" value="5"><span>电子与半导体</span></label><label><input type="radio" name="ind" value="6"><span>能源与重工业</span></label><label><input type="radio" name="ind" value="7"><span>学术与研究机构</span></label><label><input type="radio" name="ind" value="8"><span>其他产业</span></label></div></fieldset>
-<fieldset class="vf-q"><legend>公司规模</legend><div class="vf-opts"><label><input type="radio" name="size" value="0"><span>50 人以下</span></label><label><input type="radio" name="size" value="1"><span>51–200 人</span></label><label><input type="radio" name="size" value="2"><span>201–500 人</span></label><label><input type="radio" name="size" value="3"><span>500 人以上</span></label></div></fieldset>
-<fieldset class="vf-q"><legend>目前零件怎么做</legend><div class="vf-opts"><label><input type="radio" name="mfg" value="0"><span>完全自制</span></label><label><input type="radio" name="mfg" value="1"><span>完全外包</span></label><label><input type="radio" name="mfg" value="2"><span>自制与外包并行</span></label><label><input type="radio" name="mfg" value="3"><span>尚无固定制程</span></label></div></fieldset>
-<fieldset class="vf-q"><legend>预计导入时程</legend><div class="vf-opts"><label><input type="radio" name="time" value="0"><span>3 个月内</span></label><label><input type="radio" name="time" value="1"><span>6 个月内</span></label><label><input type="radio" name="time" value="2"><span>1 年内</span></label><label><input type="radio" name="time" value="3"><span>评估中</span></label></div></fieldset>
-<fieldset class="vf-q"><legend>想了解的主题（可复选）</legend><div class="vf-opts"><label><input type="checkbox" name="topic" value="1"><span>无人机结构件</span></label><label><input type="checkbox" name="topic" value="2"><span>夹工装</span></label><label><input type="checkbox" name="topic" value="3"><span>金属零件（FX10 + Metal Kit）</span></label><label><input type="checkbox" name="topic" value="4"><span>备件与停产零件</span></label><label><input type="checkbox" name="topic" value="5"><span>设备实机体验</span></label></div></fieldset>
-<fieldset class="vf-q"><legend>预算范围（选填）</legend><div class="vf-opts"><label><input type="radio" name="budget" value="0"><span>NT$100 万以下</span></label><label><input type="radio" name="budget" value="1"><span>NT$100–300 万</span></label><label><input type="radio" name="budget" value="2"><span>NT$300–500 万</span></label><label><input type="radio" name="budget" value="3"><span>NT$500 万以上</span></label><label><input type="radio" name="budget" value="4"><span>尚未确认</span></label></div></fieldset>
-<fieldset class="vf-q"><legend>您从哪里得知（选填）</legend><div class="vf-opts"><label><input type="radio" name="src" value="0"><span>Markforged 新闻中心文章</span></label><label><input type="radio" name="src" value="2"><span>Markforged 官方 LINE</span></label><label><input type="radio" name="src" value="3"><span>业务或经销伙伴</span></label><label><input type="radio" name="src" value="4"><span>展会或研讨会</span></label><label><input type="radio" name="src" value="5"><span>搜寻引擎</span></label><label><input type="radio" name="src" value="6"><span>其他管道</span></label></div></fieldset>
-      <fieldset class="vf-q"><legend>想看的应用或零件（选填）</legend><textarea name="note" rows="2"></textarea></fieldset>
-      <div class="vf-sec">联络数据</div>
-      <div class="vf-ct"><label>姓名 *<input name="name" type="text" required autocomplete="on"></label><label>公司名称 *<input name="company" type="text" required autocomplete="on"></label><label>职称<input name="title" type="text" autocomplete="on"></label><label>Email *<input name="email" type="email" required autocomplete="on"></label><label>电话 *<input name="phone" type="tel" required autocomplete="on"></label></div>
-      <label class="vf-cs"><input type="checkbox" name="consent" value="1"><span>我同意 Markforged 使用以上数据与我联系，并依隐私权政策处理。</span></label>
-      <button type="submit" class="vf-btn" id="vfBtn">送出 VIP 申请 →</button>
-      <div class="vf-err" id="vfErr"></div>
-      <a class="vf-alt" href="https://docs.google.com/forms/d/1QVoS_NBUD8-cVzbirNctZfZ6z5vNOSF02_7hHejYFZk/viewform" target="_blank" rel="noopener">或改用 Google 表单填写</a>
-    </form>
-    <div class="vf-ok" id="vfOk"><div class="vf-ok-h">已收到您的申请</div><p>谢谢！Markforged 会在 3 个工作天内与您联系，确认体验时间与地点。也欢迎加入官方 LINE @markforged。</p></div>
-    <div hidden id="vfTx" data-sending="送出中…" data-err="请填写姓名、公司名称、Email、电话，并勾选同意。" data-net="网络不稳定，数据可能没有送出，请稍后再送一次。"></div>
-  </div>
-</section>
-
-<!-- ── FOOTER ── -->
-<footer>
-  <div class="footer-logo"><img src="images/markforged_logo_white.png" alt="Markforged" /></div>
-  <div class="footer-links">
-    <a href="https://markforged.com" target="_blank">官网</a>
-    <a href="https://markforged.com/3d-printers/fx10" target="_blank">FX10</a>
-    <a href="#register">申请体验</a>
-  </div>
-  <div class="footer-copy">© 2026 Markforged, Inc. All rights reserved.</div>
-</footer>
+<nav><a class="logo" href="index-sc.html"><img src="images/markforged_logo_white.png" alt="Markforged"></a>
+<div class="langbar"><a href="index.html">繁體中文</a><a href="index-sc.html" class="on">简体中文</a><a href="index-en.html">English</a></div><a class="nav-cta" href="vip/index-sc.html#register">申请体验名额</a></nav>
+<header class="hero"><div class="wrap">
+<div class="kicker">MARKFORGED 大中华区 · 活动</div>
+<h1>活动与<span>体验</span></h1>
+<p class="sub">预约看机台、老客户健诊与旧换新，都从这里进入。</p>
+<p class="regions">台湾 · 中国 · 香港 · 越南</p>
+<div class="jump"><a href="#now">进行中<b>2</b></a><a href="#upcoming">即将举行<b></b></a><a href="#past" style="display:none">已结束<b></b></a><a href="#contact">联络我们</a></div>
+</div></header>
+<section class="sec" id="now" data-sec="on"><div class="wrap">
+<div class="sec-h"><h2>进行中的活动</h2><span class="n">2</span><span class="ln"></span></div>
+<article class="feat" data-id="vip-experience-day" data-start="2026-03-22" data-end="" data-always="1" data-featured="1"><div class="ph"><img class="fit-contain" src="images/fx10_front.jpg" alt="FX10 VIP 体验日" loading="eager"></div><div class="tx"><span class="flag">主打活动</span><div class="tagrow"><span class="tag">体验日</span><span class="st always" data-l-on="进行中" data-l-up="即将举行" data-l-past="已结束">常态开放</span></div><h3>FX10 VIP 体验日</h3><p class="s">Markforged 原厂工程师一对一，依您的行业与零件准备实机演示。地点与时间由您选择，免费参加。</p><ul class="meta"><li>台湾 · 中国 · 香港 · 越南</li><li>可选线上演示</li></ul><div class="ctas"><a class="btn p" href="vip/index-sc.html#register">申请体验名额 →</a><a class="btn" href="vip/index-sc.html">查看体验日内容 →</a></div></div></article>
+<div class="grid" style="margin-top:22px"><article class="card" data-id="homecoming" data-start="2026-10-27" data-end="" data-always="0"><div class="ph"><img class="fit-cover" src="images/homecoming-healthcheck.jpg" alt="老朋友，回娘家" loading="lazy"></div><div class="tx"><div class="tagrow"><span class="tag">客户服务</span><span class="st on" data-l-on="进行中" data-l-up="即将举行" data-l-past="已结束">进行中</span></div><h3>老朋友，回娘家</h3><p class="s">Markforged 老客户设备健诊，以及不限品牌的工业级 3D 打印机旧换新。三地各由当地合作伙伴执行，各有一个专区。</p><ul class="meta"><li>中国 · 台湾 · 香港</li><li>设备健诊 · 旧换新</li></ul><div class="ctas"><a class="btn p" href="https://news.markforged.tw/homecoming/cn/" target="_blank" rel="noopener">中国专区 →</a><a class="btn" href="https://news.markforged.tw/homecoming/tw/" target="_blank" rel="noopener">台湾专区 →</a><a class="btn" href="https://news.markforged.tw/homecoming/hk/" target="_blank" rel="noopener">香港专区 →</a></div></div></article></div>
+</div></section>
+<section class="sec" id="upcoming" data-sec="up"><div class="wrap"><div class="sec-h"><h2>即将举行</h2><span class="n"></span><span class="ln"></span></div><div class="empty"><span>下一场活动公布后会放在这里。加入官方 LINE，第一时间收到通知。</span><a class="btn" href="#contact">加入官方 LINE →</a></div><div class="grid"></div></div></section>
+<section class="sec" id="past" data-sec="past" style="display:none"><div class="wrap"><div class="sec-h"><h2>已结束的活动</h2><span class="n"></span><span class="ln"></span></div><div class="grid"></div></div></section>
+<section class="prod"><div class="wrap">
+<div class="lab">Markforged 产品线</div><h2>想先看机台，就从体验日开始</h2>
+<div class="pgrid"><div class="pc"><img src="images/prod_fx10.png" alt="FX10 + Metal Kit" loading="lazy"><h4>FX10 + Metal Kit</h4><p>复合材料 + 金属一机双用。</p></div><div class="pc"><img src="images/prod_fx20.png" alt="FX20" loading="lazy"><h4>FX20</h4><p>超大打印空间，专为大型工业零件设计。</p></div><div class="pc"><img src="images/prod_x7.png" alt="X7 · X7 Field Edition" loading="lazy"><h4>X7 · X7 Field Edition</h4><p>连续碳纤维复合材料主力机种；Field Edition 采耐冲击运输箱设计，可在现场直接打印。</p></div></div>
+<div class="ctas"><a class="btn p" href="vip/index-sc.html#register">预约实机演示 →</a></div>
+</div></section>
+<section class="ct" id="contact"><div class="wrap"><div class="box">
+<img src="images/line_qr.jpg" alt="LINE QR">
+<div><div class="lab">联络我们</div><h2>扫描加入 Markforged 官方 LINE</h2><p>即时获得产品信息、技术支援与最新活动通知。</p><p class="id">@markforged</p></div>
+</div></div></section>
+<footer><img src="images/markforged_logo_white.png" alt="Markforged"><div class="fl"><a href="https://markforged.com" target="_blank" rel="noopener">官网</a><a href="https://news.markforged.tw/" target="_blank" rel="noopener">媒体中心</a><a href="vip/index-sc.html#register">申请体验</a></div>
+<div class="cp">© 2026 Markforged, Inc. All rights reserved.</div></footer>
 
 <script>
-  // Smooth scroll for all anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', function(e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-    });
-  });
-
-  // Scroll-reveal via IntersectionObserver (with fallback)
-  (function() {
-    const reveals = document.querySelectorAll('.reveal');
-    if (!reveals.length) return;
-
-    // Check if reduced motion is preferred — if so, show all immediately
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      reveals.forEach(el => el.classList.add('visible'));
-      return;
-    }
-
-    if (!('IntersectionObserver' in window)) {
-      reveals.forEach(el => el.classList.add('visible'));
-      return;
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.05,
-      rootMargin: '0px 0px -20px 0px'
-    });
-
-    reveals.forEach((el, i) => {
-      // Stagger siblings within the same parent
-      const siblings = el.parentElement.querySelectorAll(':scope > .reveal');
-      const idx = Array.from(siblings).indexOf(el);
-      el.style.transitionDelay = idx * 0.08 + 's';
-      observer.observe(el);
-    });
-
-    // Fallback: if after 3s some reveals still not visible, force them
-    setTimeout(() => {
-      reveals.forEach(el => {
-        if (!el.classList.contains('visible')) {
-          el.classList.add('visible');
-        }
-      });
-    }, 3000);
-  })();
-</script>
-<script>
-/* VIP 申請表（2026-10-31 Brian「原來 VIP 的問卷很醜，要優化類似非紅表格依樣設計」）：頁內作答 → 直接寫進同一張 VIP Google 表單 */
+/* 瀏覽器端依「今天」重排：活動過了 end 自動移到已結束、到了 start 自動從即將舉行移到進行中——不必等重產。 */
 (function(){
-var A="https://docs.google.com/forms/d/e/1FAIpQLScUzpAD5-p6okBrxFujaKvL6O7LnIqn-fd9mUUTqGhy7-HVaQ/formResponse", V={"loc": {"e": "entry.1661346594", "v": ["\u53f0\u7063\u5317\u90e8 \u53f0\u5317 Northern Taiwan \u00b7 Taipei", "\u53f0\u7063\u4e2d\u90e8 \u53f0\u4e2d Central Taiwan \u00b7 Taichung", "\u53f0\u7063\u5357\u90e8 \u9ad8\u96c4 Southern Taiwan \u00b7 Kaohsiung", "\u4e2d\u570b\u83ef\u6771 \u4e0a\u6d77 East China \u00b7 Shanghai", "\u4e2d\u570b\u83ef\u5357 \u6df1\u5733 South China \u00b7 Shenzhen", "\u9999\u6e2f Hong Kong", "\u8d8a\u5357 \u80e1\u5fd7\u660e\u5e02 Viet Nam \u00b7 Ho Chi Minh City", "\u7dda\u4e0a\u5c55\u793a Online demonstration", "\u5176\u4ed6 Other"], "multi": false}, "ind": {"e": "entry.702564806", "v": ["\u6c7d\u8eca\u8207\u4ea4\u901a Automotive and transport", "\u822a\u592a\u8207\u570b\u9632 Aerospace and defence", "\u7121\u4eba\u6a5f\u8207\u7121\u4eba\u8f09\u5177 UAV and uncrewed systems", "\u91ab\u7642\u8207\u751f\u6280 Medical and life sciences", "\u7cbe\u5bc6\u6a5f\u68b0\u8207\u6a21\u5177 Precision machinery and tooling", "\u96fb\u5b50\u8207\u534a\u5c0e\u9ad4 Electronics and semiconductor", "\u80fd\u6e90\u8207\u91cd\u5de5\u696d Energy and heavy industry", "\u5b78\u8853\u8207\u7814\u7a76\u6a5f\u69cb Academic and research", "\u5176\u4ed6 Other"], "multi": false}, "size": {"e": "entry.1927766727", "v": ["50 \u4eba\u4ee5\u4e0b Fewer than 50 employees", "51\u2013200 \u4eba 51\u2013200 employees", "201\u2013500 \u4eba 201\u2013500 employees", "500 \u4eba\u4ee5\u4e0a More than 500 employees"], "multi": false}, "mfg": {"e": "entry.1554625665", "v": ["\u5b8c\u5168\u81ea\u88fd All in house", "\u5b8c\u5168\u5916\u5305 All outsourced", "\u81ea\u88fd\u8207\u5916\u5305\u4e26\u884c Mixed in house and outsourced", "\u5c1a\u7121\u56fa\u5b9a\u88fd\u7a0b No settled process yet"], "multi": false}, "time": {"e": "entry.615165058", "v": ["3 \u500b\u6708\u5167 Within 3 months", "6 \u500b\u6708\u5167 Within 6 months", "1 \u5e74\u5167 Within 12 months", "\u8a55\u4f30\u4e2d\uff0c\u5c1a\u672a\u78ba\u5b9a Still evaluating"], "multi": false}, "topic": {"e": "entry.543041358", "v": ["\u975e\u7d05\u4f9b\u61c9\u93c8\u8207\u570b\u9632\u61c9\u7528 Non-red supply chain and defence", "\u7121\u4eba\u6a5f\u7d50\u69cb\u4ef6 Drone structures", "\u593e\u6cbb\u5177 Jigs and fixtures", "\u91d1\u5c6c\u96f6\u4ef6\uff08FX10 + Metal Kit\uff09Metal parts", "\u5099\u54c1\u8207\u505c\u7522\u96f6\u4ef6 Spares and discontinued parts", "\u8a2d\u5099\u5be6\u6a5f\u9ad4\u9a57 Hands-on demo"], "multi": true}, "budget": {"e": "entry.1823419522", "v": ["NT$100 \u842c\u4ee5\u4e0b Under NT$1M", "NT$100 \u842c\u2013300 \u842c NT$1M\u20133M", "NT$300 \u842c\u2013500 \u842c NT$3M\u20135M", "NT$500 \u842c\u4ee5\u4e0a Over NT$5M", "\u5c1a\u672a\u78ba\u8a8d Not yet determined"], "multi": false}, "src": {"e": "entry.521954915", "v": ["Markforged \u65b0\u805e\u4e2d\u5fc3\u6587\u7ae0 Markforged newsroom article", "\u975e\u7d05\u81ea\u6211\u6aa2\u6838 Non-red self-check", "Markforged \u5b98\u65b9 LINE", "\u696d\u52d9\u6216\u7d93\u92b7\u5925\u4f34 Sales rep or partner", "\u5c55\u6703\u6216\u7814\u8a0e\u6703 Trade show or seminar", "\u641c\u5c0b\u5f15\u64ce Search engine", "\u5176\u4ed6 Other"], "multi": false}, "_contact": {"name": "entry.2047457802", "company": "entry.1109148177", "title": "entry.39817803", "email": "entry.1534245742", "phone": "entry.586431209"}, "_note": "entry.1436149164"};
-var f=document.getElementById('vipForm'); if(!f) return;
-var T=document.getElementById('vfTx').dataset, b=document.getElementById('vfBtn'), er=document.getElementById('vfErr');
-try{var q=new URLSearchParams(location.search);
-  if((q.get('utm_campaign')||'').indexOf('non-red')>=0){
-    var s=f.querySelector('input[name="src"][value="1"]'); if(s) s.checked=true;
-    var tp=f.querySelector('input[name="topic"][value="0"]'); if(tp) tp.checked=true;}}catch(e){}
-f.addEventListener('submit',function(ev){
-  ev.preventDefault(); er.style.display='none';
-  var C=V._contact, val=function(n){return (f.elements[n].value||'').trim();};
-  if(!val('name')||!val('company')||!val('phone')||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(val('email'))||!f.elements.consent.checked){
-    er.textContent=T.err; er.style.display='block'; return;}
-  var p=new URLSearchParams();
-  Object.keys(C).forEach(function(k){p.append(C[k],val(k));});
-  if(val('note')) p.append(V._note,val('note'));
-  Object.keys(V).forEach(function(k){ if(k.charAt(0)==='_') return;
-    [].forEach.call(f.querySelectorAll('input[name="'+k+'"]:checked'),function(x){p.append(V[k].e,V[k].v[+x.value]);});});
-  b.disabled=true; b.textContent=T.sending;
-  try{fetch('https://hits.sh/mfmk.markforged.tw/vip-submit.svg?_='+Date.now(),{mode:'no-cors'}).catch(function(){});}catch(e){}
-  fetch(A,{method:'POST',mode:'no-cors',body:p}).then(function(){
-    f.style.display='none'; document.getElementById('vfOk').style.display='block';
-    document.getElementById('register').scrollIntoView({behavior:'smooth',block:'start'});
-  }).catch(function(){ b.disabled=false; er.textContent=T.net; er.style.display='block'; });
-});
+  var t=new Date(),today=t.getFullYear()+'-'+('0'+(t.getMonth()+1)).slice(-2)+'-'+('0'+t.getDate()).slice(-2);
+  window.__hubToday=window.__hubToday||today;today=window.__hubToday;
+  var S=document.querySelectorAll('[data-sec]'),box={};S.forEach(function(s){box[s.getAttribute('data-sec')]=s;});
+  document.querySelectorAll('.card[data-id]').forEach(function(c){
+    if(c.getAttribute('data-always')==='1')return;
+    var s=c.getAttribute('data-start')||'',e=c.getAttribute('data-end')||'',want='on';
+    if(s&&s>today)want='up';else if(e&&e<today)want='past';
+    var cur=c.closest('[data-sec]');
+    if(cur&&cur.getAttribute('data-sec')!==want&&box[want]){
+      box[want].querySelector('.grid').appendChild(c);
+      c.classList.toggle('past',want==='past');
+      var st=c.querySelector('.st');if(st){st.className='st '+want;st.textContent=st.getAttribute('data-l-'+want)||st.textContent;}
+    }
+  });
+  S.forEach(function(s){
+    var n=s.querySelectorAll('.card,.feat').length,k=s.getAttribute('data-sec');
+    var em=s.querySelector('.empty');if(em)em.style.display=n?'none':'';
+    if(k==='past')s.style.display=n?'':'none';
+    var cnt=s.querySelector('.sec-h .n');if(cnt)cnt.textContent=n?String(n):'';
+    var j=document.querySelector('.jump a[href="#'+s.id+'"] b');if(j)j.textContent=n?String(n):'';
+    var ja=document.querySelector('.jump a[href="#'+s.id+'"]');if(ja&&k==='past')ja.style.display=n?'':'none';
+  });
 })();
 </script>
 </body>

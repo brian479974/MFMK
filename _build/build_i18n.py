@@ -30,7 +30,10 @@ sys.path.insert(0, str(NEWS_BUILD))
 from cn_localize import localize, TW_ONLY, _T2S  # noqa: E402
 import i18n  # noqa: E402
 
-MASTER = SITE / "index.html"
+# 2026-11-01（Bella）：首頁改成活動主畫面（產生器在 vault MF-GCR/84_Media-PR/2026-11_mfmk-活動主畫面/_build/build_hub.py），
+# VIP 體驗日三語頁搬到 /vip/。本檔只管 VIP 頁 —— 母版與輸出都在 vip/，絕不寫 root 的 index*.html（那是主畫面）。
+PAGE_DIR = SITE / "vip"
+MASTER = PAGE_DIR / "index.html"
 
 
 def inject_common(html, lang):
@@ -43,7 +46,7 @@ def inject_common(html, lang):
     html = re.sub(r'\s*<link rel="alternate" hreflang="[^"]*" href="[^"]*"\s*/?>', "", html)
     alts = "".join(
         f'\n  <link rel="alternate" hreflang="{i18n.LANG_ATTR[L]}" '
-        f'href="https://mfmk.markforged.tw/{i18n.FILES[L]}">'
+        f'href="https://mfmk.markforged.tw/vip/{i18n.FILES[L]}">'
         for L in ("tw", "cn", "en"))
     html = html.replace("</head>", f"{alts}\n</head>", 1)
 
@@ -125,7 +128,7 @@ def gates(pages):
 
     for L, p in pages.items():
         for m in re.findall(r'src="((?!http|data:)[^"]+)"', p):
-            if not (SITE / m).exists():
+            if not (PAGE_DIR / m).exists():
                 sys.exit(f"✗ G5 資源缺：{i18n.FILES[L]} 參照 {m}")
     print("  ✅ G5 資源：三版引用的圖片全部存在")
 
@@ -143,9 +146,9 @@ def main():
     pages = {L: build(L) for L in ("tw", "cn", "en")}
     gates(pages)
     for L, html in pages.items():
-        (SITE / i18n.FILES[L]).write_text(html, encoding="utf-8")
+        (PAGE_DIR / i18n.FILES[L]).write_text(html, encoding="utf-8")
         print(f"✓ {i18n.FILES[L]}  {len(html)//1024} KB")
-    print("\n（母版 index.html 已就地加上切換列與 hreflang；改繁中內容後重跑本檔即可同步三語）")
+    print("\n（母版 vip/index.html 已就地加上切換列與 hreflang；改繁中內容後重跑本檔即可同步三語）")
 
 
 if __name__ == "__main__":

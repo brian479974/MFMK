@@ -147,7 +147,9 @@ EN = {
     "三起軍用無人機陸製零件案之後，非紅查核只會更嚴，合格料源只會更少。晶片要靠合格供應商把關；機身結構件、夾治具與停產備品，可以用 100% 非紅的工業級 3D 列印設備收回廠內。文章整理各國軍方與台灣 ASTER-SWARM 的做法，並附到廠盤點自我檢核。":
         "After three cases of mainland-made parts in Taiwan’s military drones, non-red checks will only tighten and fewer sources will qualify. Chips depend on qualified suppliers; airframe structures, fixtures and end-of-life spares can be brought in-house on 100% non-red industrial 3D printers. The article covers what armed forces and Taiwan’s ASTER-SWARM already do, with a self-check before a site review.",
     "閱讀文章並預約到廠盤點 →": "Read the article and request a site review →",
-    'href="non-red-three-checks-2026-10.html"': 'href="non-red-three-checks-2026-10-en.html"',
+    # 2026-11-01：VIP 頁搬到 /vip/ → 非紅文章路徑多一層 ../；導覽列「回主畫面」連到各語言的主畫面
+    'href="../non-red-three-checks-2026-10.html"': 'href="../non-red-three-checks-2026-10-en.html"',
+    '<a class="hub-back" href="../index.html"><span class="hb-l">← 所有活動</span><span class="hb-s">← 活動</span></a>': '<a class="hub-back" href="../index-en.html"><span class="hb-l">← All events</span><span class="hb-s">← Events</span></a>',
     # ── 2026-10-31 VIP 頁內申請表
     "台灣北部 台北": "Northern Taiwan · Taipei",
     "台灣中部 台中": "Central Taiwan · Taichung",
@@ -226,6 +228,7 @@ EN = {
 
 # 簡中：只列 cn_localize 換不掉、且行銷語感需要人工定的少數幾條
 CN_OVERRIDE = {
+    '<a class="hub-back" href="../index.html"><span class="hb-l">← 所有活動</span><span class="hb-s">← 活動</span></a>': '<a class="hub-back" href="../index-sc.html"><span class="hb-l">← 所有活动</span><span class="hb-s">← 活动</span></a>',  # 2026-11-01 VIP 頁搬 /vip/
     "您的製造痛點，": "您的制造痛点，",
     "貴": "贵",
     "從來不是": "从来不是",
