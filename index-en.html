@@ -670,6 +670,35 @@
     .form-head-icon { color: var(--black); }
     .form-head-icon svg { width: 34px; height: 34px; display: block; }
 
+
+    /* ── VIP 頁內申請表（2026-10-31，同Non-red self-check設計）── */
+    .vf { padding: 30px 40px 34px; }
+    .vf-sec { color: var(--yellow); font-size: 12px; font-weight: 900; letter-spacing: 2px; margin: 8px 0 6px; }
+    .vf-q { border: 0; border-top: 1px solid #222; padding: 16px 0 12px; margin: 0; }
+    .vf-q legend { color: #fff; font-size: 15px; font-weight: 800; padding: 0; margin-bottom: 10px; }
+    .vf-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+    .vf-opts label { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #444; border-radius: 22px;
+      padding: 8px 14px; color: #ccc; font-size: 13.5px; cursor: pointer; transition: all .15s; }
+    .vf-opts label:hover { border-color: var(--yellow); color: #fff; }
+    .vf-opts input { position: absolute; opacity: 0; pointer-events: none; }
+    .vf-opts label:has(input:checked) { background: var(--yellow); border-color: var(--yellow); color: #000; font-weight: 800; }
+    .vf textarea, .vf-ct input { width: 100%; background: #111; border: 1px solid #333; border-radius: 6px; color: #fff;
+      font-size: 15px; padding: 11px 12px; font-family: inherit; }
+    .vf textarea:focus, .vf-ct input:focus { outline: none; border-color: var(--yellow); }
+    .vf-ct { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; padding: 12px 0 4px; border-top: 1px solid #222; }
+    .vf-ct label { color: #aaa; font-size: 12.5px; font-weight: 700; display: flex; flex-direction: column; gap: 6px; }
+    .vf-cs { display: flex; gap: 10px; align-items: flex-start; color: #999; font-size: 12.5px; line-height: 1.6; margin: 16px 0 6px; }
+    .vf-cs input { margin-top: 3px; accent-color: #FFFF00; }
+    .vf-btn { margin-top: 14px; width: 100%; background: var(--yellow); color: #000; border: 0; border-radius: 6px; font-size: 17px;
+      font-weight: 900; padding: 18px; cursor: pointer; letter-spacing: 1px; }
+    .vf-btn:disabled { opacity: .6; cursor: wait; }
+    .vf-err { display: none; color: #ff6b6b; font-size: 13px; font-weight: 700; margin-top: 10px; }
+    .vf-alt { display: block; text-align: center; color: #666; font-size: 12px; margin-top: 16px; }
+    .vf-ok { display: none; padding: 46px 40px; text-align: center; }
+    .vf-ok-h { color: var(--yellow); font-size: 24px; font-weight: 900; margin-bottom: 10px; }
+    .vf-ok p { color: #ccc; font-size: 15px; line-height: 1.8; }
+    @media (max-width: 768px) { .vf { padding: 22px 18px 26px; } .vf-ct { grid-template-columns: 1fr; } }
+
     /* ── FOOTER ── */
     footer {
       background: #000;
@@ -1054,22 +1083,30 @@
     <div class="form-head">
       <div>
         <h2>Request a VIP place</h2>
-        <p>Fill in the form below and we will come back to you within three working days.</p>
+        <p>About one minute. Our engineers prepare a one-to-one demonstration around your industry and parts, and contact you within three working days.</p>
       </div>
       <div class="form-head-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 4h10v5a5 5 0 0 1-10 0Z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4M17 6h2.5a2.5 2.5 0 0 1-2.5 4"/><path d="M10 14h4l-.5 4h-3Z"/><path d="M8.5 20h7"/></svg></div>
     </div>
-    <div style="padding:40px 48px; text-align:center;">
-      <p style="color:#888; font-size:15px; margin-bottom:32px; line-height:1.7;">
-        Give us your details and requirement, and our engineers will arrange a one-to-one session.<br/>
-        <strong style="color:#ccc;">Places are limited.</strong>
-      </p>
-      <a href="https://docs.google.com/forms/d/1QVoS_NBUD8-cVzbirNctZfZ6z5vNOSF02_7hHejYFZk/viewform"
-         target="_blank"
-         style="display:inline-block; background:var(--yellow); color:#000; font-size:18px; font-weight:800; padding:20px 48px; border-radius:6px; text-decoration:none; letter-spacing:1px; transition:opacity .2s, box-shadow .3s;">
-        Open the VIP application form
-      </a>
-      <p style="color:#555; font-size:12px; margin-top:20px;">The form opens in a new tab</p>
-    </div>
+    <form class="vf" id="vipForm" novalidate>
+      <div class="vf-sec">Your needs</div>
+<fieldset class="vf-q"><legend>Preferred location</legend><div class="vf-opts"><label><input type="radio" name="loc" value="0"><span>Northern Taiwan · Taipei</span></label><label><input type="radio" name="loc" value="1"><span>Central Taiwan · Taichung</span></label><label><input type="radio" name="loc" value="2"><span>Southern Taiwan · Kaohsiung</span></label><label><input type="radio" name="loc" value="3"><span>East China · Shanghai</span></label><label><input type="radio" name="loc" value="4"><span>South China · Shenzhen</span></label><label><input type="radio" name="loc" value="5"><span>Hong Kong</span></label><label><input type="radio" name="loc" value="6"><span>Viet Nam · Ho Chi Minh City</span></label><label><input type="radio" name="loc" value="7"><span>Online demonstration</span></label><label><input type="radio" name="loc" value="8"><span>Other location</span></label></div></fieldset>
+<fieldset class="vf-q"><legend>Industry</legend><div class="vf-opts"><label><input type="radio" name="ind" value="0"><span>Automotive and transport</span></label><label><input type="radio" name="ind" value="1"><span>Aerospace and defence</span></label><label><input type="radio" name="ind" value="2"><span>UAV and uncrewed systems</span></label><label><input type="radio" name="ind" value="3"><span>Medical and life sciences</span></label><label><input type="radio" name="ind" value="4"><span>Precision machinery and tooling</span></label><label><input type="radio" name="ind" value="5"><span>Electronics and semiconductor</span></label><label><input type="radio" name="ind" value="6"><span>Energy and heavy industry</span></label><label><input type="radio" name="ind" value="7"><span>Academic and research</span></label><label><input type="radio" name="ind" value="8"><span>Other industry</span></label></div></fieldset>
+<fieldset class="vf-q"><legend>Company size</legend><div class="vf-opts"><label><input type="radio" name="size" value="0"><span>Fewer than 50</span></label><label><input type="radio" name="size" value="1"><span>51–200</span></label><label><input type="radio" name="size" value="2"><span>201–500</span></label><label><input type="radio" name="size" value="3"><span>More than 500</span></label></div></fieldset>
+<fieldset class="vf-q"><legend>How parts are made today</legend><div class="vf-opts"><label><input type="radio" name="mfg" value="0"><span>All in house</span></label><label><input type="radio" name="mfg" value="1"><span>All outsourced</span></label><label><input type="radio" name="mfg" value="2"><span>Mixed</span></label><label><input type="radio" name="mfg" value="3"><span>No settled process yet</span></label></div></fieldset>
+<fieldset class="vf-q"><legend>Timeline</legend><div class="vf-opts"><label><input type="radio" name="time" value="0"><span>Within 3 months</span></label><label><input type="radio" name="time" value="1"><span>Within 6 months</span></label><label><input type="radio" name="time" value="2"><span>Within 12 months</span></label><label><input type="radio" name="time" value="3"><span>Still evaluating</span></label></div></fieldset>
+<fieldset class="vf-q"><legend>Topics of interest (select all that apply)</legend><div class="vf-opts"><label><input type="checkbox" name="topic" value="0"><span>Non-red supply chain and defence</span></label><label><input type="checkbox" name="topic" value="1"><span>Drone structures</span></label><label><input type="checkbox" name="topic" value="2"><span>Jigs and fixtures</span></label><label><input type="checkbox" name="topic" value="3"><span>Metal parts (FX10 + Metal Kit)</span></label><label><input type="checkbox" name="topic" value="4"><span>Spares and discontinued parts</span></label><label><input type="checkbox" name="topic" value="5"><span>Hands-on demo</span></label></div></fieldset>
+<fieldset class="vf-q"><legend>Budget (optional)</legend><div class="vf-opts"><label><input type="radio" name="budget" value="0"><span>Under NT$1M</span></label><label><input type="radio" name="budget" value="1"><span>NT$1M–3M</span></label><label><input type="radio" name="budget" value="2"><span>NT$3M–5M</span></label><label><input type="radio" name="budget" value="3"><span>Over NT$5M</span></label><label><input type="radio" name="budget" value="4"><span>Not yet determined</span></label></div></fieldset>
+<fieldset class="vf-q"><legend>How did you hear about us (optional)</legend><div class="vf-opts"><label><input type="radio" name="src" value="0"><span>Markforged newsroom article</span></label><label><input type="radio" name="src" value="1"><span>Non-red self-check</span></label><label><input type="radio" name="src" value="2"><span>Markforged LINE</span></label><label><input type="radio" name="src" value="3"><span>Sales rep or partner</span></label><label><input type="radio" name="src" value="4"><span>Trade show or seminar</span></label><label><input type="radio" name="src" value="5"><span>Search engine</span></label><label><input type="radio" name="src" value="6"><span>Other channel</span></label></div></fieldset>
+      <fieldset class="vf-q"><legend>Applications or parts you want to see (optional)</legend><textarea name="note" rows="2"></textarea></fieldset>
+      <div class="vf-sec">Contact details</div>
+      <div class="vf-ct"><label>Name *<input name="name" type="text" required autocomplete="on"></label><label>Company *<input name="company" type="text" required autocomplete="on"></label><label>Job title<input name="title" type="text" autocomplete="on"></label><label>Email *<input name="email" type="email" required autocomplete="on"></label><label>Phone *<input name="phone" type="tel" required autocomplete="on"></label></div>
+      <label class="vf-cs"><input type="checkbox" name="consent" value="1"><span>I agree that Markforged may use these details to contact me, in line with its privacy policy.</span></label>
+      <button type="submit" class="vf-btn" id="vfBtn">Send my VIP request →</button>
+      <div class="vf-err" id="vfErr"></div>
+      <a class="vf-alt" href="https://docs.google.com/forms/d/1QVoS_NBUD8-cVzbirNctZfZ6z5vNOSF02_7hHejYFZk/viewform" target="_blank" rel="noopener">Or use the Google Form instead</a>
+    </form>
+    <div class="vf-ok" id="vfOk"><div class="vf-ok-h">Request received</div><p>Thank you. Markforged will contact you within three working days to confirm the time and place.</p></div>
+    <div hidden id="vfTx" data-sending="Sending…" data-err="Please fill in your name, company, email and phone, and tick the consent box." data-net="The connection is unstable and your request may not have been sent. Please try again shortly."></div>
   </div>
 </section>
 
@@ -1138,6 +1175,35 @@
       });
     }, 3000);
   })();
+</script>
+<script>
+/* VIP 申請表（2026-10-31 Brian「原來 VIP 的問卷很醜，要優化類似非紅表格依樣設計」）：頁內作答 → 直接寫進同一張 VIP Google 表單 */
+(function(){
+var A="https://docs.google.com/forms/d/e/1FAIpQLScUzpAD5-p6okBrxFujaKvL6O7LnIqn-fd9mUUTqGhy7-HVaQ/formResponse", V={"loc": {"e": "entry.1661346594", "v": ["\u53f0\u7063\u5317\u90e8 \u53f0\u5317 Northern Taiwan \u00b7 Taipei", "\u53f0\u7063\u4e2d\u90e8 \u53f0\u4e2d Central Taiwan \u00b7 Taichung", "\u53f0\u7063\u5357\u90e8 \u9ad8\u96c4 Southern Taiwan \u00b7 Kaohsiung", "\u4e2d\u570b\u83ef\u6771 \u4e0a\u6d77 East China \u00b7 Shanghai", "\u4e2d\u570b\u83ef\u5357 \u6df1\u5733 South China \u00b7 Shenzhen", "\u9999\u6e2f Hong Kong", "\u8d8a\u5357 \u80e1\u5fd7\u660e\u5e02 Viet Nam \u00b7 Ho Chi Minh City", "\u7dda\u4e0a\u5c55\u793a Online demonstration", "\u5176\u4ed6 Other"], "multi": false}, "ind": {"e": "entry.702564806", "v": ["\u6c7d\u8eca\u8207\u4ea4\u901a Automotive and transport", "\u822a\u592a\u8207\u570b\u9632 Aerospace and defence", "\u7121\u4eba\u6a5f\u8207\u7121\u4eba\u8f09\u5177 UAV and uncrewed systems", "\u91ab\u7642\u8207\u751f\u6280 Medical and life sciences", "\u7cbe\u5bc6\u6a5f\u68b0\u8207\u6a21\u5177 Precision machinery and tooling", "\u96fb\u5b50\u8207\u534a\u5c0e\u9ad4 Electronics and semiconductor", "\u80fd\u6e90\u8207\u91cd\u5de5\u696d Energy and heavy industry", "\u5b78\u8853\u8207\u7814\u7a76\u6a5f\u69cb Academic and research", "\u5176\u4ed6 Other"], "multi": false}, "size": {"e": "entry.1927766727", "v": ["50 \u4eba\u4ee5\u4e0b Fewer than 50 employees", "51\u2013200 \u4eba 51\u2013200 employees", "201\u2013500 \u4eba 201\u2013500 employees", "500 \u4eba\u4ee5\u4e0a More than 500 employees"], "multi": false}, "mfg": {"e": "entry.1554625665", "v": ["\u5b8c\u5168\u81ea\u88fd All in house", "\u5b8c\u5168\u5916\u5305 All outsourced", "\u81ea\u88fd\u8207\u5916\u5305\u4e26\u884c Mixed in house and outsourced", "\u5c1a\u7121\u56fa\u5b9a\u88fd\u7a0b No settled process yet"], "multi": false}, "time": {"e": "entry.615165058", "v": ["3 \u500b\u6708\u5167 Within 3 months", "6 \u500b\u6708\u5167 Within 6 months", "1 \u5e74\u5167 Within 12 months", "\u8a55\u4f30\u4e2d\uff0c\u5c1a\u672a\u78ba\u5b9a Still evaluating"], "multi": false}, "topic": {"e": "entry.543041358", "v": ["\u975e\u7d05\u4f9b\u61c9\u93c8\u8207\u570b\u9632\u61c9\u7528 Non-red supply chain and defence", "\u7121\u4eba\u6a5f\u7d50\u69cb\u4ef6 Drone structures", "\u593e\u6cbb\u5177 Jigs and fixtures", "\u91d1\u5c6c\u96f6\u4ef6\uff08FX10 + Metal Kit\uff09Metal parts", "\u5099\u54c1\u8207\u505c\u7522\u96f6\u4ef6 Spares and discontinued parts", "\u8a2d\u5099\u5be6\u6a5f\u9ad4\u9a57 Hands-on demo"], "multi": true}, "budget": {"e": "entry.1823419522", "v": ["NT$100 \u842c\u4ee5\u4e0b Under NT$1M", "NT$100 \u842c\u2013300 \u842c NT$1M\u20133M", "NT$300 \u842c\u2013500 \u842c NT$3M\u20135M", "NT$500 \u842c\u4ee5\u4e0a Over NT$5M", "\u5c1a\u672a\u78ba\u8a8d Not yet determined"], "multi": false}, "src": {"e": "entry.521954915", "v": ["Markforged \u65b0\u805e\u4e2d\u5fc3\u6587\u7ae0 Markforged newsroom article", "\u975e\u7d05\u81ea\u6211\u6aa2\u6838 Non-red self-check", "Markforged \u5b98\u65b9 LINE", "\u696d\u52d9\u6216\u7d93\u92b7\u5925\u4f34 Sales rep or partner", "\u5c55\u6703\u6216\u7814\u8a0e\u6703 Trade show or seminar", "\u641c\u5c0b\u5f15\u64ce Search engine", "\u5176\u4ed6 Other"], "multi": false}, "_contact": {"name": "entry.2047457802", "company": "entry.1109148177", "title": "entry.39817803", "email": "entry.1534245742", "phone": "entry.586431209"}, "_note": "entry.1436149164"};
+var f=document.getElementById('vipForm'); if(!f) return;
+var T=document.getElementById('vfTx').dataset, b=document.getElementById('vfBtn'), er=document.getElementById('vfErr');
+try{var q=new URLSearchParams(location.search);
+  if((q.get('utm_campaign')||'').indexOf('non-red')>=0){
+    var s=f.querySelector('input[name="src"][value="1"]'); if(s) s.checked=true;
+    var tp=f.querySelector('input[name="topic"][value="0"]'); if(tp) tp.checked=true;}}catch(e){}
+f.addEventListener('submit',function(ev){
+  ev.preventDefault(); er.style.display='none';
+  var C=V._contact, val=function(n){return (f.elements[n].value||'').trim();};
+  if(!val('name')||!val('company')||!val('phone')||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(val('email'))||!f.elements.consent.checked){
+    er.textContent=T.err; er.style.display='block'; return;}
+  var p=new URLSearchParams();
+  Object.keys(C).forEach(function(k){p.append(C[k],val(k));});
+  if(val('note')) p.append(V._note,val('note'));
+  Object.keys(V).forEach(function(k){ if(k.charAt(0)==='_') return;
+    [].forEach.call(f.querySelectorAll('input[name="'+k+'"]:checked'),function(x){p.append(V[k].e,V[k].v[+x.value]);});});
+  b.disabled=true; b.textContent=T.sending;
+  try{fetch('https://hits.sh/mfmk.markforged.tw/vip-submit.svg?_='+Date.now(),{mode:'no-cors'}).catch(function(){});}catch(e){}
+  fetch(A,{method:'POST',mode:'no-cors',body:p}).then(function(){
+    f.style.display='none'; document.getElementById('vfOk').style.display='block';
+    document.getElementById('register').scrollIntoView({behavior:'smooth',block:'start'});
+  }).catch(function(){ b.disabled=false; er.textContent=T.net; er.style.display='block'; });
+});
+})();
 </script>
 </body>
 </html>

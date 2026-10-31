@@ -80,6 +80,9 @@ def build(lang):
         out = localize(out) if False else out  # 不整檔轉：避免動到 URL 與程式碼
         # 2026-10-31：非紅／國防導流區塊不放簡中版（非紅訴求對大陸是地緣紅旗）
         out = re.sub(r"<!-- NONRED:START.*?<!-- NONRED:END -->\n?", "", out, flags=re.S)
+        # VIP 頁內申請表的兩個非紅選項也不放簡中版（值以索引送出，拿掉選項不影響其他選項的對應）
+        out = re.sub(r'<label><input type="checkbox" name="topic" value="0">.*?</label>', "", out, flags=re.S)
+        out = re.sub(r'<label><input type="radio" name="src" value="1">.*?</label>', "", out, flags=re.S)
     return inject_common(out, lang)
 
 
