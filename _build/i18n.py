@@ -140,11 +140,12 @@ EN = {
     "Markforged FX10 等角視圖": "The Markforged FX10, isometric view",
     # ── 2026-10-31 優化新增
     "50 – 250 µm（複合材料）": "50–250 µm (composites)",
-    "產業觀點 · 國防與無人機": "Industry insight · Defence and drones",
     # 2026-10-31 v3（Bella）：非紅觀點文改成生產韌性主軸，導流區跟著換
-    "機身、治具與備品，你能自己做嗎？": "Airframes, fixtures, spares: can you make them yourself?",
-    "三起軍用無人機陸製零件案之後，合格料源只會更少。晶片要靠合格供應商把關；機身結構件、夾治具與停產備品，可以用工業級 3D 列印收回廠內。文章整理各國軍方與台灣 ASTER-SWARM 的做法，並附到廠盤點自我檢核。":
-        "After three cases of mainland-made parts in Taiwan’s military drones, fewer sources will qualify. Chips depend on qualified suppliers; airframe structures, fixtures and end-of-life spares can be brought in-house with industrial 3D printing. The article covers what armed forces and Taiwan’s ASTER-SWARM already do, with a self-check before a site review.",
+    # 2026-10-31 v3.1（Bella）：Brian「主題要與非紅有關」，導流區標題與摘要改回非紅主題
+    "產業觀點 · 非紅供應鏈": "Industry insight · Non-red supply chain",
+    "守住非紅，也守住產線": "Stay non-red, keep the line running",
+    "三起軍用無人機陸製零件案之後，非紅查核只會更嚴，合格料源只會更少。晶片要靠合格供應商把關；機身結構件、夾治具與停產備品，可以用 100% 非紅的工業級 3D 列印設備收回廠內。文章整理各國軍方與台灣 ASTER-SWARM 的做法，並附到廠盤點自我檢核。":
+        "After three cases of mainland-made parts in Taiwan’s military drones, non-red checks will only tighten and fewer sources will qualify. Chips depend on qualified suppliers; airframe structures, fixtures and end-of-life spares can be brought in-house on 100% non-red industrial 3D printers. The article covers what armed forces and Taiwan’s ASTER-SWARM already do, with a self-check before a site review.",
     "閱讀文章並預約到廠盤點 →": "Read the article and request a site review →",
     'href="non-red-three-checks-2026-10.html"': 'href="non-red-three-checks-2026-10-en.html"',
     # ── 2026-10-31 VIP 頁內申請表
