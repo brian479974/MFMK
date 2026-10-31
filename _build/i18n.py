@@ -12,8 +12,8 @@ EN = {
         "Making AI Physical | Markforged FX10 Greater China VIP Experience Day",
     "Markforged FX10 大中華區 VIP 專屬體驗日。全球首台工業級金屬複合材料 3D 列印機，一對一客製化展示，預約制。立即申請，感受 AI 實體化製造新紀元。":
         "The Markforged FX10 Greater China VIP Experience Day. The first industrial printer to run both metal and continuous-fibre composites, shown one to one by appointment. Apply now.",
-    "Markforged,Markforged 大中華區,Markforged GCR,Markforged China,Markforged Hong Kong,Markforged Vietnam,Markforged ":
-        "Markforged,Markforged Greater China,Markforged GCR,Markforged China,Markforged Hong Kong,Markforged Vietnam,Markforged ",
+    "Markforged,Markforged 大中華區,Markforged China,Markforged Hong Kong,Markforged Vietnam,Markforged ":
+        "Markforged,Markforged Greater China,Markforged China,Markforged Hong Kong,Markforged Vietnam,Markforged ",
     "全球首台工業級金屬複合材料 3D 列印機 FX10，大中華區一對一 VIP 體驗日。預約制，由 Markforged 原廠工程師親自展示。":
         "The FX10, the first industrial printer for both metal and continuous-fibre composites. A one-to-one VIP experience day across Greater China, by appointment, demonstrated by Markforged engineers.",
     "全球首台工業級金屬複合材料 3D 列印機，大中華區 VIP 專屬體驗日。預約制，一對一展示。":
@@ -65,14 +65,14 @@ EN = {
     "小批量、多樣化零件無需開模。按需生產，大幅減少庫存壓力與高昂模具費用。":
         "Low-volume and varied parts need no tooling. Produce on demand and hold less stock.",
     "金屬 × 複合材料一機雙用": "Metal and composite on one machine",
-    "全球唯一可切換金屬與複合材料列印的工業機。一台 FX10，兩種材料，無限可能。":
-        "The only industrial machine that switches between metal and continuous-fibre composite. One machine, two material routes.",
+    "全球首部集金屬與複合材料於一機的工業級 3D 列印機。一台 FX10，兩種材料，無限可能。":
+        "The world’s first industrial 3D printer for both metal and composites in one system. One FX10, two materials, endless possibilities.",
     "工廠級可靠度": "Built for the factory floor",
     "精密鋁製平台，光學感測器自動驗證尺寸精度，自動校準，無需專職操作員。":
         "A precision aluminium bed, dimensional accuracy verified by optical sensor, and automatic calibration; no dedicated operator needed.",
     "Eiger 雲端管理": "Managed in Eiger",
-    "從任何地點遠端監控、管理、下單列印。Eiger 讓多地工廠統一管理成為可能。":
-        "Monitor, manage and queue prints from anywhere. Eiger lets several sites run under one system.",
+    "從任何地點遠端監控、管理、下單列印。資料傳輸與儲存皆加密，Markforged 通過 ISO/IEC 27001:2022 資安認證。":
+        "Monitor, manage and queue prints from anywhere. Data is encrypted in transit and at rest, and Markforged is ISO/IEC 27001:2022 certified.",
     "快速 ROI": "Fast payback",
     "以治具、夾具、備品自製為起點，快速回收投資，並逐步擴展到終端零件生產。":
         "Start with jigs, fixtures and spares made in house, recover the investment, then extend into end-use parts.",
@@ -85,9 +85,8 @@ EN = {
         "Continuous carbon fibre brings printed parts close to metal in strength. Four steps, finished the same day.",
     "金屬列印": "Metal printing",
     "設計 → 列印 → 清洗 → 燒結 → 使用": "Design → print → wash → sinter → use",
-    "安全、辦公室友好的金屬列印流程。無需傳統加工設備，直接產出高強度金屬零件。":
-        "A metal process safe enough for an office environment, with no conventional machining required.",
-    # ── value band
+    "列印、清洗、燒結三步完成，不需傳統機械加工即可產出金屬零件；燒結爐需三相電源與氬氣。":
+        "Print, wash and sinter: metal parts without conventional machining. The sintering furnace needs three-phase power and argon.",
     "貴": "Price",
     "從來不是": "was never",
     "好產品的缺點": "the problem",
@@ -146,6 +145,14 @@ EN = {
     "Markforged 複合材料列印流程": "The Markforged composite printing process",
     "Markforged 金屬列印流程": "The Markforged metal printing process",
     "Markforged FX10 等角視圖": "The Markforged FX10, isometric view",
+    # ── 2026-10-31 優化新增
+    "50 – 250 µm（複合材料）": "50–250 µm (composites)",
+    "產業觀點 · 國防與無人機": "Industry insight · Defence and drones",
+    "你的非紅，經得起拆檢嗎？": "Would your non-red supply chain survive a teardown?",
+    "今年 8 到 10 月，至少三家廠商因無人機使用陸製零件遭檢方偵辦。非紅要過三道驗證：紙上、拆開、改版之後。文章整理了各國軍方案例，並附兩分鐘自我檢核。":
+        "Between August and October, at least three companies in Taiwan came under investigation for mainland parts in military drones. Non-red has to pass three checks: on paper, in the teardown, and after the revision. The article covers armed-forces cases by country, with a two-minute self-check.",
+    "閱讀文章並做自我檢核 →": "Read the article and take the self-check →",
+    'href="non-red-three-checks-2026-10.html"': 'href="non-red-three-checks-2026-10-en.html"',
 }
 
 # 簡中：只列 cn_localize 換不掉、且行銷語感需要人工定的少數幾條

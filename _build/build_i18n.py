@@ -78,6 +78,8 @@ def build(lang):
             out = out.replace(tw, cn)
         # 母版中未列入對照表的其餘中文（按鈕、零星文案）一律走 localize
         out = localize(out) if False else out  # 不整檔轉：避免動到 URL 與程式碼
+        # 2026-10-31：非紅／國防導流區塊不放簡中版（非紅訴求對大陸是地緣紅旗）
+        out = re.sub(r"<!-- NONRED:START.*?<!-- NONRED:END -->\n?", "", out, flags=re.S)
     return inject_common(out, lang)
 
 
@@ -110,7 +112,10 @@ def gates(pages):
         sys.exit("✗ G3 台灣用語：簡中版殘留 " + "、".join(hit))
     print("  ✅ G3 簡繁／台灣用語：簡中版零殘留")
 
-    shape = {L: (p.count("<div"), p.count("<img"), p.count("<a ")) for L, p in pages.items()}
+    strip_nr = lambda p: re.sub(r"<!-- NONRED:START.*?<!-- NONRED:END -->", "", p, flags=re.S)
+    shape = {L: (strip_nr(p).count("<div"), strip_nr(p).count("<img"), strip_nr(p).count("<a ")) for L, p in pages.items()}
+    if "NONRED:START" in pages["cn"]:
+        sys.exit("✗ G4b 簡中版不得含非紅導流區塊")
     if len(set(shape.values())) != 1:
         sys.exit(f"✗ G4 結構同形：{shape}")
     print(f"  ✅ G4 結構同形：div/img/a = {shape['tw']}（三版一致）")
